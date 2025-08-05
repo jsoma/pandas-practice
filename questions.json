@@ -1,0 +1,5362 @@
+{
+  "questions": [
+    {
+      "id": "overflows_value_counts_most_common_006",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Company name",
+          "Site name",
+          "Permit No"
+        ],
+        [
+          "Anglian Water",
+          "ABTHORPE TERMINAL PUMPING STATION",
+          "AW1NF947"
+        ],
+        [
+          "Anglian Water",
+          "SCHOOL LANE SPS ABY",
+          "ANNNF2581"
+        ],
+        [
+          "Anglian Water",
+          "AKELEY (EX STW) PS",
+          "AWCNF10279"
+        ],
+        [
+          "Anglian Water",
+          "ALDBOROUGH WATER RECYCLING CENTRE",
+          "AEENF12058"
+        ],
+        [
+          "Anglian Water",
+          "ALDEBURGH STW",
+          "AW4CS12011"
+        ]
+      ],
+      "columnDescriptions": {
+        "Company name": "Name identifier",
+        "Site name": "Name identifier",
+        "Permit No": "Data field"
+      },
+      "context": "Working with overflow event data.",
+      "question": "What is the most common Company name?",
+      "canonicalAnswer": {
+        "code": "df['Company name'].value_counts().head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts",
+        "head"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "forces_sort_highest_023",
+      "dataset": "forces.csv",
+      "dataPreview": [
+        [
+          "other",
+          "name",
+          "land"
+        ],
+        [
+          0,
+          "Iceland",
+          0
+        ],
+        [
+          10000,
+          "UK",
+          80000
+        ],
+        [
+          24000,
+          "France",
+          108000
+        ],
+        [
+          5000,
+          "Portugal",
+          15000
+        ],
+        [
+          10000,
+          "Spain",
+          80000
+        ]
+      ],
+      "columnDescriptions": {
+        "other": "Data field",
+        "name": "Name identifier",
+        "land": "Data field"
+      },
+      "context": "Working with force measurement data.",
+      "question": "Which force measurement has the highest other?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('other', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "powerplants_filter_count_003",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "plant_name",
+          "utility_name",
+          "sector_name"
+        ],
+        [
+          "Bankhead Dam",
+          "Alabama Power Co",
+          "Electric Utility"
+        ],
+        [
+          "Barry",
+          "Alabama Power Co",
+          "Electric Utility"
+        ],
+        [
+          "Walter Bouldin Dam",
+          "Alabama Power Co",
+          "Electric Utility"
+        ],
+        [
+          "Gadsden",
+          "Alabama Power Co",
+          "Electric Utility"
+        ],
+        [
+          "Gorgas",
+          "Alabama Power Co",
+          "Electric Utility"
+        ]
+      ],
+      "columnDescriptions": {
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier",
+        "sector_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "How many power plants have plant_name equal to \"Kelford\"?",
+      "canonicalAnswer": {
+        "code": "(df['plant_name'] == 'Kelford').sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "boolean indexing",
+        "sum"
+      ],
+      "hint": "Use boolean indexing to solve this",
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "wreckers_groupby_count_015",
+      "dataset": "wreckers.csv",
+      "dataPreview": [
+        [
+          "DBA Name",
+          "Customer",
+          "TDLR Number"
+        ],
+        [
+          "1ST CHOICE PAINT & BODY, INC",
+          "1ST CHOICE WRECKER SERVICE",
+          "006096604C (Insurance not applied !)"
+        ],
+        [
+          "1ST CHOICE PAINT & BODY, INC.",
+          "1ST CHOICE WRECKER SERVICE",
+          "0612137VSF (Insurance not applied !)"
+        ],
+        [
+          null,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          "006529369C"
+        ],
+        [
+          null,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          "0652937VSF"
+        ],
+        [
+          null,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          "0655000VSF"
+        ]
+      ],
+      "columnDescriptions": {
+        "DBA Name": "Name identifier",
+        "Customer": "Data field",
+        "TDLR Number": "Count or quantity"
+      },
+      "context": "Working with tow truck data.",
+      "question": "How many tow trucks does each DBA Name have?",
+      "canonicalAnswer": {
+        "code": "df['DBA Name'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use groupby to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+    },
+    {
+      "id": "tickets-tiny_value_counts_most_common_063",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "AGEGROUP",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "21-25",
+          "K0001506",
+          "T"
+        ],
+        [
+          "36-40",
+          "K0001507",
+          "T"
+        ],
+        [
+          "61-65",
+          "K0001509",
+          "T"
+        ],
+        [
+          "51-55",
+          "K0001510",
+          "T"
+        ],
+        [
+          "21-25",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "AGEGROUP": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "What is the most common AGEGROUP?",
+      "canonicalAnswer": {
+        "code": "df['AGEGROUP'].value_counts().head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts",
+        "head"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "powerplants_mean_simple_134",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "hydro_mw",
+          "plant_name",
+          "utility_name"
+        ],
+        [
+          56.0,
+          "Bankhead Dam",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Barry",
+          "Alabama Power Co"
+        ],
+        [
+          225.9,
+          "Walter Bouldin Dam",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Gadsden",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Gorgas",
+          "Alabama Power Co"
+        ]
+      ],
+      "columnDescriptions": {
+        "hydro_mw": "Data field",
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "What is the average hydro_mw?",
+      "canonicalAnswer": {
+        "code": "df['hydro_mw'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "mean"
+      ],
+      "hint": "Use mean to solve this",
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "crops_groupby_mean_098",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Unit",
+          "Current Item Code",
+          "Year"
+        ],
+        [
+          null,
+          null,
+          2022
+        ],
+        [
+          null,
+          null,
+          2022
+        ],
+        [
+          null,
+          null,
+          2022
+        ],
+        [
+          null,
+          null,
+          2022
+        ],
+        [
+          null,
+          null,
+          2022
+        ]
+      ],
+      "columnDescriptions": {
+        "Unit": "Data field",
+        "Current Item Code": "Data field",
+        "Year": "Date/time information"
+      },
+      "context": "Analyzing crop data by categories.",
+      "question": "What is the average Current Item Code by Unit?",
+      "canonicalAnswer": {
+        "code": "df.groupby('Unit')['Current Item Code'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "mean"
+      ],
+      "hint": "Use groupby and mean to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "crops_sum_simple_029",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Current Item Code",
+          "Year",
+          "Current Item Name"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ]
+      ],
+      "columnDescriptions": {
+        "Current Item Code": "Data field",
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier"
+      },
+      "context": "Working with crop data.",
+      "question": "What is the total Current Item Code across all crops?",
+      "canonicalAnswer": {
+        "code": "df['Current Item Code'].sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sum"
+      ],
+      "hint": "Use sum to solve this",
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "foods_filter_count_034",
+      "dataset": "foods.csv",
+      "dataPreview": [
+        [
+          "Carbs",
+          "Company",
+          "Variety"
+        ],
+        [
+          "7%",
+          "4HEALTH",
+          "Turkey/Salmon"
+        ],
+        [
+          "1%",
+          "4HEALTH",
+          "Grain-Free Turkey/Giblets"
+        ],
+        [
+          "8%",
+          "4HEALTH",
+          "Chicken/Beef"
+        ],
+        [
+          "7%",
+          "4HEALTH",
+          "Grain-Free Salmon in Gravy"
+        ],
+        [
+          "0%",
+          "4HEALTH",
+          "Grain-Free Chicken/Whitefish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Carbs": "Data field",
+        "Company": "Data field",
+        "Variety": "Data field"
+      },
+      "context": "Working with pet food product data.",
+      "question": "How many pet food products have Carbs equal to \"13%\"?",
+      "canonicalAnswer": {
+        "code": "(df['Carbs'] == '13%').sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "boolean indexing",
+        "sum"
+      ],
+      "hint": "Use boolean indexing to solve this",
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "race-places_groupby_sum_sorted_041",
+      "dataset": "race-places.csv",
+      "dataPreview": [
+        [
+          "Race_Result",
+          "Serial",
+          "Driver"
+        ],
+        [
+          "1",
+          1.0,
+          "Tommi M\u00e4kinen"
+        ],
+        [
+          "2",
+          1.0,
+          "Carlos Sainz"
+        ],
+        [
+          "DNF",
+          1.0,
+          "Colin McRae"
+        ],
+        [
+          "DNF",
+          2.0,
+          "Carlos Sainz"
+        ],
+        [
+          "3",
+          2.0,
+          "Colin McRae"
+        ]
+      ],
+      "columnDescriptions": {
+        "Race_Result": "Data field",
+        "Serial": "Data field",
+        "Driver": "Data field"
+      },
+      "context": "Analyzing race result data by categories.",
+      "question": "What is the total Serial by Race_Result?",
+      "canonicalAnswer": {
+        "code": "df.groupby('Race_Result')['Serial'].sum().sort_values(ascending=False)",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "sum",
+        "sort_values"
+      ],
+      "hint": "Use groupby and sum and sort_values to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "overflows_value_counts_most_common_042",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Waterbody name",
+          "Company name",
+          "Site name"
+        ],
+        [
+          "Tove (US Greens Norton)",
+          "Anglian Water",
+          "ABTHORPE TERMINAL PUMPING STATION"
+        ],
+        [
+          "Woldgrift Drain",
+          "Anglian Water",
+          "SCHOOL LANE SPS ABY"
+        ],
+        [
+          "Leckhampstead Brook",
+          "Anglian Water",
+          "AKELEY (EX STW) PS"
+        ],
+        [
+          "Scarrow Beck",
+          "Anglian Water",
+          "ALDBOROUGH WATER RECYCLING CENTRE"
+        ],
+        [
+          "Suffolk",
+          "Anglian Water",
+          "ALDEBURGH STW"
+        ]
+      ],
+      "columnDescriptions": {
+        "Waterbody name": "Name identifier",
+        "Company name": "Name identifier",
+        "Site name": "Name identifier"
+      },
+      "context": "Working with overflow event data.",
+      "question": "What is the most common Waterbody name?",
+      "canonicalAnswer": {
+        "code": "df['Waterbody name'].value_counts().head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts",
+        "head"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "motorcycles_filter_show_all_simple_571",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Seat",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Seat": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "Show all One piece dual seat motorcycles",
+      "canonicalAnswer": {
+        "code": "df[df['Seat'] == 'One piece dual seat']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "foods_filter_show_all_simple_025",
+      "dataset": "foods.csv",
+      "dataPreview": [
+        [
+          "Fat",
+          "Company",
+          "Variety"
+        ],
+        [
+          "62%",
+          "4HEALTH",
+          "Turkey/Salmon"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Turkey/Giblets"
+        ],
+        [
+          "59%",
+          "4HEALTH",
+          "Chicken/Beef"
+        ],
+        [
+          "57%",
+          "4HEALTH",
+          "Grain-Free Salmon in Gravy"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Chicken/Whitefish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Fat": "Data field",
+        "Company": "Data field",
+        "Variety": "Data field"
+      },
+      "context": "Working with pet food product data.",
+      "question": "Show all 58% pet food products",
+      "canonicalAnswer": {
+        "code": "df[df['Fat'] == '58%']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "foods_count_multiple_values_046",
+      "dataset": "foods.csv",
+      "dataPreview": [
+        [
+          "Phos",
+          "Company",
+          "Variety"
+        ],
+        [
+          "273mg",
+          "4HEALTH",
+          "Turkey/Salmon"
+        ],
+        [
+          "274mg",
+          "4HEALTH",
+          "Grain-Free Turkey/Giblets"
+        ],
+        [
+          "278mg",
+          "4HEALTH",
+          "Chicken/Beef"
+        ],
+        [
+          "278mg",
+          "4HEALTH",
+          "Grain-Free Salmon in Gravy"
+        ],
+        [
+          "287mg",
+          "4HEALTH",
+          "Grain-Free Chicken/Whitefish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Phos": "Data field",
+        "Company": "Data field",
+        "Variety": "Data field"
+      },
+      "context": "Working with pet food product data.",
+      "question": "How many pet food products are either 195mg or 0mg?",
+      "canonicalAnswer": {
+        "code": "df['Phos'].isin(['195mg', '0mg']).sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "isin",
+        "sum"
+      ],
+      "hint": "Use isin to solve this",
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "foods_groupby_count_023",
+      "dataset": "foods.csv",
+      "dataPreview": [
+        [
+          "Protein",
+          "Company",
+          "Variety"
+        ],
+        [
+          "31%",
+          "4HEALTH",
+          "Turkey/Salmon"
+        ],
+        [
+          "29%",
+          "4HEALTH",
+          "Grain-Free Turkey/Giblets"
+        ],
+        [
+          "33%",
+          "4HEALTH",
+          "Chicken/Beef"
+        ],
+        [
+          "36%",
+          "4HEALTH",
+          "Grain-Free Salmon in Gravy"
+        ],
+        [
+          "30%",
+          "4HEALTH",
+          "Grain-Free Chicken/Whitefish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Protein": "Data field",
+        "Company": "Data field",
+        "Variety": "Data field"
+      },
+      "context": "Working with pet food product data.",
+      "question": "How many pet food products does each Protein have?",
+      "canonicalAnswer": {
+        "code": "df['Protein'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use groupby to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+    },
+    {
+      "id": "tickets-tiny_groupby_count_073",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "INTOWN",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "N",
+          "K0001506",
+          "T"
+        ],
+        [
+          "N",
+          "K0001507",
+          "T"
+        ],
+        [
+          "N",
+          "K0001509",
+          "T"
+        ],
+        [
+          "N",
+          "K0001510",
+          "T"
+        ],
+        [
+          "N",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "INTOWN": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "How many traffic stops does each INTOWN have?",
+      "canonicalAnswer": {
+        "code": "df['INTOWN'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use groupby to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+    },
+    {
+      "id": "wreckers_filter_show_all_simple_032",
+      "dataset": "wreckers.csv",
+      "dataPreview": [
+        [
+          "State",
+          "Customer",
+          "DBA Name"
+        ],
+        [
+          "TX",
+          "1ST CHOICE WRECKER SERVICE",
+          "1ST CHOICE PAINT & BODY, INC"
+        ],
+        [
+          "TX",
+          "1ST CHOICE WRECKER SERVICE",
+          "1ST CHOICE PAINT & BODY, INC."
+        ],
+        [
+          "TX",
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ],
+        [
+          "TX",
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ],
+        [
+          "TX",
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ]
+      ],
+      "columnDescriptions": {
+        "State": "Data field",
+        "Customer": "Data field",
+        "DBA Name": "Name identifier"
+      },
+      "context": "Working with tow truck data.",
+      "question": "Show all TX tow trucks",
+      "canonicalAnswer": {
+        "code": "df[df['State'] == 'TX']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "forces_mean_simple_026",
+      "dataset": "forces.csv",
+      "dataPreview": [
+        [
+          "other",
+          "name",
+          "land"
+        ],
+        [
+          0,
+          "Iceland",
+          0
+        ],
+        [
+          10000,
+          "UK",
+          80000
+        ],
+        [
+          24000,
+          "France",
+          108000
+        ],
+        [
+          5000,
+          "Portugal",
+          15000
+        ],
+        [
+          10000,
+          "Spain",
+          80000
+        ]
+      ],
+      "columnDescriptions": {
+        "other": "Data field",
+        "name": "Name identifier",
+        "land": "Data field"
+      },
+      "context": "Working with force measurement data.",
+      "question": "What is the average other?",
+      "canonicalAnswer": {
+        "code": "df['other'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "mean"
+      ],
+      "hint": "Use mean to solve this",
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "overflows_filter_show_all_037",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Waterbody name",
+          "Company name",
+          "Site name"
+        ],
+        [
+          "Tove (US Greens Norton)",
+          "Anglian Water",
+          "ABTHORPE TERMINAL PUMPING STATION"
+        ],
+        [
+          "Woldgrift Drain",
+          "Anglian Water",
+          "SCHOOL LANE SPS ABY"
+        ],
+        [
+          "Leckhampstead Brook",
+          "Anglian Water",
+          "AKELEY (EX STW) PS"
+        ],
+        [
+          "Scarrow Beck",
+          "Anglian Water",
+          "ALDBOROUGH WATER RECYCLING CENTRE"
+        ],
+        [
+          "Suffolk",
+          "Anglian Water",
+          "ALDEBURGH STW"
+        ]
+      ],
+      "columnDescriptions": {
+        "Waterbody name": "Name identifier",
+        "Company name": "Name identifier",
+        "Site name": "Name identifier"
+      },
+      "context": "Working with overflow event data.",
+      "question": "Show all overflow events where Waterbody name is \"TYNE\"",
+      "canonicalAnswer": {
+        "code": "df[df['Waterbody name'] == 'TYNE']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "tickets-tiny_filter_show_all_050",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "MPHGROUP",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "b) 10 to 15",
+          "K0001506",
+          "T"
+        ],
+        [
+          "U",
+          "K0001507",
+          "T"
+        ],
+        [
+          "U",
+          "K0001509",
+          "T"
+        ],
+        [
+          "U",
+          "K0001510",
+          "T"
+        ],
+        [
+          "c) 16 to 20",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "MPHGROUP": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "Show all traffic stops where MPHGROUP is \"d) more than 20\"",
+      "canonicalAnswer": {
+        "code": "df[df['MPHGROUP'] == 'd) more than 20']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "motorcycles_sum_simple_707",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Oil capacity (litres)",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Oil capacity (litres)": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "What is the total Oil capacity (litres) across all motorcycles?",
+      "canonicalAnswer": {
+        "code": "df['Oil capacity (litres)'].sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sum"
+      ],
+      "hint": "Use sum to solve this",
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "tickets-tiny_value_counts_most_common_055",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "MPHGROUP",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "b) 10 to 15",
+          "K0001506",
+          "T"
+        ],
+        [
+          "U",
+          "K0001507",
+          "T"
+        ],
+        [
+          "U",
+          "K0001509",
+          "T"
+        ],
+        [
+          "U",
+          "K0001510",
+          "T"
+        ],
+        [
+          "c) 16 to 20",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "MPHGROUP": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "What is the most common MPHGROUP?",
+      "canonicalAnswer": {
+        "code": "df['MPHGROUP'].value_counts().head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts",
+        "head"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "motorcycles_sort_highest_586",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Dry weight (kg)",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          239.0,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Dry weight (kg)": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "Which motorcycle has the highest Dry weight (kg)?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Dry weight (kg)', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "tickets-tiny_value_counts_basic_078",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "INSTATE",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "Y",
+          "K0001506",
+          "T"
+        ],
+        [
+          "Y",
+          "K0001507",
+          "T"
+        ],
+        [
+          "N",
+          "K0001509",
+          "T"
+        ],
+        [
+          "N",
+          "K0001510",
+          "T"
+        ],
+        [
+          "Y",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "INSTATE": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "How many traffic stops are there for each INSTATE?",
+      "canonicalAnswer": {
+        "code": "df['INSTATE'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+    },
+    {
+      "id": "motorcycles_sort_highest_144",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Torque (rpm)",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          6750.0,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Torque (rpm)": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "Which motorcycle has the highest Torque (rpm)?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Torque (rpm)', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "forces_filter_numeric_greater_016",
+      "dataset": "forces.csv",
+      "dataPreview": [
+        [
+          "air",
+          "name",
+          "land"
+        ],
+        [
+          0,
+          "Iceland",
+          0
+        ],
+        [
+          20000,
+          "UK",
+          80000
+        ],
+        [
+          36000,
+          "France",
+          108000
+        ],
+        [
+          5000,
+          "Portugal",
+          15000
+        ],
+        [
+          20000,
+          "Spain",
+          80000
+        ]
+      ],
+      "columnDescriptions": {
+        "air": "Data field",
+        "name": "Name identifier",
+        "land": "Data field"
+      },
+      "context": "Working with force measurement data.",
+      "question": "How many force measurements have air greater than 5000.0?",
+      "canonicalAnswer": {
+        "code": "(df['air'] > 5000.0).sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "boolean indexing",
+        "sum"
+      ],
+      "hint": "Use boolean indexing to solve this",
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "race-places_groupby_mean_038",
+      "dataset": "race-places.csv",
+      "dataPreview": [
+        [
+          "Race_Result",
+          "Year_x",
+          "Driver"
+        ],
+        [
+          "1",
+          2000,
+          "Tommi M\u00e4kinen"
+        ],
+        [
+          "2",
+          2000,
+          "Carlos Sainz"
+        ],
+        [
+          "DNF",
+          2000,
+          "Colin McRae"
+        ],
+        [
+          "DNF",
+          2000,
+          "Carlos Sainz"
+        ],
+        [
+          "3",
+          2000,
+          "Colin McRae"
+        ]
+      ],
+      "columnDescriptions": {
+        "Race_Result": "Data field",
+        "Year_x": "Date/time information",
+        "Driver": "Data field"
+      },
+      "context": "Analyzing race result data by categories.",
+      "question": "What is the average Year_x by Race_Result?",
+      "canonicalAnswer": {
+        "code": "df.groupby('Race_Result')['Year_x'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "mean"
+      ],
+      "hint": "Use groupby and mean to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "crops_sort_lowest_069",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Production",
+          "Year",
+          "Current Item Name"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ]
+      ],
+      "columnDescriptions": {
+        "Production": "Data field",
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier"
+      },
+      "context": "Working with crop data.",
+      "question": "What is the crop with the lowest Production?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Production').head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "foods_filter_show_all_simple_033",
+      "dataset": "foods.csv",
+      "dataPreview": [
+        [
+          "Carbs",
+          "Company",
+          "Variety"
+        ],
+        [
+          "7%",
+          "4HEALTH",
+          "Turkey/Salmon"
+        ],
+        [
+          "1%",
+          "4HEALTH",
+          "Grain-Free Turkey/Giblets"
+        ],
+        [
+          "8%",
+          "4HEALTH",
+          "Chicken/Beef"
+        ],
+        [
+          "7%",
+          "4HEALTH",
+          "Grain-Free Salmon in Gravy"
+        ],
+        [
+          "0%",
+          "4HEALTH",
+          "Grain-Free Chicken/Whitefish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Carbs": "Data field",
+        "Company": "Data field",
+        "Variety": "Data field"
+      },
+      "context": "Working with pet food product data.",
+      "question": "Show all 14% pet food products",
+      "canonicalAnswer": {
+        "code": "df[df['Carbs'] == '14%']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "motorcycles_groupby_count_493",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Front tyre",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          "120/70-17 ",
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          "120/70-17 ",
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          "120/70-17 ",
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          "120/70-17 ",
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Front tyre": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "How many motorcycles does each Front tyre have?",
+      "canonicalAnswer": {
+        "code": "df['Front tyre'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use groupby to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+    },
+    {
+      "id": "motorcycles_filter_numeric_greater_137",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Torque (Nm)",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          100.03,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Torque (Nm)": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "How many motorcycles have Torque (Nm) greater than 106.6?",
+      "canonicalAnswer": {
+        "code": "(df['Torque (Nm)'] > 106.6).sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "boolean indexing",
+        "sum"
+      ],
+      "hint": "Use boolean indexing to solve this",
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "race-places_sort_highest_043",
+      "dataset": "race-places.csv",
+      "dataPreview": [
+        [
+          "Serial",
+          "Driver",
+          "Name_x"
+        ],
+        [
+          1.0,
+          "Tommi M\u00e4kinen",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          1.0,
+          "Carlos Sainz",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          1.0,
+          "Colin McRae",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          2.0,
+          "Carlos Sainz",
+          "International Swedish Rally"
+        ],
+        [
+          2.0,
+          "Colin McRae",
+          "International Swedish Rally"
+        ]
+      ],
+      "columnDescriptions": {
+        "Serial": "Data field",
+        "Driver": "Data field",
+        "Name_x": "Name identifier"
+      },
+      "context": "Working with race result data.",
+      "question": "Which race result has the highest Serial?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Serial', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "grammys_groupby_mean_041",
+      "dataset": "grammys.csv",
+      "dataPreview": [
+        [
+          "status",
+          "year",
+          "musician_x"
+        ],
+        [
+          "winner",
+          2022,
+          "Jon Batiste"
+        ],
+        [
+          "nominee",
+          2022,
+          "Tony Bennett & Lady Gaga"
+        ],
+        [
+          "nominee",
+          2022,
+          "Justin Bieber"
+        ],
+        [
+          "nominee",
+          2022,
+          "Doja Cat"
+        ],
+        [
+          "nominee",
+          2022,
+          "Billie Eilish"
+        ]
+      ],
+      "columnDescriptions": {
+        "status": "Current status",
+        "year": "Date/time information",
+        "musician_x": "Data field"
+      },
+      "context": "Analyzing Grammy nomination data by categories.",
+      "question": "What is the average year by status?",
+      "canonicalAnswer": {
+        "code": "df.groupby('status')['year'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "mean"
+      ],
+      "hint": "Use groupby and mean to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "powerplants_filter_show_all_simple_077",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "street_address",
+          "plant_name",
+          "utility_name"
+        ],
+        [
+          "19001 Lock 17 Road",
+          "Bankhead Dam",
+          "Alabama Power Co"
+        ],
+        [
+          "North Highway 43",
+          "Barry",
+          "Alabama Power Co"
+        ],
+        [
+          "750 Bouldin Dam Road",
+          "Walter Bouldin Dam",
+          "Alabama Power Co"
+        ],
+        [
+          "1000 Goodyear Ave",
+          "Gadsden",
+          "Alabama Power Co"
+        ],
+        [
+          "460 Gorgas Road",
+          "Gorgas",
+          "Alabama Power Co"
+        ]
+      ],
+      "columnDescriptions": {
+        "street_address": "Data field",
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "Show all P.O. BOX 429 power plants",
+      "canonicalAnswer": {
+        "code": "df[df['street_address'] == 'P.O. BOX 429']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "powerplants_groupby_mean_016",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "utility_name",
+          "zip",
+          "plant_name"
+        ],
+        [
+          "Alabama Power Co",
+          35476,
+          "Bankhead Dam"
+        ],
+        [
+          "Alabama Power Co",
+          36512,
+          "Barry"
+        ],
+        [
+          "Alabama Power Co",
+          36092,
+          "Walter Bouldin Dam"
+        ],
+        [
+          "Alabama Power Co",
+          35903,
+          "Gadsden"
+        ],
+        [
+          "Alabama Power Co",
+          35580,
+          "Gorgas"
+        ]
+      ],
+      "columnDescriptions": {
+        "utility_name": "Name identifier",
+        "zip": "Data field",
+        "plant_name": "Name identifier"
+      },
+      "context": "Analyzing power plant data by categories.",
+      "question": "What is the average zip by utility_name?",
+      "canonicalAnswer": {
+        "code": "df.groupby('utility_name')['zip'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "mean"
+      ],
+      "hint": "Use groupby and mean to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "tickets-tiny_filter_show_all_simple_020",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "LOCAL",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "N",
+          "K0001506",
+          "T"
+        ],
+        [
+          "N",
+          "K0001507",
+          "T"
+        ],
+        [
+          "N",
+          "K0001509",
+          "T"
+        ],
+        [
+          "N",
+          "K0001510",
+          "T"
+        ],
+        [
+          "N",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "LOCAL": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "Show all N traffic stops",
+      "canonicalAnswer": {
+        "code": "df[df['LOCAL'] == 'N']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "overflows_value_counts_most_common_054",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Treatment method",
+          "Company name",
+          "Site name"
+        ],
+        [
+          "Not Applicable",
+          "Anglian Water",
+          "ABTHORPE TERMINAL PUMPING STATION"
+        ],
+        [
+          "Not Applicable",
+          "Anglian Water",
+          "SCHOOL LANE SPS ABY"
+        ],
+        [
+          "Not Applicable",
+          "Anglian Water",
+          "AKELEY (EX STW) PS"
+        ],
+        [
+          "Not Applicable",
+          "Anglian Water",
+          "ALDBOROUGH WATER RECYCLING CENTRE"
+        ],
+        [
+          "Not Applicable",
+          "Anglian Water",
+          "ALDEBURGH STW"
+        ]
+      ],
+      "columnDescriptions": {
+        "Treatment method": "Data field",
+        "Company name": "Name identifier",
+        "Site name": "Name identifier"
+      },
+      "context": "Working with overflow event data.",
+      "question": "What is the most common Treatment method?",
+      "canonicalAnswer": {
+        "code": "df['Treatment method'].value_counts().head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts",
+        "head"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "grammys_filter_show_all_045",
+      "dataset": "grammys.csv",
+      "dataPreview": [
+        [
+          "cleaned_musician",
+          "year",
+          "musician_x"
+        ],
+        [
+          "Jon Batiste",
+          2022,
+          "Jon Batiste"
+        ],
+        [
+          "Tony Bennett  Lady Gaga",
+          2022,
+          "Tony Bennett & Lady Gaga"
+        ],
+        [
+          "Justin Bieber",
+          2022,
+          "Justin Bieber"
+        ],
+        [
+          "Doja Cat",
+          2022,
+          "Doja Cat"
+        ],
+        [
+          "Billie Eilish",
+          2022,
+          "Billie Eilish"
+        ]
+      ],
+      "columnDescriptions": {
+        "cleaned_musician": "Data field",
+        "year": "Date/time information",
+        "musician_x": "Data field"
+      },
+      "context": "Working with Grammy nomination data.",
+      "question": "Show all Grammy nominations where cleaned_musician is \"Adele\"",
+      "canonicalAnswer": {
+        "code": "df[df['cleaned_musician'] == 'Adele']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "wreckers_sum_simple_045",
+      "dataset": "wreckers.csv",
+      "dataPreview": [
+        [
+          "Zip code",
+          "Customer",
+          "DBA Name"
+        ],
+        [
+          75160,
+          "1ST CHOICE WRECKER SERVICE",
+          "1ST CHOICE PAINT & BODY, INC"
+        ],
+        [
+          75160,
+          "1ST CHOICE WRECKER SERVICE",
+          "1ST CHOICE PAINT & BODY, INC."
+        ],
+        [
+          77656,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ],
+        [
+          77656,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ],
+        [
+          77656,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ]
+      ],
+      "columnDescriptions": {
+        "Zip code": "Data field",
+        "Customer": "Data field",
+        "DBA Name": "Name identifier"
+      },
+      "context": "Working with tow truck data.",
+      "question": "What is the total Zip code across all tow trucks?",
+      "canonicalAnswer": {
+        "code": "df['Zip code'].sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sum"
+      ],
+      "hint": "Use sum to solve this",
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "wreckers_value_counts_most_common_013",
+      "dataset": "wreckers.csv",
+      "dataPreview": [
+        [
+          "DBA Name",
+          "Customer",
+          "TDLR Number"
+        ],
+        [
+          "1ST CHOICE PAINT & BODY, INC",
+          "1ST CHOICE WRECKER SERVICE",
+          "006096604C (Insurance not applied !)"
+        ],
+        [
+          "1ST CHOICE PAINT & BODY, INC.",
+          "1ST CHOICE WRECKER SERVICE",
+          "0612137VSF (Insurance not applied !)"
+        ],
+        [
+          null,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          "006529369C"
+        ],
+        [
+          null,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          "0652937VSF"
+        ],
+        [
+          null,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          "0655000VSF"
+        ]
+      ],
+      "columnDescriptions": {
+        "DBA Name": "Name identifier",
+        "Customer": "Data field",
+        "TDLR Number": "Count or quantity"
+      },
+      "context": "Working with tow truck data.",
+      "question": "What is the most common DBA Name?",
+      "canonicalAnswer": {
+        "code": "df['DBA Name'].value_counts().head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts",
+        "head"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "tickets-tiny_value_counts_basic_008",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "TYPE",
+          "CITATION",
+          "AGENCY2"
+        ],
+        [
+          "T",
+          "K0001506",
+          "State Police"
+        ],
+        [
+          "T",
+          "K0001507",
+          "State Police"
+        ],
+        [
+          "T",
+          "K0001509",
+          "State Police"
+        ],
+        [
+          "T",
+          "K0001510",
+          "State Police"
+        ],
+        [
+          "T",
+          "K0001511",
+          "State Police"
+        ]
+      ],
+      "columnDescriptions": {
+        "TYPE": "Category or type",
+        "CITATION": "Data field",
+        "AGENCY2": "Data field"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "How many traffic stops are there for each TYPE?",
+      "canonicalAnswer": {
+        "code": "df['TYPE'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+    },
+    {
+      "id": "tickets-tiny_count_multiple_values_064",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "AGEGROUP",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "21-25",
+          "K0001506",
+          "T"
+        ],
+        [
+          "36-40",
+          "K0001507",
+          "T"
+        ],
+        [
+          "61-65",
+          "K0001509",
+          "T"
+        ],
+        [
+          "51-55",
+          "K0001510",
+          "T"
+        ],
+        [
+          "21-25",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "AGEGROUP": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "How many traffic stops are either 51-55 or 56-60?",
+      "canonicalAnswer": {
+        "code": "df['AGEGROUP'].isin(['51-55', '56-60']).sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "isin",
+        "sum"
+      ],
+      "hint": "Use isin to solve this",
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "powerplants_sort_highest_167",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "other_mw",
+          "plant_name",
+          "utility_name"
+        ],
+        [
+          null,
+          "Bankhead Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Barry",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Walter Bouldin Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gadsden",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gorgas",
+          "Alabama Power Co"
+        ]
+      ],
+      "columnDescriptions": {
+        "other_mw": "Data field",
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "Which power plant has the highest other_mw?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('other_mw', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "grammys_mean_simple_005",
+      "dataset": "grammys.csv",
+      "dataPreview": [
+        [
+          "year",
+          "musician_x",
+          "work"
+        ],
+        [
+          2022,
+          "Jon Batiste",
+          "We Are"
+        ],
+        [
+          2022,
+          "Tony Bennett & Lady Gaga",
+          "Love for Sale"
+        ],
+        [
+          2022,
+          "Justin Bieber",
+          "Justice"
+        ],
+        [
+          2022,
+          "Doja Cat",
+          "Planet Her"
+        ],
+        [
+          2022,
+          "Billie Eilish",
+          "Happier Than Ever"
+        ]
+      ],
+      "columnDescriptions": {
+        "year": "Date/time information",
+        "musician_x": "Data field",
+        "work": "Data field"
+      },
+      "context": "Working with Grammy nomination data.",
+      "question": "What is the average year?",
+      "canonicalAnswer": {
+        "code": "df['year'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "mean"
+      ],
+      "hint": "Use mean to solve this",
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "crops_mean_simple_138",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Footnote",
+          "Year",
+          "Current Item Name"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ]
+      ],
+      "columnDescriptions": {
+        "Footnote": "Data field",
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier"
+      },
+      "context": "Working with crop data.",
+      "question": "What is the average Footnote?",
+      "canonicalAnswer": {
+        "code": "df['Footnote'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "mean"
+      ],
+      "hint": "Use mean to solve this",
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "motorcycles_sort_highest_178",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Max RPM",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Max RPM": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "Which motorcycle has the highest Max RPM?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Max RPM', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "crops_sort_lowest_003",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Year",
+          "Current Item Name",
+          "Current Item Code"
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ]
+      ],
+      "columnDescriptions": {
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier",
+        "Current Item Code": "Data field"
+      },
+      "context": "Working with crop data.",
+      "question": "What is the crop with the lowest Year?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Year').head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "powerplants_groupby_mean_198",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "tech_desc",
+          "zip",
+          "plant_name"
+        ],
+        [
+          "Conventional Hydroelectric",
+          35476,
+          "Bankhead Dam"
+        ],
+        [
+          "Conventional Steam Coal; Natural Gas Fired Combined Cycle; Natural Gas Steam Turbine",
+          36512,
+          "Barry"
+        ],
+        [
+          "Conventional Hydroelectric",
+          36092,
+          "Walter Bouldin Dam"
+        ],
+        [
+          "Natural Gas Steam Turbine",
+          35903,
+          "Gadsden"
+        ],
+        [
+          "Conventional Steam Coal",
+          35580,
+          "Gorgas"
+        ]
+      ],
+      "columnDescriptions": {
+        "tech_desc": "Data field",
+        "zip": "Data field",
+        "plant_name": "Name identifier"
+      },
+      "context": "Analyzing power plant data by categories.",
+      "question": "What is the average zip by tech_desc?",
+      "canonicalAnswer": {
+        "code": "df.groupby('tech_desc')['zip'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "mean"
+      ],
+      "hint": "Use groupby and mean to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "powerplants_filter_numeric_greater_118",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "crude_mw",
+          "plant_name",
+          "utility_name"
+        ],
+        [
+          0.0,
+          "Bankhead Dam",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Barry",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Walter Bouldin Dam",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Gadsden",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Gorgas",
+          "Alabama Power Co"
+        ]
+      ],
+      "columnDescriptions": {
+        "crude_mw": "Data field",
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "How many power plants have crude_mw greater than 0.0?",
+      "canonicalAnswer": {
+        "code": "(df['crude_mw'] > 0.0).sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "boolean indexing",
+        "sum"
+      ],
+      "hint": "Use boolean indexing to solve this",
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "powerplants_mean_simple_170",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "other_mw",
+          "plant_name",
+          "utility_name"
+        ],
+        [
+          null,
+          "Bankhead Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Barry",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Walter Bouldin Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gadsden",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gorgas",
+          "Alabama Power Co"
+        ]
+      ],
+      "columnDescriptions": {
+        "other_mw": "Data field",
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "What is the average other_mw?",
+      "canonicalAnswer": {
+        "code": "df['other_mw'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "mean"
+      ],
+      "hint": "Use mean to solve this",
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "foods_value_counts_basic_028",
+      "dataset": "foods.csv",
+      "dataPreview": [
+        [
+          "Fat",
+          "Company",
+          "Variety"
+        ],
+        [
+          "62%",
+          "4HEALTH",
+          "Turkey/Salmon"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Turkey/Giblets"
+        ],
+        [
+          "59%",
+          "4HEALTH",
+          "Chicken/Beef"
+        ],
+        [
+          "57%",
+          "4HEALTH",
+          "Grain-Free Salmon in Gravy"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Chicken/Whitefish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Fat": "Data field",
+        "Company": "Data field",
+        "Variety": "Data field"
+      },
+      "context": "Working with pet food product data.",
+      "question": "How many pet food products are there for each Fat?",
+      "canonicalAnswer": {
+        "code": "df['Fat'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+    },
+    {
+      "id": "grammys_filter_show_all_052",
+      "dataset": "grammys.csv",
+      "dataPreview": [
+        [
+          "musician_y",
+          "year",
+          "musician_x"
+        ],
+        [
+          "Jon Batiste",
+          2022,
+          "Jon Batiste"
+        ],
+        [
+          "Tony Bennett & Lady Gaga",
+          2022,
+          "Tony Bennett & Lady Gaga"
+        ],
+        [
+          "Justin Bieber",
+          2022,
+          "Justin Bieber"
+        ],
+        [
+          "Doja Cat",
+          2022,
+          "Doja Cat"
+        ],
+        [
+          "Billie Eilish",
+          2022,
+          "Billie Eilish"
+        ]
+      ],
+      "columnDescriptions": {
+        "musician_y": "Data field",
+        "year": "Date/time information",
+        "musician_x": "Data field"
+      },
+      "context": "Working with Grammy nomination data.",
+      "question": "Show all Grammy nominations where musician_y is \"Taylor Swift\"",
+      "canonicalAnswer": {
+        "code": "df[df['musician_y'] == 'Taylor Swift']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "crops_groupby_sum_sorted_100",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Unit",
+          "Year",
+          "Current Item Name"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ]
+      ],
+      "columnDescriptions": {
+        "Unit": "Data field",
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier"
+      },
+      "context": "Analyzing crop data by categories.",
+      "question": "What is the total Year by Unit?",
+      "canonicalAnswer": {
+        "code": "df.groupby('Unit')['Year'].sum().sort_values(ascending=False)",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "sum",
+        "sort_values"
+      ],
+      "hint": "Use groupby and sum and sort_values to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "tickets-tiny_filter_show_all_012",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "AGENCY2",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "State Police",
+          "K0001506",
+          "T"
+        ],
+        [
+          "State Police",
+          "K0001507",
+          "T"
+        ],
+        [
+          "State Police",
+          "K0001509",
+          "T"
+        ],
+        [
+          "State Police",
+          "K0001510",
+          "T"
+        ],
+        [
+          "State Police",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "AGENCY2": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "Show all traffic stops where AGENCY2 is \"State Police\"",
+      "canonicalAnswer": {
+        "code": "df[df['AGENCY2'] == 'State Police']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "motorcycles_filter_show_all_280",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Cooling system",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          "Liquid",
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          "Liquid",
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          "Liquid",
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          "Liquid",
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Cooling system": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "Show all motorcycles where Cooling system is \"Oil & air\"",
+      "canonicalAnswer": {
+        "code": "df[df['Cooling system'] == 'Oil & air']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "forces_sort_lowest_018",
+      "dataset": "forces.csv",
+      "dataPreview": [
+        [
+          "air",
+          "name",
+          "land"
+        ],
+        [
+          0,
+          "Iceland",
+          0
+        ],
+        [
+          20000,
+          "UK",
+          80000
+        ],
+        [
+          36000,
+          "France",
+          108000
+        ],
+        [
+          5000,
+          "Portugal",
+          15000
+        ],
+        [
+          20000,
+          "Spain",
+          80000
+        ]
+      ],
+      "columnDescriptions": {
+        "air": "Data field",
+        "name": "Name identifier",
+        "land": "Data field"
+      },
+      "context": "Working with force measurement data.",
+      "question": "What is the force measurement with the lowest air?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('air').head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "tickets-tiny_filter_count_036",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "SEX",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "M",
+          "K0001506",
+          "T"
+        ],
+        [
+          "F",
+          "K0001507",
+          "T"
+        ],
+        [
+          "F",
+          "K0001509",
+          "T"
+        ],
+        [
+          "M",
+          "K0001510",
+          "T"
+        ],
+        [
+          "M",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "SEX": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "How many traffic stops have SEX equal to \"U\"?",
+      "canonicalAnswer": {
+        "code": "(df['SEX'] == 'U').sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "boolean indexing",
+        "sum"
+      ],
+      "hint": "Use boolean indexing to solve this",
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "crops_sort_highest_068",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Production",
+          "Year",
+          "Current Item Name"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ]
+      ],
+      "columnDescriptions": {
+        "Production": "Data field",
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier"
+      },
+      "context": "Working with crop data.",
+      "question": "Which crop has the highest Production?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Production', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "crops_sort_top_5_070",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Production",
+          "Year",
+          "Current Item Name"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ]
+      ],
+      "columnDescriptions": {
+        "Production": "Data field",
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier"
+      },
+      "context": "Working with crop data.",
+      "question": "Show the 5 crops with the highest Production",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Production', ascending=False).head(5)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "tickets-tiny_value_counts_basic_054",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "MPHGROUP",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "b) 10 to 15",
+          "K0001506",
+          "T"
+        ],
+        [
+          "U",
+          "K0001507",
+          "T"
+        ],
+        [
+          "U",
+          "K0001509",
+          "T"
+        ],
+        [
+          "U",
+          "K0001510",
+          "T"
+        ],
+        [
+          "c) 16 to 20",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "MPHGROUP": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "How many traffic stops are there for each MPHGROUP?",
+      "canonicalAnswer": {
+        "code": "df['MPHGROUP'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+    },
+    {
+      "id": "crops_groupby_mean_049",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "County",
+          "Current Item Code",
+          "Year"
+        ],
+        [
+          "Alameda",
+          null,
+          2022
+        ],
+        [
+          "Amador",
+          null,
+          2022
+        ],
+        [
+          "Butte",
+          null,
+          2022
+        ],
+        [
+          "Colusa",
+          null,
+          2022
+        ],
+        [
+          "Contra Costa",
+          null,
+          2022
+        ]
+      ],
+      "columnDescriptions": {
+        "County": "Count or quantity",
+        "Current Item Code": "Data field",
+        "Year": "Date/time information"
+      },
+      "context": "Analyzing crop data by categories.",
+      "question": "What is the average Current Item Code by County?",
+      "canonicalAnswer": {
+        "code": "df.groupby('County')['Current Item Code'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "mean"
+      ],
+      "hint": "Use groupby and mean to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "race-places_mean_simple_046",
+      "dataset": "race-places.csv",
+      "dataPreview": [
+        [
+          "Serial",
+          "Driver",
+          "Name_x"
+        ],
+        [
+          1.0,
+          "Tommi M\u00e4kinen",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          1.0,
+          "Carlos Sainz",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          1.0,
+          "Colin McRae",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          2.0,
+          "Carlos Sainz",
+          "International Swedish Rally"
+        ],
+        [
+          2.0,
+          "Colin McRae",
+          "International Swedish Rally"
+        ]
+      ],
+      "columnDescriptions": {
+        "Serial": "Data field",
+        "Driver": "Data field",
+        "Name_x": "Name identifier"
+      },
+      "context": "Working with race result data.",
+      "question": "What is the average Serial?",
+      "canonicalAnswer": {
+        "code": "df['Serial'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "mean"
+      ],
+      "hint": "Use mean to solve this",
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "overflows_filter_show_all_simple_027",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Discharge Type",
+          "Company name",
+          "Site name"
+        ],
+        [
+          "Storm discharge at pumping station",
+          "Anglian Water",
+          "ABTHORPE TERMINAL PUMPING STATION"
+        ],
+        [
+          "Storm discharge at pumping station",
+          "Anglian Water",
+          "SCHOOL LANE SPS ABY"
+        ],
+        [
+          "Storm discharge at pumping station",
+          "Anglian Water",
+          "AKELEY (EX STW) PS"
+        ],
+        [
+          "Storm tank at WwTW",
+          "Anglian Water",
+          "ALDBOROUGH WATER RECYCLING CENTRE"
+        ],
+        [
+          "Inlet SO at WwTW",
+          "Anglian Water",
+          "ALDEBURGH STW"
+        ]
+      ],
+      "columnDescriptions": {
+        "Discharge Type": "Category or type",
+        "Company name": "Name identifier",
+        "Site name": "Name identifier"
+      },
+      "context": "Working with overflow event data.",
+      "question": "Show all SO on sewer network overflow events",
+      "canonicalAnswer": {
+        "code": "df[df['Discharge Type'] == 'SO on sewer network']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "grammys_value_counts_most_common_012",
+      "dataset": "grammys.csv",
+      "dataPreview": [
+        [
+          "musician_x",
+          "year",
+          "work"
+        ],
+        [
+          "Jon Batiste",
+          2022,
+          "We Are"
+        ],
+        [
+          "Tony Bennett & Lady Gaga",
+          2022,
+          "Love for Sale"
+        ],
+        [
+          "Justin Bieber",
+          2022,
+          "Justice"
+        ],
+        [
+          "Doja Cat",
+          2022,
+          "Planet Her"
+        ],
+        [
+          "Billie Eilish",
+          2022,
+          "Happier Than Ever"
+        ]
+      ],
+      "columnDescriptions": {
+        "musician_x": "Data field",
+        "year": "Date/time information",
+        "work": "Data field"
+      },
+      "context": "Working with Grammy nomination data.",
+      "question": "What is the most common musician_x?",
+      "canonicalAnswer": {
+        "code": "df['musician_x'].value_counts().head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts",
+        "head"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "race-places_filter_show_all_001",
+      "dataset": "race-places.csv",
+      "dataPreview": [
+        [
+          "Driver",
+          "Name_x",
+          "Year_x"
+        ],
+        [
+          "Tommi M\u00e4kinen",
+          "Rallye Automobile Monte-Carlo",
+          2000
+        ],
+        [
+          "Carlos Sainz",
+          "Rallye Automobile Monte-Carlo",
+          2000
+        ],
+        [
+          "Colin McRae",
+          "Rallye Automobile Monte-Carlo",
+          2000
+        ],
+        [
+          "Carlos Sainz",
+          "International Swedish Rally",
+          2000
+        ],
+        [
+          "Colin McRae",
+          "International Swedish Rally",
+          2000
+        ]
+      ],
+      "columnDescriptions": {
+        "Driver": "Data field",
+        "Name_x": "Name identifier",
+        "Year_x": "Date/time information"
+      },
+      "context": "Working with race result data.",
+      "question": "Show all race results where Driver is \"Ott T\u00e4nak\"",
+      "canonicalAnswer": {
+        "code": "df[df['Driver'] == 'Ott T\u00e4nak']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "overflows_filter_show_all_simple_002",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Company name",
+          "Site name",
+          "Permit No"
+        ],
+        [
+          "Anglian Water",
+          "ABTHORPE TERMINAL PUMPING STATION",
+          "AW1NF947"
+        ],
+        [
+          "Anglian Water",
+          "SCHOOL LANE SPS ABY",
+          "ANNNF2581"
+        ],
+        [
+          "Anglian Water",
+          "AKELEY (EX STW) PS",
+          "AWCNF10279"
+        ],
+        [
+          "Anglian Water",
+          "ALDBOROUGH WATER RECYCLING CENTRE",
+          "AEENF12058"
+        ],
+        [
+          "Anglian Water",
+          "ALDEBURGH STW",
+          "AW4CS12011"
+        ]
+      ],
+      "columnDescriptions": {
+        "Company name": "Name identifier",
+        "Site name": "Name identifier",
+        "Permit No": "Data field"
+      },
+      "context": "Working with overflow event data.",
+      "question": "Show all Anglian Water overflow events",
+      "canonicalAnswer": {
+        "code": "df[df['Company name'] == 'Anglian Water']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "foods_count_multiple_values_030",
+      "dataset": "foods.csv",
+      "dataPreview": [
+        [
+          "Fat",
+          "Company",
+          "Variety"
+        ],
+        [
+          "62%",
+          "4HEALTH",
+          "Turkey/Salmon"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Turkey/Giblets"
+        ],
+        [
+          "59%",
+          "4HEALTH",
+          "Chicken/Beef"
+        ],
+        [
+          "57%",
+          "4HEALTH",
+          "Grain-Free Salmon in Gravy"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Chicken/Whitefish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Fat": "Data field",
+        "Company": "Data field",
+        "Variety": "Data field"
+      },
+      "context": "Working with pet food product data.",
+      "question": "How many pet food products are either 0% or 59%?",
+      "canonicalAnswer": {
+        "code": "df['Fat'].isin(['0%', '59%']).sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "isin",
+        "sum"
+      ],
+      "hint": "Use isin to solve this",
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "foods_filter_count_026",
+      "dataset": "foods.csv",
+      "dataPreview": [
+        [
+          "Fat",
+          "Company",
+          "Variety"
+        ],
+        [
+          "62%",
+          "4HEALTH",
+          "Turkey/Salmon"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Turkey/Giblets"
+        ],
+        [
+          "59%",
+          "4HEALTH",
+          "Chicken/Beef"
+        ],
+        [
+          "57%",
+          "4HEALTH",
+          "Grain-Free Salmon in Gravy"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Chicken/Whitefish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Fat": "Data field",
+        "Company": "Data field",
+        "Variety": "Data field"
+      },
+      "context": "Working with pet food product data.",
+      "question": "How many pet food products have Fat equal to \"33%\"?",
+      "canonicalAnswer": {
+        "code": "(df['Fat'] == '33%').sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "boolean indexing",
+        "sum"
+      ],
+      "hint": "Use boolean indexing to solve this",
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "tickets-tiny_value_counts_basic_016",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "AGENCY2",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "State Police",
+          "K0001506",
+          "T"
+        ],
+        [
+          "State Police",
+          "K0001507",
+          "T"
+        ],
+        [
+          "State Police",
+          "K0001509",
+          "T"
+        ],
+        [
+          "State Police",
+          "K0001510",
+          "T"
+        ],
+        [
+          "State Police",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "AGENCY2": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "How many traffic stops are there for each AGENCY2?",
+      "canonicalAnswer": {
+        "code": "df['AGENCY2'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+    },
+    {
+      "id": "overflows_groupby_sum_sorted_048",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Waterbody name",
+          "Spill count",
+          "Company name"
+        ],
+        [
+          "Tove (US Greens Norton)",
+          0.0,
+          "Anglian Water"
+        ],
+        [
+          "Woldgrift Drain",
+          0.0,
+          "Anglian Water"
+        ],
+        [
+          "Leckhampstead Brook",
+          104.0,
+          "Anglian Water"
+        ],
+        [
+          "Scarrow Beck",
+          9.0,
+          "Anglian Water"
+        ],
+        [
+          "Suffolk",
+          94.0,
+          "Anglian Water"
+        ]
+      ],
+      "columnDescriptions": {
+        "Waterbody name": "Name identifier",
+        "Spill count": "Count or quantity",
+        "Company name": "Name identifier"
+      },
+      "context": "Analyzing overflow event data by categories.",
+      "question": "What is the total Spill count by Waterbody name?",
+      "canonicalAnswer": {
+        "code": "df.groupby('Waterbody name')['Spill count'].sum().sort_values(ascending=False)",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "sum",
+        "sort_values"
+      ],
+      "hint": "Use groupby and sum and sort_values to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "crops_value_counts_basic_094",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Unit",
+          "Year",
+          "Current Item Name"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          null,
+          2022,
+          "Alfalfa"
+        ]
+      ],
+      "columnDescriptions": {
+        "Unit": "Data field",
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier"
+      },
+      "context": "Working with crop data.",
+      "question": "How many crops are there for each Unit?",
+      "canonicalAnswer": {
+        "code": "df['Unit'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+    },
+    {
+      "id": "race-places_sort_lowest_026",
+      "dataset": "race-places.csv",
+      "dataPreview": [
+        [
+          "Year_x",
+          "Driver",
+          "Name_x"
+        ],
+        [
+          2000,
+          "Tommi M\u00e4kinen",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          2000,
+          "Carlos Sainz",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          2000,
+          "Colin McRae",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          2000,
+          "Carlos Sainz",
+          "International Swedish Rally"
+        ],
+        [
+          2000,
+          "Colin McRae",
+          "International Swedish Rally"
+        ]
+      ],
+      "columnDescriptions": {
+        "Year_x": "Date/time information",
+        "Driver": "Data field",
+        "Name_x": "Name identifier"
+      },
+      "context": "Working with race result data.",
+      "question": "What is the race result with the lowest Year_x?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Year_x').head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "overflows_value_counts_most_common_077",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Year count",
+          "Company name",
+          "Site name"
+        ],
+        [
+          "4",
+          "Anglian Water",
+          "ABTHORPE TERMINAL PUMPING STATION"
+        ],
+        [
+          "<1",
+          "Anglian Water",
+          "SCHOOL LANE SPS ABY"
+        ],
+        [
+          "3",
+          "Anglian Water",
+          "AKELEY (EX STW) PS"
+        ],
+        [
+          "2",
+          "Anglian Water",
+          "ALDBOROUGH WATER RECYCLING CENTRE"
+        ],
+        [
+          "2",
+          "Anglian Water",
+          "ALDEBURGH STW"
+        ]
+      ],
+      "columnDescriptions": {
+        "Year count": "Date/time information",
+        "Company name": "Name identifier",
+        "Site name": "Name identifier"
+      },
+      "context": "Working with overflow event data.",
+      "question": "What is the most common Year count?",
+      "canonicalAnswer": {
+        "code": "df['Year count'].value_counts().head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts",
+        "head"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "foods_groupby_count_031",
+      "dataset": "foods.csv",
+      "dataPreview": [
+        [
+          "Fat",
+          "Company",
+          "Variety"
+        ],
+        [
+          "62%",
+          "4HEALTH",
+          "Turkey/Salmon"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Turkey/Giblets"
+        ],
+        [
+          "59%",
+          "4HEALTH",
+          "Chicken/Beef"
+        ],
+        [
+          "57%",
+          "4HEALTH",
+          "Grain-Free Salmon in Gravy"
+        ],
+        [
+          "70%",
+          "4HEALTH",
+          "Grain-Free Chicken/Whitefish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Fat": "Data field",
+        "Company": "Data field",
+        "Variety": "Data field"
+      },
+      "context": "Working with pet food product data.",
+      "question": "How many pet food products does each Fat have?",
+      "canonicalAnswer": {
+        "code": "df['Fat'].value_counts()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "value_counts"
+      ],
+      "hint": "Use groupby to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+    },
+    {
+      "id": "motorcycles_filter_show_all_simple_431",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Trail",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Trail": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "Show all 102 mm (4.0 inches) motorcycles",
+      "canonicalAnswer": {
+        "code": "df[df['Trail'] == '102 mm (4.0 inches)']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "tickets-tiny_count_multiple_values_010",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "TYPE",
+          "CITATION",
+          "AGENCY2"
+        ],
+        [
+          "T",
+          "K0001506",
+          "State Police"
+        ],
+        [
+          "T",
+          "K0001507",
+          "State Police"
+        ],
+        [
+          "T",
+          "K0001509",
+          "State Police"
+        ],
+        [
+          "T",
+          "K0001510",
+          "State Police"
+        ],
+        [
+          "T",
+          "K0001511",
+          "State Police"
+        ]
+      ],
+      "columnDescriptions": {
+        "TYPE": "Category or type",
+        "CITATION": "Data field",
+        "AGENCY2": "Data field"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "How many traffic stops are either T or W?",
+      "canonicalAnswer": {
+        "code": "df['TYPE'].isin(['T', 'W']).sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "isin",
+        "sum"
+      ],
+      "hint": "Use isin to solve this",
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "powerplants_sort_top_5_127",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "bio_mw",
+          "plant_name",
+          "utility_name"
+        ],
+        [
+          null,
+          "Bankhead Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Barry",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Walter Bouldin Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gadsden",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gorgas",
+          "Alabama Power Co"
+        ]
+      ],
+      "columnDescriptions": {
+        "bio_mw": "Data field",
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "Show the 5 power plants with the highest bio_mw",
+      "canonicalAnswer": {
+        "code": "df.sort_values('bio_mw', ascending=False).head(5)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "tickets-tiny_filter_show_all_simple_043",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "DAYNIGHT",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "day",
+          "K0001506",
+          "T"
+        ],
+        [
+          "day",
+          "K0001507",
+          "T"
+        ],
+        [
+          "day",
+          "K0001509",
+          "T"
+        ],
+        [
+          "night",
+          "K0001510",
+          "T"
+        ],
+        [
+          "day",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "DAYNIGHT": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "Show all night traffic stops",
+      "canonicalAnswer": {
+        "code": "df[df['DAYNIGHT'] == 'night']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "wreckers_filter_show_all_021",
+      "dataset": "wreckers.csv",
+      "dataPreview": [
+        [
+          "City",
+          "Customer",
+          "DBA Name"
+        ],
+        [
+          "TERRELL",
+          "1ST CHOICE WRECKER SERVICE",
+          "1ST CHOICE PAINT & BODY, INC"
+        ],
+        [
+          "TERRELL",
+          "1ST CHOICE WRECKER SERVICE",
+          "1ST CHOICE PAINT & BODY, INC."
+        ],
+        [
+          "SILSBEE",
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ],
+        [
+          "SILSBEE",
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ],
+        [
+          "SILSBEE",
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ]
+      ],
+      "columnDescriptions": {
+        "City": "Data field",
+        "Customer": "Data field",
+        "DBA Name": "Name identifier"
+      },
+      "context": "Working with tow truck data.",
+      "question": "Show all tow trucks where City is \"INEZ\"",
+      "canonicalAnswer": {
+        "code": "df[df['City'] == 'INEZ']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "overflows_filter_show_all_simple_013",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Site name",
+          "Company name",
+          "Permit No"
+        ],
+        [
+          "ABTHORPE TERMINAL PUMPING STATION",
+          "Anglian Water",
+          "AW1NF947"
+        ],
+        [
+          "SCHOOL LANE SPS ABY",
+          "Anglian Water",
+          "ANNNF2581"
+        ],
+        [
+          "AKELEY (EX STW) PS",
+          "Anglian Water",
+          "AWCNF10279"
+        ],
+        [
+          "ALDBOROUGH WATER RECYCLING CENTRE",
+          "Anglian Water",
+          "AEENF12058"
+        ],
+        [
+          "ALDEBURGH STW",
+          "Anglian Water",
+          "AW4CS12011"
+        ]
+      ],
+      "columnDescriptions": {
+        "Site name": "Name identifier",
+        "Company name": "Name identifier",
+        "Permit No": "Data field"
+      },
+      "context": "Working with overflow event data.",
+      "question": "Show all SPORTS CENTRE MILL RD. overflow events",
+      "canonicalAnswer": {
+        "code": "df[df['Site name'] == 'SPORTS CENTRE MILL RD.']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "forces_sort_highest_017",
+      "dataset": "forces.csv",
+      "dataPreview": [
+        [
+          "air",
+          "name",
+          "land"
+        ],
+        [
+          0,
+          "Iceland",
+          0
+        ],
+        [
+          20000,
+          "UK",
+          80000
+        ],
+        [
+          36000,
+          "France",
+          108000
+        ],
+        [
+          5000,
+          "Portugal",
+          15000
+        ],
+        [
+          20000,
+          "Spain",
+          80000
+        ]
+      ],
+      "columnDescriptions": {
+        "air": "Data field",
+        "name": "Name identifier",
+        "land": "Data field"
+      },
+      "context": "Working with force measurement data.",
+      "question": "Which force measurement has the highest air?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('air', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "grammys_sort_highest_085",
+      "dataset": "grammys.csv",
+      "dataPreview": [
+        [
+          "Column1",
+          "year",
+          "musician_x"
+        ],
+        [
+          null,
+          2022,
+          "Jon Batiste"
+        ],
+        [
+          null,
+          2022,
+          "Tony Bennett & Lady Gaga"
+        ],
+        [
+          null,
+          2022,
+          "Justin Bieber"
+        ],
+        [
+          null,
+          2022,
+          "Doja Cat"
+        ],
+        [
+          null,
+          2022,
+          "Billie Eilish"
+        ]
+      ],
+      "columnDescriptions": {
+        "Column1": "Data field",
+        "year": "Date/time information",
+        "musician_x": "Data field"
+      },
+      "context": "Working with Grammy nomination data.",
+      "question": "Which Grammy nomination has the highest Column1?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Column1', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "wreckers_sort_lowest_042",
+      "dataset": "wreckers.csv",
+      "dataPreview": [
+        [
+          "Zip code",
+          "Customer",
+          "DBA Name"
+        ],
+        [
+          75160,
+          "1ST CHOICE WRECKER SERVICE",
+          "1ST CHOICE PAINT & BODY, INC"
+        ],
+        [
+          75160,
+          "1ST CHOICE WRECKER SERVICE",
+          "1ST CHOICE PAINT & BODY, INC."
+        ],
+        [
+          77656,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ],
+        [
+          77656,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ],
+        [
+          77656,
+          "1ST CHOICE WRECKER SERVICE LLC",
+          null
+        ]
+      ],
+      "columnDescriptions": {
+        "Zip code": "Data field",
+        "Customer": "Data field",
+        "DBA Name": "Name identifier"
+      },
+      "context": "Working with tow truck data.",
+      "question": "What is the tow truck with the lowest Zip code?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Zip code').head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "powerplants_sort_highest_119",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "crude_mw",
+          "plant_name",
+          "utility_name"
+        ],
+        [
+          0.0,
+          "Bankhead Dam",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Barry",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Walter Bouldin Dam",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Gadsden",
+          "Alabama Power Co"
+        ],
+        [
+          0.0,
+          "Gorgas",
+          "Alabama Power Co"
+        ]
+      ],
+      "columnDescriptions": {
+        "crude_mw": "Data field",
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "Which power plant has the highest crude_mw?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('crude_mw', ascending=False).head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "overflows_filter_show_all_072",
+      "dataset": "overflows.csv",
+      "dataPreview": [
+        [
+          "Year count",
+          "Company name",
+          "Site name"
+        ],
+        [
+          "4",
+          "Anglian Water",
+          "ABTHORPE TERMINAL PUMPING STATION"
+        ],
+        [
+          "<1",
+          "Anglian Water",
+          "SCHOOL LANE SPS ABY"
+        ],
+        [
+          "3",
+          "Anglian Water",
+          "AKELEY (EX STW) PS"
+        ],
+        [
+          "2",
+          "Anglian Water",
+          "ALDBOROUGH WATER RECYCLING CENTRE"
+        ],
+        [
+          "2",
+          "Anglian Water",
+          "ALDEBURGH STW"
+        ]
+      ],
+      "columnDescriptions": {
+        "Year count": "Date/time information",
+        "Company name": "Name identifier",
+        "Site name": "Name identifier"
+      },
+      "context": "Working with overflow event data.",
+      "question": "Show all overflow events where Year count is \"6\"",
+      "canonicalAnswer": {
+        "code": "df[df['Year count'] == '6']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "grammys_value_counts_most_common_026",
+      "dataset": "grammys.csv",
+      "dataPreview": [
+        [
+          "category",
+          "year",
+          "musician_x"
+        ],
+        [
+          "album-of-the-year",
+          2022,
+          "Jon Batiste"
+        ],
+        [
+          "album-of-the-year",
+          2022,
+          "Tony Bennett & Lady Gaga"
+        ],
+        [
+          "album-of-the-year",
+          2022,
+          "Justin Bieber"
+        ],
+        [
+          "album-of-the-year",
+          2022,
+          "Doja Cat"
+        ],
+        [
+          "album-of-the-year",
+          2022,
+          "Billie Eilish"
+        ]
+      ],
+      "columnDescriptions": {
+        "category": "Category or type",
+        "year": "Date/time information",
+        "musician_x": "Data field"
+      },
+      "context": "Working with Grammy nomination data.",
+      "question": "What is the most common category?",
+      "canonicalAnswer": {
+        "code": "df['category'].value_counts().head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "value_counts",
+        "head"
+      ],
+      "hint": "Use value_counts to solve this",
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "forces_filter_numeric_greater_004",
+      "dataset": "forces.csv",
+      "dataPreview": [
+        [
+          "land",
+          "name",
+          "naval"
+        ],
+        [
+          0,
+          "Iceland",
+          0
+        ],
+        [
+          80000,
+          "UK",
+          30000
+        ],
+        [
+          108000,
+          "France",
+          36000
+        ],
+        [
+          15000,
+          "Portugal",
+          5000
+        ],
+        [
+          80000,
+          "Spain",
+          20000
+        ]
+      ],
+      "columnDescriptions": {
+        "land": "Data field",
+        "name": "Name identifier",
+        "naval": "Data field"
+      },
+      "context": "Working with force measurement data.",
+      "question": "How many force measurements have land greater than 10000.0?",
+      "canonicalAnswer": {
+        "code": "(df['land'] > 10000.0).sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "boolean indexing",
+        "sum"
+      ],
+      "hint": "Use boolean indexing to solve this",
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "motorcycles_mean_simple_554",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Rear brakes diameter (mm)",
+          "Page URL",
+          "Image URL"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php",
+          "https://bikez.com/pictures/bmw/1993/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php",
+          "https://bikez.com/pictures/bmw/1992/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php",
+          "https://bikez.com/pictures/bmw/1991/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php",
+          "https://bikez.com/pictures/bmw/1990/k 1.jpg"
+        ],
+        [
+          null,
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php",
+          "https://bikez.com/pictures/bmw/1989/k 1.jpg"
+        ]
+      ],
+      "columnDescriptions": {
+        "Rear brakes diameter (mm)": "Data field",
+        "Page URL": "Data field",
+        "Image URL": "Data field"
+      },
+      "context": "Working with motorcycle data.",
+      "question": "What is the average Rear brakes diameter (mm)?",
+      "canonicalAnswer": {
+        "code": "df['Rear brakes diameter (mm)'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "mean"
+      ],
+      "hint": "Use mean to solve this",
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "forces_sum_simple_027",
+      "dataset": "forces.csv",
+      "dataPreview": [
+        [
+          "other",
+          "name",
+          "land"
+        ],
+        [
+          0,
+          "Iceland",
+          0
+        ],
+        [
+          10000,
+          "UK",
+          80000
+        ],
+        [
+          24000,
+          "France",
+          108000
+        ],
+        [
+          5000,
+          "Portugal",
+          15000
+        ],
+        [
+          10000,
+          "Spain",
+          80000
+        ]
+      ],
+      "columnDescriptions": {
+        "other": "Data field",
+        "name": "Name identifier",
+        "land": "Data field"
+      },
+      "context": "Working with force measurement data.",
+      "question": "What is the total other across all force measurements?",
+      "canonicalAnswer": {
+        "code": "df['other'].sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sum"
+      ],
+      "hint": "Use sum to solve this",
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "tickets-tiny_count_multiple_values_072",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "INTOWN",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "N",
+          "K0001506",
+          "T"
+        ],
+        [
+          "N",
+          "K0001507",
+          "T"
+        ],
+        [
+          "N",
+          "K0001509",
+          "T"
+        ],
+        [
+          "N",
+          "K0001510",
+          "T"
+        ],
+        [
+          "N",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "INTOWN": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "How many traffic stops are either U or Y?",
+      "canonicalAnswer": {
+        "code": "df['INTOWN'].isin(['U', 'Y']).sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "isin",
+        "sum"
+      ],
+      "hint": "Use isin to solve this",
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "crops_sort_top_5_004",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Year",
+          "Current Item Name",
+          "Current Item Code"
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ],
+        [
+          2022,
+          "Alfalfa",
+          null
+        ]
+      ],
+      "columnDescriptions": {
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier",
+        "Current Item Code": "Data field"
+      },
+      "context": "Working with crop data.",
+      "question": "Show the 5 crops with the highest Year",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Year', ascending=False).head(5)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "tickets-tiny_filter_show_all_019",
+      "dataset": "tickets-tiny.csv",
+      "dataPreview": [
+        [
+          "LOCAL",
+          "CITATION",
+          "TYPE"
+        ],
+        [
+          "N",
+          "K0001506",
+          "T"
+        ],
+        [
+          "N",
+          "K0001507",
+          "T"
+        ],
+        [
+          "N",
+          "K0001509",
+          "T"
+        ],
+        [
+          "N",
+          "K0001510",
+          "T"
+        ],
+        [
+          "N",
+          "K0001511",
+          "T"
+        ]
+      ],
+      "columnDescriptions": {
+        "LOCAL": "Data field",
+        "CITATION": "Data field",
+        "TYPE": "Category or type"
+      },
+      "context": "Working with traffic stop data.",
+      "question": "Show all traffic stops where LOCAL is \"N\"",
+      "canonicalAnswer": {
+        "code": "df[df['LOCAL'] == 'N']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    },
+    {
+      "id": "race-places_mean_simple_028",
+      "dataset": "race-places.csv",
+      "dataPreview": [
+        [
+          "Year_x",
+          "Driver",
+          "Name_x"
+        ],
+        [
+          2000,
+          "Tommi M\u00e4kinen",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          2000,
+          "Carlos Sainz",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          2000,
+          "Colin McRae",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          2000,
+          "Carlos Sainz",
+          "International Swedish Rally"
+        ],
+        [
+          2000,
+          "Colin McRae",
+          "International Swedish Rally"
+        ]
+      ],
+      "columnDescriptions": {
+        "Year_x": "Date/time information",
+        "Driver": "Data field",
+        "Name_x": "Name identifier"
+      },
+      "context": "Working with race result data.",
+      "question": "What is the average Year_x?",
+      "canonicalAnswer": {
+        "code": "df['Year_x'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "mean"
+      ],
+      "hint": "Use mean to solve this",
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "powerplants_sort_top_5_163",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "geo_mw",
+          "plant_name",
+          "utility_name"
+        ],
+        [
+          null,
+          "Bankhead Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Barry",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Walter Bouldin Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gadsden",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gorgas",
+          "Alabama Power Co"
+        ]
+      ],
+      "columnDescriptions": {
+        "geo_mw": "Data field",
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "Show the 5 power plants with the highest geo_mw",
+      "canonicalAnswer": {
+        "code": "df.sort_values('geo_mw', ascending=False).head(5)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "powerplants_sum_simple_165",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "geo_mw",
+          "plant_name",
+          "utility_name"
+        ],
+        [
+          null,
+          "Bankhead Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Barry",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Walter Bouldin Dam",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gadsden",
+          "Alabama Power Co"
+        ],
+        [
+          null,
+          "Gorgas",
+          "Alabama Power Co"
+        ]
+      ],
+      "columnDescriptions": {
+        "geo_mw": "Data field",
+        "plant_name": "Name identifier",
+        "utility_name": "Name identifier"
+      },
+      "context": "Working with power plant data.",
+      "question": "What is the total geo_mw across all power plants?",
+      "canonicalAnswer": {
+        "code": "df['geo_mw'].sum()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sum"
+      ],
+      "hint": "Use sum to solve this",
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "powerplants_groupby_sum_sorted_202",
+      "dataset": "powerplants.csv",
+      "dataPreview": [
+        [
+          "tech_desc",
+          "coal_mw",
+          "plant_name"
+        ],
+        [
+          "Conventional Hydroelectric",
+          0.0,
+          "Bankhead Dam"
+        ],
+        [
+          "Conventional Steam Coal; Natural Gas Fired Combined Cycle; Natural Gas Steam Turbine",
+          1088.5,
+          "Barry"
+        ],
+        [
+          "Conventional Hydroelectric",
+          0.0,
+          "Walter Bouldin Dam"
+        ],
+        [
+          "Natural Gas Steam Turbine",
+          0.0,
+          "Gadsden"
+        ],
+        [
+          "Conventional Steam Coal",
+          1034.0,
+          "Gorgas"
+        ]
+      ],
+      "columnDescriptions": {
+        "tech_desc": "Data field",
+        "coal_mw": "Data field",
+        "plant_name": "Name identifier"
+      },
+      "context": "Analyzing power plant data by categories.",
+      "question": "What is the total coal_mw by tech_desc?",
+      "canonicalAnswer": {
+        "code": "df.groupby('tech_desc')['coal_mw'].sum().sort_values(ascending=False)",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "sum",
+        "sort_values"
+      ],
+      "hint": "Use groupby and sum and sort_values to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "motorcycles_groupby_sum_sorted_335",
+      "dataset": "motorcycles.csv",
+      "dataPreview": [
+        [
+          "Clutch",
+          "Year of launch",
+          "Page URL"
+        ],
+        [
+          null,
+          1993,
+          "https://bikez.com/motorcycles/bmw_k_1_1993.php"
+        ],
+        [
+          null,
+          1992,
+          "https://bikez.com/motorcycles/bmw_k_1_1992.php"
+        ],
+        [
+          null,
+          1991,
+          "https://bikez.com/motorcycles/bmw_k_1_1991.php"
+        ],
+        [
+          null,
+          1990,
+          "https://bikez.com/motorcycles/bmw_k_1_1990.php"
+        ],
+        [
+          null,
+          1989,
+          "https://bikez.com/motorcycles/bmw_k_1_1989.php"
+        ]
+      ],
+      "columnDescriptions": {
+        "Clutch": "Data field",
+        "Year of launch": "Date/time information",
+        "Page URL": "Data field"
+      },
+      "context": "Analyzing motorcycle data by categories.",
+      "question": "What is the total Year of launch by Clutch?",
+      "canonicalAnswer": {
+        "code": "df.groupby('Clutch')['Year of launch'].sum().sort_values(ascending=False)",
+        "result": "Computed result"
+      },
+      "difficulty": 2,
+      "concepts": [
+        "groupby",
+        "sum",
+        "sort_values"
+      ],
+      "hint": "Use groupby and sum and sort_values to solve this",
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+    },
+    {
+      "id": "crops_sort_lowest_063",
+      "dataset": "crops.csv",
+      "dataPreview": [
+        [
+          "Harvested Acres",
+          "Year",
+          "Current Item Name"
+        ],
+        [
+          95.0,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          855.0,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          520.0,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          7440.0,
+          2022,
+          "Alfalfa"
+        ],
+        [
+          1730.0,
+          2022,
+          "Alfalfa"
+        ]
+      ],
+      "columnDescriptions": {
+        "Harvested Acres": "Data field",
+        "Year": "Date/time information",
+        "Current Item Name": "Name identifier"
+      },
+      "context": "Working with crop data.",
+      "question": "What is the crop with the lowest Harvested Acres?",
+      "canonicalAnswer": {
+        "code": "df.sort_values('Harvested Acres').head(1)",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "sort_values",
+        "head"
+      ],
+      "hint": "Use sort_values to solve this",
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+    },
+    {
+      "id": "forces_mean_simple_008",
+      "dataset": "forces.csv",
+      "dataPreview": [
+        [
+          "land",
+          "name",
+          "naval"
+        ],
+        [
+          0,
+          "Iceland",
+          0
+        ],
+        [
+          80000,
+          "UK",
+          30000
+        ],
+        [
+          108000,
+          "France",
+          36000
+        ],
+        [
+          15000,
+          "Portugal",
+          5000
+        ],
+        [
+          80000,
+          "Spain",
+          20000
+        ]
+      ],
+      "columnDescriptions": {
+        "land": "Data field",
+        "name": "Name identifier",
+        "naval": "Data field"
+      },
+      "context": "Working with force measurement data.",
+      "question": "What is the average land?",
+      "canonicalAnswer": {
+        "code": "df['land'].mean()",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "mean"
+      ],
+      "hint": "Use mean to solve this",
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+    },
+    {
+      "id": "race-places_filter_show_all_030",
+      "dataset": "race-places.csv",
+      "dataPreview": [
+        [
+          "Race_Result",
+          "Driver",
+          "Name_x"
+        ],
+        [
+          "1",
+          "Tommi M\u00e4kinen",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          "2",
+          "Carlos Sainz",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          "DNF",
+          "Colin McRae",
+          "Rallye Automobile Monte-Carlo"
+        ],
+        [
+          "DNF",
+          "Carlos Sainz",
+          "International Swedish Rally"
+        ],
+        [
+          "3",
+          "Colin McRae",
+          "International Swedish Rally"
+        ]
+      ],
+      "columnDescriptions": {
+        "Race_Result": "Data field",
+        "Driver": "Data field",
+        "Name_x": "Name identifier"
+      },
+      "context": "Working with race result data.",
+      "question": "Show all race results where Race_Result is \"3\"",
+      "canonicalAnswer": {
+        "code": "df[df['Race_Result'] == '3']",
+        "result": "Computed result"
+      },
+      "difficulty": 1,
+      "concepts": [
+        "filtering"
+      ],
+      "hint": "Use filtering to solve this",
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+    }
+  ]
+}

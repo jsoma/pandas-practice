@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandas Mastery - Results Viewer</title>
+    
+    <!-- React & Babel CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- JSZip for decompression -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    
+    <!-- Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .drop-zone {
+            border: 2px dashed #cbd5e0;
+            transition: all 0.3s ease;
+        }
+        
+        .drop-zone.dragover {
+            border-color: #667eea;
+            background: #f7fafc;
+        }
+        
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+        
+        const ResultsViewer = () => {
+            const [data, setData] = useState(null);
+            const [loading, setLoading] = useState(false);
+            const [error, setError] = useState(null);
+            const [dragOver, setDragOver] = useState(false);
+            const fileInputRef = useRef(null);
+            const chartRefs = {
+                accuracy: useRef(null),
+                difficulty: useRef(null),
+                timeSpent: useRef(null),
+                hintUsage: useRef(null)
+            };
+            const chartInstances = useRef({});
+            
+            const processFile = async (file) => {
+                setLoading(true);
+                setError(null);
+                
+                try {
+                    // Check file extension
+                    if (!file.name.endsWith('.results')) {
+                        throw new Error('Please upload a .results file');
+                    }
+                    
+                    // Read and unzip file
+                    const zip = await JSZip.loadAsync(file);
+                    const csvFile = zip.file('tracking_data.csv');
+                    
+                    if (!csvFile) {
+                        throw new Error('Invalid results file format');
+                    }
+                    
+                    // Get the content - JSZip should handle base64 decoding automatically
+                    // since we stored it with { base64: true }
+                    const csvContent = await csvFile.async('string');
+                    
+                    // Parse CSV
+                    const rows = csvContent.split('\n').filter(row => row.trim());
+                    const headers = rows[0].split(',');
+                    
+                    const parsedData = rows.slice(1).map(row => {
+                        const values = [];
+                        let currentValue = '';
+                        let inQuotes = false;
+                        
+                        for (let char of row) {
+                            if (char === '"') {
+                                inQuotes = !inQuotes;
+                            } else if (char === ',' && !inQuotes) {
+                                values.push(currentValue);
+                                currentValue = '';
+                            } else {
+                                currentValue += char;
+                            }
+                        }
+                        values.push(currentValue);
+                        
+                        const obj = {};
+                        headers.forEach((header, i) => {
+                            let value = values[i];
+                            // Parse booleans and numbers
+                            if (value === 'true') value = true;
+                            else if (value === 'false') value = false;
+                            else if (!isNaN(value) && value !== '') value = Number(value);
+                            obj[header] = value;
+                        });
+                        return obj;
+                    });
+                    
+                    setData(parsedData);
+                } catch (err) {
+                    setError(err.message);
+                } finally {
+                    setLoading(false);
+                }
+            };
+            
+            const handleDrop = (e) => {
+                e.preventDefault();
+                setDragOver(false);
+                
+                const file = e.dataTransfer.files[0];
+                if (file) processFile(file);
+            };
+            
+            const handleFileSelect = (e) => {
+                const file = e.target.files[0];
+                if (file) processFile(file);
+            };
+            
+            const calculateStats = () => {
+                if (!data || data.length === 0) return null;
+                
+                const totalQuestions = data.length;
+                const correctAnswers = data.filter(d => d.is_correct).length;
+                const skippedQuestions = data.filter(d => d.skipped).length;
+                const hintsUsed = data.filter(d => d.hint_shown).length;
+                
+                // Unique questions
+                const uniqueQuestions = new Set(data.map(d => d.question_id)).size;
+                
+                // Average time spent (excluding skips)
+                const answeredQuestions = data.filter(d => !d.skipped);
+                const avgTimeSpent = answeredQuestions.length > 0
+                    ? answeredQuestions.reduce((sum, d) => sum + d.time_spent, 0) / answeredQuestions.length
+                    : 0;
+                
+                // Performance by difficulty
+                const difficultyStats = [1, 2, 3].map(level => {
+                    const questions = data.filter(d => d.difficulty === level);
+                    const correct = questions.filter(d => d.is_correct).length;
+                    return {
+                        level,
+                        total: questions.length,
+                        correct,
+                        accuracy: questions.length > 0 ? (correct / questions.length * 100) : 0
+                    };
+                });
+                
+                // Performance over time (by session)
+                const sessions = {};
+                data.forEach(d => {
+                    if (!sessions[d.session_id]) {
+                        sessions[d.session_id] = { total: 0, correct: 0, timestamp: d.timestamp };
+                    }
+                    sessions[d.session_id].total++;
+                    if (d.is_correct) sessions[d.session_id].correct++;
+                });
+                
+                const sessionData = Object.entries(sessions)
+                    .map(([id, stats]) => ({
+                        id,
+                        ...stats,
+                        accuracy: (stats.correct / stats.total * 100)
+                    }))
+                    .sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+                
+                // Most difficult questions
+                const questionStats = {};
+                data.forEach(d => {
+                    if (!questionStats[d.question_id]) {
+                        questionStats[d.question_id] = {
+                            text: d.question_text,
+                            attempts: 0,
+                            correct: 0,
+                            hints: 0,
+                            avgTime: 0,
+                            totalTime: 0
+                        };
+                    }
+                    questionStats[d.question_id].attempts++;
+                    if (d.is_correct) questionStats[d.question_id].correct++;
+                    if (d.hint_shown) questionStats[d.question_id].hints++;
+                    if (!d.skipped) {
+                        questionStats[d.question_id].totalTime += d.time_spent;
+                        questionStats[d.question_id].avgTime = 
+                            questionStats[d.question_id].totalTime / 
+                            data.filter(x => x.question_id === d.question_id && !x.skipped).length;
+                    }
+                });
+                
+                const difficultQuestions = Object.entries(questionStats)
+                    .map(([id, stats]) => ({
+                        id,
+                        ...stats,
+                        accuracy: (stats.correct / stats.attempts * 100)
+                    }))
+                    .filter(q => q.attempts >= 2) // Only questions attempted at least twice
+                    .sort((a, b) => a.accuracy - b.accuracy)
+                    .slice(0, 5);
+                
+                return {
+                    totalQuestions,
+                    uniqueQuestions,
+                    correctAnswers,
+                    skippedQuestions,
+                    hintsUsed,
+                    accuracy: (correctAnswers / (totalQuestions - skippedQuestions) * 100),
+                    avgTimeSpent,
+                    difficultyStats,
+                    sessionData,
+                    difficultQuestions
+                };
+            };
+            
+            useEffect(() => {
+                if (!data) return;
+                
+                const stats = calculateStats();
+                if (!stats) return;
+                
+                // Destroy existing charts
+                Object.values(chartInstances.current).forEach(chart => chart?.destroy());
+                
+                // Accuracy by Difficulty Chart
+                if (chartRefs.accuracy.current) {
+                    chartInstances.current.accuracy = new Chart(chartRefs.accuracy.current, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Easy', 'Medium', 'Hard'],
+                            datasets: [{
+                                label: 'Accuracy %',
+                                data: stats.difficultyStats.map(d => d.accuracy),
+                                backgroundColor: ['#10b981', '#f59e0b', '#ef4444'],
+                                borderRadius: 8
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    max: 100
+                                }
+                            }
+                        }
+                    });
+                }
+                
+                // Questions by Difficulty Distribution
+                if (chartRefs.difficulty.current) {
+                    chartInstances.current.difficulty = new Chart(chartRefs.difficulty.current, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Easy', 'Medium', 'Hard'],
+                            datasets: [{
+                                data: stats.difficultyStats.map(d => d.total),
+                                backgroundColor: ['#10b981', '#f59e0b', '#ef4444']
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false
+                        }
+                    });
+                }
+                
+                // Time Spent Distribution
+                if (chartRefs.timeSpent.current) {
+                    const timeRanges = { '0-30s': 0, '31-60s': 0, '61-120s': 0, '120s+': 0 };
+                    data.filter(d => !d.skipped).forEach(d => {
+                        if (d.time_spent <= 30) timeRanges['0-30s']++;
+                        else if (d.time_spent <= 60) timeRanges['31-60s']++;
+                        else if (d.time_spent <= 120) timeRanges['61-120s']++;
+                        else timeRanges['120s+']++;
+                    });
+                    
+                    chartInstances.current.timeSpent = new Chart(chartRefs.timeSpent.current, {
+                        type: 'pie',
+                        data: {
+                            labels: Object.keys(timeRanges),
+                            datasets: [{
+                                data: Object.values(timeRanges),
+                                backgroundColor: ['#34d399', '#60a5fa', '#a78bfa', '#f87171']
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false
+                        }
+                    });
+                }
+                
+                // Performance Over Sessions
+                if (chartRefs.hintUsage.current && stats.sessionData.length > 1) {
+                    chartInstances.current.hintUsage = new Chart(chartRefs.hintUsage.current, {
+                        type: 'line',
+                        data: {
+                            labels: stats.sessionData.map((_, i) => `Session ${i + 1}`),
+                            datasets: [{
+                                label: 'Accuracy %',
+                                data: stats.sessionData.map(s => s.accuracy),
+                                borderColor: '#8b5cf6',
+                                backgroundColor: '#8b5cf620',
+                                tension: 0.4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    max: 100
+                                }
+                            }
+                        }
+                    });
+                }
+            }, [data]);
+            
+            const stats = data ? calculateStats() : null;
+            
+            return (
+                <div className="min-h-screen bg-gray-50">
+                    <header className="gradient-bg text-white py-6 px-4 shadow-lg">
+                        <div className="max-w-6xl mx-auto">
+                            <h1 className="text-3xl font-bold">Pandas Mastery Results</h1>
+                            <p className="text-purple-100 mt-2">Import and analyze your learning progress</p>
+                        </div>
+                    </header>
+                    
+                    <main className="max-w-6xl mx-auto p-4 mt-8">
+                        {!data && (
+                            <div
+                                className={`drop-zone rounded-lg p-12 text-center ${dragOver ? 'dragover' : ''}`}
+                                onDrop={handleDrop}
+                                onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
+                                onDragLeave={() => setDragOver(false)}
+                                onClick={() => fileInputRef.current?.click()}
+                            >
+                                <svg className="w-16 h-16 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                </svg>
+                                <p className="text-lg font-medium text-gray-700 mb-2">
+                                    Drop your .results file here
+                                </p>
+                                <p className="text-sm text-gray-500 mb-4">
+                                    or click to browse
+                                </p>
+                                <input
+                                    ref={fileInputRef}
+                                    type="file"
+                                    accept=".results"
+                                    onChange={handleFileSelect}
+                                    className="hidden"
+                                />
+                                {loading && (
+                                    <div className="text-purple-600 font-medium">Processing file...</div>
+                                )}
+                                {error && (
+                                    <div className="text-red-600 font-medium">{error}</div>
+                                )}
+                            </div>
+                        )}
+                        
+                        {data && stats && (
+                            <div className="space-y-8">
+                                {/* Overview Stats */}
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                    <div className="stat-card bg-white rounded-lg p-6 shadow">
+                                        <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wider">Overall Accuracy</h3>
+                                        <p className="text-3xl font-bold text-purple-600 mt-2">{stats.accuracy.toFixed(1)}%</p>
+                                        <p className="text-sm text-gray-600 mt-1">
+                                            {stats.correctAnswers} of {stats.totalQuestions - stats.skippedQuestions} answered
+                                        </p>
+                                    </div>
+                                    
+                                    <div className="stat-card bg-white rounded-lg p-6 shadow">
+                                        <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wider">Unique Questions</h3>
+                                        <p className="text-3xl font-bold text-blue-600 mt-2">{stats.uniqueQuestions}</p>
+                                        <p className="text-sm text-gray-600 mt-1">
+                                            {(stats.totalQuestions / stats.uniqueQuestions).toFixed(1)} attempts per question
+                                        </p>
+                                    </div>
+                                    
+                                    <div className="stat-card bg-white rounded-lg p-6 shadow">
+                                        <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wider">Avg Time</h3>
+                                        <p className="text-3xl font-bold text-green-600 mt-2">{stats.avgTimeSpent.toFixed(0)}s</p>
+                                        <p className="text-sm text-gray-600 mt-1">per answered question</p>
+                                    </div>
+                                    
+                                    <div className="stat-card bg-white rounded-lg p-6 shadow">
+                                        <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wider">Hints Used</h3>
+                                        <p className="text-3xl font-bold text-yellow-600 mt-2">
+                                            {((stats.hintsUsed / stats.totalQuestions) * 100).toFixed(0)}%
+                                        </p>
+                                        <p className="text-sm text-gray-600 mt-1">{stats.hintsUsed} times</p>
+                                    </div>
+                                </div>
+                                
+                                {/* Charts */}
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div className="bg-white rounded-lg p-6 shadow">
+                                        <h3 className="text-lg font-semibold text-gray-800 mb-4">Accuracy by Difficulty</h3>
+                                        <div className="h-64">
+                                            <canvas ref={chartRefs.accuracy}></canvas>
+                                        </div>
+                                    </div>
+                                    
+                                    <div className="bg-white rounded-lg p-6 shadow">
+                                        <h3 className="text-lg font-semibold text-gray-800 mb-4">Question Distribution</h3>
+                                        <div className="h-64">
+                                            <canvas ref={chartRefs.difficulty}></canvas>
+                                        </div>
+                                    </div>
+                                    
+                                    <div className="bg-white rounded-lg p-6 shadow">
+                                        <h3 className="text-lg font-semibold text-gray-800 mb-4">Time Spent Distribution</h3>
+                                        <div className="h-64">
+                                            <canvas ref={chartRefs.timeSpent}></canvas>
+                                        </div>
+                                    </div>
+                                    
+                                    {stats.sessionData.length > 1 && (
+                                        <div className="bg-white rounded-lg p-6 shadow">
+                                            <h3 className="text-lg font-semibold text-gray-800 mb-4">Progress Over Sessions</h3>
+                                            <div className="h-64">
+                                                <canvas ref={chartRefs.hintUsage}></canvas>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                                
+                                {/* Most Difficult Questions */}
+                                {stats.difficultQuestions.length > 0 && (
+                                    <div className="bg-white rounded-lg p-6 shadow">
+                                        <h3 className="text-lg font-semibold text-gray-800 mb-4">Most Challenging Questions</h3>
+                                        <div className="space-y-3">
+                                            {stats.difficultQuestions.map((q, i) => (
+                                                <div key={q.id} className="border-l-4 border-red-400 pl-4 py-2">
+                                                    <p className="text-sm font-medium text-gray-700">
+                                                        {q.text.length > 100 ? q.text.substring(0, 100) + '...' : q.text}
+                                                    </p>
+                                                    <div className="flex gap-4 text-xs text-gray-500 mt-1">
+                                                        <span>Accuracy: {q.accuracy.toFixed(0)}%</span>
+                                                        <span>Attempts: {q.attempts}</span>
+                                                        <span>Avg time: {q.avgTime.toFixed(0)}s</span>
+                                                        <span>Hints: {q.hints}</span>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+                                
+                                {/* Actions */}
+                                <div className="flex justify-center gap-4">
+                                    <button
+                                        onClick={() => { setData(null); setError(null); }}
+                                        className="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors"
+                                    >
+                                        Import Another File
+                                    </button>
+                                    <a
+                                        href="index.html"
+                                        className="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                                    >
+                                        Back to Practice
+                                    </a>
+                                </div>
+                            </div>
+                        )}
+                    </main>
+                </div>
+            );
+        };
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<ResultsViewer />);
+    </script>
+</body>
+</html>

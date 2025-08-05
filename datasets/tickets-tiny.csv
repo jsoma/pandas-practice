@@ -1,0 +1,3000 @@
+﻿CITATION,TYPE,AGENCY2,LOCAL,RACE,SEX,DAYNIGHT,MPHGROUP,AGEGROUP,INTOWN,INSTATE
+K0001506,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0001507,T,State Police,N,W,F,day,U,36-40,N,Y
+K0001509,T,State Police,N,W,F,day,U,61-65,N,N
+K0001510,T,State Police,N,W,M,night,U,51-55,N,N
+K0001511,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0001513,T,State Police,N,W,M,day,d) more than 20,36-40,N,Y
+K0001514,W,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0001515,W,State Police,N,B,F,night,b) 10 to 15,21-25,N,N
+K0001516,W,State Police,N,U,F,night,b) 10 to 15,26-30,Y,Y
+K0001517,W,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0001518,W,State Police,N,W,F,night,b) 10 to 15,51-55,N,N
+K0001519,W,State Police,N,W,F,night,b) 10 to 15,46-50,N,N
+K0001520,W,State Police,N,W,M,night,U,46-50,N,Y
+K0001521,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0001522,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0001523,T,State Police,N,W,F,day,c) 16 to 20,51-55,N,N
+K0001524,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0001525,T,State Police,N,W,M,day,c) 16 to 20,36-40,N,N
+K0001526,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0001527,T,State Police,N,W,M,day,c) 16 to 20,51-55,N,N
+K0001528,T,State Police,N,W,M,day,c) 16 to 20,36-40,N,N
+K0001530,T,State Police,N,W,M,day,d) more than 20,21-25,N,N
+K0001531,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,N
+K0001532,T,State Police,N,W,F,day,d) more than 20,26-30,N,Y
+K0001535,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,Y
+K0001536,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0001539,W,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0001540,W,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0001541,T,State Police,N,W,F,night,d) more than 20,31-35,U,N
+K0001546,T,State Police,N,A,M,day,c) 16 to 20,31-35,N,Y
+K0001549,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0001551,T,State Police,N,W,M,night,U,26-30,N,Y
+K0001558,W,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0001601,W,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0001607,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0001608,T,State Police,N,W,M,day,d) more than 20,16-20,N,Y
+K0001609,T,State Police,N,W,M,night,U,36-40,U,N
+K0001612,W,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0001614,T,State Police,N,W,F,night,c) 16 to 20,26-30,N,N
+K0001616,W,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0001617,T,State Police,N,H,M,day,U,31-35,Y,Y
+K0001620,T,State Police,N,W,M,day,U,36-40,N,N
+K0001623,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0001625,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0001626,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,Y
+K0001628,W,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0001629,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0001632,T,State Police,N,B,M,day,c) 16 to 20,31-35,N,Y
+K0001634,T,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0001638,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,N
+K0001641,T,State Police,N,A,M,night,U,16-20,N,Y
+K0001642,T,State Police,N,W,M,night,c) 16 to 20,41-45,N,N
+K0001643,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0001645,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,Y
+K0001647,T,State Police,N,U,U,night,c) 16 to 20,36-40,N,Y
+K0001649,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0001653,T,State Police,N,W,M,night,d) more than 20,36-40,N,Y
+K0001655,T,State Police,N,H,M,day,c) 16 to 20,26-30,U,Y
+K0001656,T,State Police,N,W,F,day,c) 16 to 20,16-20,N,Y
+K0001658,T,State Police,N,W,M,day,b) 10 to 15,21-25,Y,Y
+K0001660,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0001684,T,State Police,N,W,F,night,U,31-35,N,Y
+K0001704,T,State Police,N,B,M,night,c) 16 to 20,21-25,N,Y
+K0001721,T,State Police,N,W,M,night,c) 16 to 20,36-40,N,Y
+K0001730,T,State Police,N,W,M,night,d) more than 20,16-20,N,Y
+K0001737,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0001740,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0001741,T,State Police,N,W,M,day,U,36-40,N,Y
+K0001742,T,State Police,N,W,M,day,U,76-80,N,Y
+K0001743,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0001842,T,State Police,N,W,M,night,U,46-50,N,Y
+K0001845,T,State Police,N,W,M,day,U,31-35,N,N
+K0001847,W,State Police,N,W,F,night,U,36-40,N,Y
+K0001856,T,State Police,N,W,M,day,c) 16 to 20,36-40,N,Y
+K0001857,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,Y
+K0001859,T,State Police,N,A,F,day,d) more than 20,31-35,N,N
+K0001861,T,State Police,N,W,M,night,U,21-25,N,Y
+K0001862,T,State Police,N,W,F,night,U,21-25,N,Y
+K0001863,T,State Police,N,W,M,day,d) more than 20,46-50,N,Y
+K0001867,T,State Police,N,W,F,day,c) 16 to 20,41-45,N,Y
+K0001870,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,Y
+K0001872,T,State Police,N,B,M,day,c) 16 to 20,31-35,N,Y
+K0001873,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,Y
+K0001874,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,Y
+K0001875,T,State Police,N,W,F,day,c) 16 to 20,46-50,U,N
+K0001876,T,State Police,N,W,M,day,d) more than 20,31-35,N,Y
+K0001877,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,Y
+K0001878,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,Y
+K0001879,T,State Police,N,W,M,day,d) more than 20,51-55,U,N
+K0001880,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0001902,T,State Police,N,H,F,day,U,41-45,N,Y
+K0001904,T,State Police,N,W,F,day,U,31-35,N,Y
+K0001905,T,State Police,N,U,F,day,U,31-35,N,Y
+K0001906,T,State Police,N,W,F,day,U,21-25,N,N
+K0001916,T,State Police,N,W,M,day,U,26-30,N,Y
+K0001917,W,State Police,N,W,F,night,U,26-30,N,Y
+K0001921,T,State Police,N,M,M,night,c) 16 to 20,36-40,N,Y
+K0001922,T,State Police,N,A,M,day,d) more than 20,21-25,N,Y
+K0001981,T,State Police,N,H,M,day,U,41-45,N,N
+K0001982,T,State Police,N,B,M,night,d) more than 20,26-30,N,Y
+K0002004,T,State Police,N,W,M,night,U,51-55,N,Y
+K0002006,W,State Police,N,W,M,night,U,21-25,N,N
+K0002007,T,State Police,N,W,F,night,U,31-35,N,Y
+K0002008,W,State Police,N,W,F,night,U,36-40,N,Y
+K0002009,W,State Police,N,W,F,day,U,51-55,N,Y
+K0002010,W,State Police,N,H,F,day,U,21-25,Y,Y
+K0002011,W,State Police,N,W,F,day,U,16-20,N,Y
+K0002013,W,State Police,N,W,F,night,U,16-20,N,Y
+K0002015,W,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0002016,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0002017,W,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0002018,W,State Police,N,H,M,day,b) 10 to 15,21-25,N,N
+K0002020,W,State Police,N,W,M,night,U,26-30,N,Y
+K0002021,T,State Police,N,W,M,day,U,41-45,Y,Y
+K0002022,T,State Police,N,W,F,night,U,51-55,N,N
+K0002024,T,State Police,N,W,M,day,U,36-40,N,N
+K0002041,W,State Police,N,W,M,day,U,51-55,N,Y
+K0002043,W,State Police,N,W,F,day,U,16-20,Y,Y
+K0002044,T,State Police,N,W,M,day,U,51-55,Y,Y
+K0002045,T,State Police,N,W,F,day,U,41-45,N,Y
+K0002046,T,State Police,N,W,M,day,U,16-20,N,Y
+K0002049,T,State Police,N,W,M,day,U,16-20,N,Y
+K0002050,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0002051,T,State Police,N,W,F,day,U,16-20,N,Y
+K0002052,T,State Police,N,W,M,day,U,31-35,N,Y
+K0002056,W,State Police,N,W,M,day,U,31-35,N,Y
+K0002057,W,State Police,N,W,M,day,b) 10 to 15,46-50,N,N
+K0002058,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0002059,W,State Police,N,W,M,day,U,26-30,N,Y
+K0002060,W,State Police,N,W,F,day,a) less than 10,46-50,N,Y
+K0002061,T,State Police,N,B,M,night,U,46-50,N,Y
+K0002063,W,State Police,N,W,M,night,U,31-35,N,Y
+K0002064,T,State Police,N,W,M,day,U,26-30,N,Y
+K0002065,T,State Police,N,B,M,day,U,26-30,N,Y
+K0002067,W,State Police,N,W,M,night,b) 10 to 15,66-70,N,N
+K0002068,T,State Police,N,W,M,night,U,36-40,N,N
+K0002069,W,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0002070,T,State Police,N,W,F,night,U,31-35,N,N
+K0002071,W,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0002072,W,State Police,N,M,M,day,U,46-50,N,Y
+K0002074,T,State Police,N,W,M,day,U,21-25,N,Y
+K0002076,T,State Police,N,W,F,night,b) 10 to 15,41-45,N,N
+K0002077,T,State Police,N,W,F,night,b) 10 to 15,51-55,N,Y
+K0002078,T,State Police,N,W,M,night,b) 10 to 15,61-65,N,Y
+K0002080,W,State Police,N,B,M,night,U,61-65,N,Y
+K0002081,W,State Police,N,W,F,day,U,21-25,N,Y
+K0002082,W,State Police,N,W,F,day,U,36-40,N,N
+K0002083,W,State Police,N,W,F,day,U,26-30,Y,Y
+K0002085,W,State Police,N,W,F,night,U,41-45,N,Y
+K0002087,W,State Police,N,W,M,night,U,26-30,Y,Y
+K0002089,T,State Police,N,W,M,day,U,21-25,N,Y
+K0002090,W,State Police,N,W,M,night,U,16-20,N,Y
+K0002091,T,State Police,N,W,M,night,U,21-25,N,Y
+K0002092,T,State Police,N,W,M,night,U,56-60,N,Y
+K0002093,W,State Police,N,W,M,night,U,36-40,Y,Y
+K0002095,W,State Police,N,W,M,day,U,51-55,N,Y
+K0002096,W,State Police,N,W,M,day,U,16-20,Y,Y
+K0002097,W,State Police,N,W,F,day,U,36-40,N,Y
+K0002098,W,State Police,N,B,M,night,U,51-55,N,Y
+K0002101,W,State Police,N,W,M,day,U,31-35,N,N
+K0002102,W,State Police,N,W,M,night,U,36-40,N,Y
+K0002103,W,State Police,N,W,M,day,b) 10 to 15,51-55,N,Y
+K0002105,W,State Police,N,W,F,night,U,41-45,N,Y
+K0002107,W,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0002108,W,State Police,N,B,M,night,c) 16 to 20,41-45,N,Y
+K0002109,W,State Police,N,W,M,night,U,46-50,N,N
+K0002110,W,State Police,N,W,M,night,d) more than 20,56-60,N,Y
+K0002112,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0002113,W,State Police,N,W,M,day,U,61-65,N,Y
+K0002114,T,State Police,N,W,F,night,d) more than 20,46-50,N,N
+K0002118,W,State Police,N,W,M,day,U,61-65,N,N
+K0002119,W,State Police,N,W,F,day,c) 16 to 20,31-35,N,Y
+K0002121,W,State Police,N,W,M,night,U,31-35,N,Y
+K0002123,W,State Police,N,W,M,day,c) 16 to 20,36-40,N,N
+K0002124,W,State Police,N,W,F,night,U,36-40,Y,Y
+K0002125,W,State Police,N,W,M,day,U,16-20,N,Y
+K0002126,W,State Police,N,W,M,day,U,16-20,N,Y
+K0002127,W,State Police,N,W,F,day,U,16-20,N,Y
+K0002132,W,State Police,N,W,M,day,U,51-55,N,Y
+K0002133,T,State Police,N,W,M,day,U,31-35,N,N
+K0002135,W,State Police,N,W,F,day,b) 10 to 15,46-50,N,N
+K0002137,W,State Police,N,W,F,day,U,36-40,N,Y
+K0002138,W,State Police,N,W,M,day,U,51-55,N,Y
+K0002140,W,State Police,N,W,M,day,U,21-25,N,Y
+K0002142,W,State Police,N,W,M,day,U,46-50,N,N
+K0002144,W,State Police,N,W,F,night,U,31-35,N,Y
+K0002146,W,State Police,N,W,F,day,U,31-35,Y,Y
+K0002148,W,State Police,N,B,M,day,b) 10 to 15,36-40,N,Y
+K0002149,T,State Police,N,W,M,day,U,51-55,N,Y
+K0002152,W,State Police,N,W,F,night,U,51-55,N,Y
+K0002157,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0002159,W,State Police,N,W,F,day,b) 10 to 15,31-35,N,N
+K0002160,W,State Police,N,W,M,day,b) 10 to 15,76-80,N,Y
+K0002161,W,State Police,N,W,F,day,a) less than 10,21-25,N,Y
+K0002163,W,State Police,N,W,M,day,a) less than 10,41-45,U,N
+K0002164,W,State Police,N,W,M,day,a) less than 10,36-40,N,N
+K0002165,W,State Police,N,W,F,day,a) less than 10,51-55,N,N
+K0002166,W,State Police,N,W,M,day,a) less than 10,76-80,N,N
+K0002169,W,State Police,N,W,F,day,a) less than 10,56-60,N,Y
+K0002171,W,State Police,N,W,M,night,a) less than 10,51-55,N,Y
+K0002172,T,State Police,N,W,M,day,U,56-60,N,Y
+K0002179,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,N
+K0002181,W,State Police,N,W,M,day,b) 10 to 15,16-20,N,N
+K0002182,T,State Police,N,W,M,day,U,36-40,Y,Y
+K0002183,W,State Police,N,W,M,day,U,61-65,Y,Y
+K0002184,T,State Police,N,W,F,day,U,51-55,N,Y
+K0002186,T,State Police,N,W,M,day,U,21-25,N,Y
+K0002188,W,State Police,N,W,F,day,U,66-70,N,Y
+K0002189,W,State Police,N,W,F,day,U,46-50,N,Y
+K0002190,T,State Police,N,W,M,day,U,56-60,N,N
+K0002191,W,State Police,N,W,F,day,b) 10 to 15,31-35,N,N
+K0002192,W,State Police,N,W,M,day,b) 10 to 15,61-65,N,Y
+K0002193,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0002194,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0002195,W,State Police,N,W,M,day,b) 10 to 15,66-70,N,N
+K0002196,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0002197,W,State Police,N,W,M,day,b) 10 to 15,61-65,N,Y
+K0002198,W,State Police,N,W,F,day,U,26-30,N,Y
+K0002199,W,State Police,N,W,M,day,U,36-40,Y,Y
+K0002200,W,State Police,N,W,F,day,U,71-75,Y,Y
+K0002201,W,State Police,N,W,M,day,a) less than 10,21-25,N,N
+K0002202,W,State Police,N,W,M,night,U,16-20,N,Y
+K0002204,T,State Police,N,W,F,day,U,21-25,N,Y
+K0002205,W,State Police,N,W,M,day,U,31-35,N,Y
+K0002207,W,State Police,N,B,M,day,U,26-30,N,Y
+K0002208,W,State Police,N,W,F,day,U,46-50,Y,Y
+K0002209,W,State Police,N,A,M,night,b) 10 to 15,26-30,N,N
+K0002210,W,State Police,N,W,F,day,U,31-35,N,N
+K0002211,W,State Police,N,W,M,day,U,26-30,Y,Y
+K0002212,W,State Police,N,W,M,day,U,21-25,N,Y
+K0002213,W,State Police,N,W,F,day,U,31-35,N,Y
+K0002214,W,State Police,N,W,F,day,U,31-35,N,N
+K0002217,W,State Police,N,W,M,night,U,16-20,N,Y
+K0002219,W,State Police,N,W,F,day,U,16-20,N,Y
+K0002220,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,Y
+K0002221,W,State Police,N,W,F,night,U,51-55,N,Y
+K0002222,W,State Police,N,W,F,night,U,46-50,N,Y
+K0002224,W,State Police,N,W,M,night,U,41-45,N,Y
+K0002225,W,State Police,N,W,M,night,U,46-50,N,Y
+K0002229,W,State Police,N,W,M,night,U,46-50,N,Y
+K0002230,W,State Police,N,W,M,night,U,21-25,N,Y
+K0002233,T,State Police,N,W,M,day,U,41-45,N,Y
+K0002236,T,State Police,N,W,F,night,d) more than 20,21-25,N,Y
+K0002240,W,State Police,N,W,M,day,U,31-35,N,Y
+K0002241,W,State Police,N,W,M,night,U,36-40,N,Y
+K0002242,T,State Police,N,W,M,night,d) more than 20,16-20,Y,Y
+K0002243,W,State Police,N,W,F,night,U,51-55,Y,Y
+K0002244,W,State Police,N,W,M,night,U,46-50,Y,Y
+K0002247,W,State Police,N,H,M,night,U,21-25,Y,Y
+K0002248,W,State Police,N,W,F,night,U,26-30,Y,Y
+K0002250,T,State Police,N,W,M,night,d) more than 20,31-35,N,Y
+K0002252,T,State Police,N,W,M,night,U,31-35,N,N
+K0002254,W,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0002256,W,State Police,N,W,F,night,b) 10 to 15,16-20,N,N
+K0002257,W,State Police,N,W,M,night,U,21-25,N,Y
+K0002264,T,State Police,N,W,M,day,d) more than 20,16-20,N,Y
+K0002265,T,State Police,N,W,F,night,U,16-20,Y,Y
+K0002266,W,State Police,N,W,F,day,U,51-55,N,Y
+K0002268,T,State Police,N,W,F,day,a) less than 10,51-55,N,N
+K0002269,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,N
+K0002270,T,State Police,N,W,M,night,a) less than 10,56-60,N,N
+K0002271,T,State Police,N,W,F,day,c) 16 to 20,46-50,N,Y
+K0002272,W,State Police,N,W,F,night,U,31-35,N,Y
+K0002273,T,State Police,N,W,M,day,U,51-55,Y,Y
+K0002275,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0002278,T,State Police,N,W,M,day,c) 16 to 20,51-55,N,Y
+K0002280,T,State Police,N,B,F,night,U,26-30,N,Y
+K0002282,W,State Police,N,W,M,night,U,16-20,N,Y
+K0002284,W,State Police,N,W,M,night,U,51-55,N,N
+K0002285,W,State Police,N,W,M,night,U,56-60,N,Y
+K0002286,T,State Police,N,W,M,day,U,76-80,Y,Y
+K0002287,W,State Police,N,B,M,night,U,26-30,N,Y
+K0002288,W,State Police,N,W,F,night,b) 10 to 15,21-25,Y,Y
+K0002291,W,State Police,N,W,M,night,U,16-20,N,Y
+K0002292,W,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0002294,W,State Police,N,W,F,night,U,36-40,N,Y
+K0002297,T,State Police,N,M,M,night,b) 10 to 15,41-45,N,N
+K0002302,W,State Police,N,W,F,day,U,41-45,N,Y
+K0002303,W,State Police,N,H,M,day,U,46-50,Y,Y
+K0002304,T,State Police,N,H,M,day,U,21-25,N,Y
+K0002305,W,State Police,N,W,F,day,U,16-20,Y,Y
+K0002306,W,State Police,N,W,M,day,U,21-25,N,Y
+K0002307,W,State Police,N,W,M,day,U,16-20,Y,Y
+K0002311,W,State Police,N,H,M,day,U,21-25,N,Y
+K0002313,W,State Police,N,U,U,day,U,31-35,N,Y
+K0002314,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0002315,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0002316,T,State Police,N,W,M,day,U,21-25,N,Y
+K0002317,W,State Police,N,W,M,day,U,21-25,N,Y
+K0002318,T,State Police,N,W,F,day,U,21-25,N,Y
+K0002320,W,State Police,N,W,M,day,U,21-25,N,Y
+K0002322,W,State Police,N,W,M,day,a) less than 10,41-45,N,N
+K0002323,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,N
+K0002324,W,State Police,N,W,F,night,a) less than 10,56-60,N,Y
+K0002325,W,State Police,N,W,M,night,a) less than 10,21-25,N,N
+K0002326,W,State Police,N,W,F,night,U,31-35,U,Y
+K0002327,T,State Police,N,H,M,day,U,46-50,N,Y
+K0002328,W,State Police,N,W,F,day,U,51-55,N,Y
+K0002329,W,State Police,N,W,M,day,a) less than 10,56-60,Y,Y
+K0002330,T,State Police,N,W,M,night,U,21-25,N,Y
+K0002331,W,State Police,N,W,F,night,U,21-25,N,Y
+K0002332,W,State Police,N,W,M,night,a) less than 10,41-45,N,N
+K0002333,W,State Police,N,W,M,day,U,46-50,Y,Y
+K0002335,W,State Police,N,W,M,day,U,36-40,N,Y
+K0002337,T,State Police,N,W,M,day,U,36-40,N,Y
+K0002338,W,State Police,N,W,M,day,U,46-50,N,Y
+K0002339,T,State Police,N,W,M,day,U,31-35,Y,Y
+K0002340,T,State Police,N,H,F,day,b) 10 to 15,26-30,N,Y
+K0002341,W,State Police,N,W,F,day,U,51-55,N,Y
+K0002342,W,State Police,N,W,M,day,U,21-25,N,N
+K0002344,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0002345,W,State Police,N,W,M,day,U,31-35,N,N
+K0002346,W,State Police,N,W,M,night,U,46-50,N,Y
+K0002347,W,State Police,N,W,M,night,U,21-25,N,Y
+K0002348,W,State Police,N,W,M,night,U,21-25,N,Y
+K0002349,T,State Police,N,B,M,day,d) more than 20,26-30,N,Y
+K0002351,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,Y
+K0002352,W,State Police,N,W,F,night,U,16-20,N,Y
+K0002353,W,State Police,N,W,M,night,U,36-40,N,Y
+K0002355,W,State Police,N,W,F,night,U,16-20,Y,Y
+K0002356,W,State Police,N,B,M,night,U,21-25,N,N
+K0002359,W,State Police,N,W,M,day,U,36-40,N,Y
+K0002362,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0002368,T,State Police,N,H,M,day,U,26-30,Y,Y
+K0002373,T,State Police,N,W,F,day,U,51-55,N,Y
+K0002379,T,State Police,N,W,F,day,U,41-45,N,Y
+K0002380,T,State Police,N,W,M,day,U,26-30,Y,Y
+K0002381,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0002384,T,State Police,N,M,M,day,b) 10 to 15,36-40,U,N
+K0002385,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0002386,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0002389,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0002402,T,State Police,N,A,F,day,U,26-30,N,N
+K0002442,T,State Police,N,H,M,night,c) 16 to 20,21-25,N,Y
+K0002444,W,State Police,N,W,M,night,b) 10 to 15,51-55,N,Y
+K0002445,T,State Police,N,W,M,night,c) 16 to 20,26-30,N,Y
+K0002446,W,State Police,N,W,M,night,U,31-35,N,Y
+K0002447,W,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0002448,W,State Police,N,W,M,night,b) 10 to 15,41-45,N,N
+K0002449,W,State Police,N,W,M,night,b) 10 to 15,36-40,Y,Y
+K0002450,W,State Police,N,B,M,night,b) 10 to 15,41-45,N,Y
+K0002451,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0002452,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0002453,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0002454,W,State Police,N,W,M,day,b) 10 to 15,56-60,N,Y
+K0002456,W,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0002474,T,State Police,N,W,M,day,U,41-45,N,Y
+K0002478,T,State Police,N,W,F,night,U,21-25,N,Y
+K0002502,T,State Police,N,W,M,day,a) less than 10,26-30,N,N
+K0002508,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0002511,T,State Police,N,W,M,day,c) 16 to 20,41-45,N,Y
+K0002517,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,Y
+K0002518,T,State Police,N,W,F,day,d) more than 20,36-40,N,N
+K0002519,T,State Police,N,W,F,day,b) 10 to 15,46-50,N,Y
+K0002520,W,State Police,N,W,F,day,a) less than 10,56-60,N,N
+K0002521,T,State Police,N,W,F,night,U,46-50,N,Y
+K0002523,T,State Police,N,B,M,night,U,21-25,N,Y
+K0002526,T,State Police,N,W,F,day,c) 16 to 20,36-40,N,Y
+K0002528,T,State Police,N,H,M,day,c) 16 to 20,46-50,N,Y
+K0002537,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,N
+K0002540,T,State Police,N,H,M,night,c) 16 to 20,26-30,U,Y
+K0002541,T,State Police,N,W,M,night,U,26-30,N,Y
+K0002542,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0002545,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0002546,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0002548,T,State Police,N,W,M,night,b) 10 to 15,36-40,U,N
+K0002549,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0002550,T,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0002551,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0002552,T,State Police,N,W,F,night,b) 10 to 15,36-40,N,N
+K0002553,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0002554,T,State Police,N,W,F,night,b) 10 to 15,21-25,Y,Y
+K0002557,T,State Police,N,H,F,night,U,21-25,N,Y
+K0002558,T,State Police,N,W,F,night,b) 10 to 15,21-25,N,N
+K0002559,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0002560,T,State Police,N,W,F,night,b) 10 to 15,31-35,N,Y
+K0002563,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,Y
+K0002566,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0002572,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0002573,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0002575,T,State Police,N,M,M,day,b) 10 to 15,46-50,N,Y
+K0002576,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0002577,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0002578,T,State Police,N,W,M,day,d) more than 20,36-40,N,Y
+K0002580,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0002587,T,State Police,N,W,M,night,U,16-20,N,Y
+K0002588,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0002589,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0002590,T,State Police,N,H,M,night,c) 16 to 20,36-40,N,Y
+K0002591,T,State Police,N,W,M,night,d) more than 20,26-30,Y,Y
+K0002592,T,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0002593,T,State Police,N,W,M,night,U,21-25,N,Y
+K0002595,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0002596,T,State Police,N,W,M,night,b) 10 to 15,26-30,Y,Y
+K0002600,T,State Police,N,W,F,day,U,21-25,Y,Y
+K0002601,T,State Police,N,W,F,day,U,31-35,N,Y
+K0002602,T,State Police,N,W,M,day,U,41-45,N,N
+K0002606,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0002611,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0002615,T,State Police,N,H,M,day,U,36-40,N,Y
+K0002616,T,State Police,N,W,F,night,U,36-40,N,N
+K0002618,T,State Police,N,W,M,day,U,36-40,N,Y
+K0002619,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0002622,T,State Police,N,W,F,day,c) 16 to 20,36-40,N,Y
+K0002624,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0002627,T,State Police,N,W,F,day,d) more than 20,16-20,N,Y
+K0002629,T,State Police,N,U,M,day,d) more than 20,41-45,N,Y
+K0002635,T,State Police,N,U,M,night,U,26-30,N,Y
+K0002640,T,State Police,N,U,F,day,a) less than 10,41-45,N,Y
+K0002641,T,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0002642,T,State Police,N,W,F,day,U,31-35,Y,Y
+K0002643,T,State Police,N,W,F,day,U,51-55,N,N
+K0002644,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0002645,W,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0002646,W,State Police,N,W,F,day,c) 16 to 20,51-55,N,Y
+K0002649,T,State Police,N,W,F,day,U,21-25,N,Y
+K0002650,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,Y
+K0002653,W,State Police,N,W,M,night,c) 16 to 20,61-65,N,Y
+K0002654,T,State Police,N,W,F,night,b) 10 to 15,36-40,N,Y
+K0002655,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0002660,T,State Police,N,W,M,day,U,56-60,N,N
+K0002673,T,State Police,N,H,M,night,U,16-20,Y,Y
+K0002725,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0002728,T,State Police,N,W,M,day,U,36-40,N,N
+K0002729,T,State Police,N,W,F,day,U,41-45,N,Y
+K0002732,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0002733,W,State Police,N,W,M,night,b) 10 to 15,31-35,N,N
+K0002734,T,State Police,N,A,M,night,c) 16 to 20,21-25,N,Y
+K0002735,T,State Police,N,H,M,night,d) more than 20,21-25,N,Y
+K0002736,W,State Police,N,W,M,night,U,21-25,N,Y
+K0002737,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0002739,W,State Police,N,W,M,night,a) less than 10,36-40,N,Y
+K0002741,T,State Police,N,W,M,night,d) more than 20,41-45,N,Y
+K0002744,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0002745,T,State Police,N,W,M,night,d) more than 20,51-55,N,Y
+K0002747,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0002748,T,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0002749,T,State Police,N,W,F,night,c) 16 to 20,46-50,N,N
+K0002750,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0002751,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0002752,T,State Police,N,W,M,day,c) 16 to 20,46-50,N,N
+K0002756,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0002761,T,State Police,N,W,M,day,U,26-30,N,N
+K0002762,T,State Police,N,W,F,day,c) 16 to 20,36-40,N,N
+K0002768,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0002771,T,State Police,N,H,M,day,b) 10 to 15,41-45,N,Y
+K0002776,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,N
+K0002777,T,State Police,N,H,M,day,d) more than 20,31-35,N,Y
+K0002783,T,State Police,N,W,M,day,U,36-40,N,N
+K0002784,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,N
+K0002785,T,State Police,N,W,F,day,U,36-40,N,N
+K0002786,T,State Police,N,B,M,day,U,46-50,N,Y
+K0002787,T,State Police,N,W,M,day,U,46-50,N,N
+K0002790,T,State Police,N,W,M,day,U,71-75,N,Y
+K0002791,W,State Police,N,W,M,night,U,46-50,U,N
+K0002793,W,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0002794,W,State Police,N,W,F,night,b) 10 to 15,46-50,N,Y
+K0002796,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0002797,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0002800,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0002805,T,State Police,N,W,F,day,U,31-35,N,N
+K0002806,T,State Police,N,W,M,day,d) more than 20,41-45,N,N
+K0002807,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0002808,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0002809,T,State Police,N,W,M,day,c) 16 to 20,36-40,Y,Y
+K0002811,W,State Police,N,W,F,day,b) 10 to 15,46-50,N,N
+K0002812,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0002817,W,State Police,N,W,F,day,b) 10 to 15,46-50,N,Y
+K0002820,W,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0002823,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0002826,W,State Police,N,W,M,day,c) 16 to 20,51-55,N,Y
+K0002827,T,State Police,N,W,M,day,d) more than 20,36-40,N,Y
+K0002829,W,State Police,N,A,M,day,b) 10 to 15,31-35,N,Y
+K0002830,T,State Police,N,W,M,day,U,21-25,N,Y
+K0002834,T,State Police,N,W,F,day,U,31-35,N,Y
+K0002835,T,State Police,N,M,M,day,U,36-40,N,Y
+K0002837,T,State Police,N,B,M,day,U,41-45,N,Y
+K0002843,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0002844,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0002847,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0002848,T,State Police,N,W,F,day,b) 10 to 15,21-25,Y,Y
+K0002851,T,State Police,N,A,M,night,b) 10 to 15,41-45,N,Y
+K0002853,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0002854,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,Y
+K0002857,T,State Police,N,W,M,day,b) 10 to 15,61-65,N,Y
+K0002861,T,State Police,N,H,F,day,U,21-25,N,Y
+K0002868,T,State Police,N,W,M,day,U,26-30,N,Y
+K0002869,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0002871,T,State Police,N,W,M,day,U,26-30,N,Y
+K0002872,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0002873,T,State Police,N,A,M,night,b) 10 to 15,36-40,N,Y
+K0002874,W,State Police,N,W,M,day,U,46-50,N,Y
+K0002875,W,State Police,N,W,F,night,U,16-20,N,Y
+K0002876,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,N
+K0002877,W,State Police,N,W,F,day,b) 10 to 15,61-65,N,Y
+K0002878,T,State Police,N,A,F,night,b) 10 to 15,26-30,N,Y
+K0002879,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0002880,T,State Police,N,B,F,day,b) 10 to 15,31-35,N,Y
+K0002884,T,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0002888,T,State Police,N,W,M,night,U,41-45,N,N
+K0002892,T,State Police,N,W,M,day,U,21-25,N,Y
+K0002894,T,State Police,N,W,F,day,U,26-30,N,Y
+K0002896,T,State Police,N,W,M,day,U,31-35,N,Y
+K0002898,T,State Police,N,W,M,day,U,21-25,N,Y
+K0002899,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0002900,T,State Police,N,W,M,day,U,26-30,Y,Y
+K0002901,T,State Police,N,U,M,day,a) less than 10,61-65,N,Y
+K0002902,T,State Police,N,A,M,day,a) less than 10,31-35,N,Y
+K0002903,T,State Police,N,H,M,day,c) 16 to 20,36-40,N,Y
+K0002904,T,State Police,N,U,F,day,U,31-35,N,Y
+K0002905,T,State Police,N,U,M,day,b) 10 to 15,21-25,N,Y
+K0002906,T,State Police,N,U,M,day,b) 10 to 15,16-20,N,Y
+K0002913,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,N
+K0002916,T,State Police,N,W,F,day,U,31-35,N,Y
+K0002918,T,State Police,N,U,U,day,U,36-40,N,Y
+K0002923,T,State Police,N,H,M,night,U,31-35,N,Y
+K0002924,T,State Police,N,W,F,night,c) 16 to 20,16-20,N,N
+K0002926,T,State Police,N,M,M,day,d) more than 20,31-35,N,Y
+K0002930,T,State Police,N,W,M,night,c) 16 to 20,N/A,N,N
+K0002933,W,State Police,N,W,M,day,U,16-20,N,Y
+K0002935,T,State Police,N,H,M,day,b) 10 to 15,36-40,N,Y
+K0002944,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,Y
+K0002947,T,State Police,N,W,M,day,c) 16 to 20,56-60,N,Y
+K0002949,W,State Police,N,W,M,day,U,41-45,N,Y
+K0002950,T,State Police,N,W,M,day,c) 16 to 20,41-45,N,Y
+K0002952,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,Y
+K0002956,T,State Police,N,W,F,night,c) 16 to 20,31-35,N,N
+K0002957,T,State Police,N,W,M,day,c) 16 to 20,36-40,N,N
+K0002958,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0002959,W,State Police,N,W,M,night,U,51-55,N,Y
+K0002960,T,State Police,N,W,M,day,c) 16 to 20,51-55,N,Y
+K0002962,T,State Police,N,W,F,day,U,26-30,Y,Y
+K0002964,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0002965,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0002966,T,State Police,N,W,M,night,d) more than 20,21-25,N,N
+K0002968,T,State Police,N,W,F,night,c) 16 to 20,31-35,N,Y
+K0002969,T,State Police,N,W,M,night,c) 16 to 20,51-55,N,Y
+K0002970,T,State Police,N,W,M,night,d) more than 20,31-35,N,Y
+K0002971,T,State Police,N,W,F,night,d) more than 20,26-30,N,N
+K0002973,T,State Police,N,W,F,night,d) more than 20,26-30,N,N
+K0002974,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,N
+K0002976,T,State Police,N,W,M,night,d) more than 20,46-50,N,N
+K0002978,T,State Police,N,W,F,night,c) 16 to 20,26-30,N,Y
+K0002980,T,State Police,N,H,F,night,U,46-50,N,Y
+K0002981,T,State Police,N,W,M,night,d) more than 20,26-30,N,N
+K0002982,T,State Police,N,W,M,night,d) more than 20,36-40,N,N
+K0002986,T,State Police,N,W,F,night,b) 10 to 15,46-50,N,Y
+K0002989,T,State Police,N,W,M,night,b) 10 to 15,61-65,N,Y
+K0002996,T,State Police,N,B,M,day,d) more than 20,41-45,N,N
+K0003007,T,State Police,N,W,M,day,U,31-35,N,N
+K0003008,T,State Police,N,A,M,day,U,51-55,N,Y
+K0003015,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0003017,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,N
+K0003020,T,State Police,N,W,M,day,U,36-40,N,Y
+K0003029,T,State Police,N,W,M,day,d) more than 20,21-25,N,Y
+K0003035,T,State Police,N,U,M,day,U,41-45,Y,Y
+K0003041,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0003044,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,Y
+K0003059,T,State Police,N,W,M,day,d) more than 20,36-40,N,N
+K0003090,T,State Police,N,W,M,day,U,21-25,N,N
+K0003093,T,State Police,N,W,M,night,U,16-20,N,N
+K0003109,T,State Police,N,U,M,day,b) 10 to 15,21-25,N,N
+K0003113,T,State Police,N,U,M,day,U,36-40,N,N
+K0003120,T,State Police,N,U,M,night,c) 16 to 20,26-30,N,Y
+K0003124,T,State Police,N,W,M,night,d) more than 20,61-65,N,Y
+K0003134,T,State Police,N,H,M,night,d) more than 20,26-30,N,Y
+K0003135,T,State Police,N,W,M,night,U,21-25,Y,Y
+K0003136,T,State Police,N,W,M,day,U,31-35,N,N
+K0003141,T,State Police,N,W,M,day,d) more than 20,31-35,N,Y
+K0003142,T,State Police,N,W,F,day,d) more than 20,16-20,N,Y
+K0003144,T,State Police,N,W,M,day,U,41-45,N,Y
+K0003147,T,State Police,N,H,M,day,d) more than 20,21-25,N,Y
+K0003148,T,State Police,N,H,F,day,d) more than 20,36-40,N,Y
+K0003150,T,State Police,N,U,M,night,b) 10 to 15,N/A,Y,Y
+K0003151,T,State Police,N,U,F,night,d) more than 20,31-35,N,Y
+K0003152,T,State Police,N,H,F,night,d) more than 20,31-35,N,Y
+K0003153,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,N
+K0003154,T,State Police,N,H,M,night,d) more than 20,36-40,N,Y
+K0003155,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0003156,T,State Police,N,W,M,night,d) more than 20,21-25,Y,Y
+K0003158,T,State Police,N,B,M,night,d) more than 20,31-35,N,Y
+K0003163,T,State Police,N,H,M,night,c) 16 to 20,41-45,N,Y
+K0003165,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,N
+K0003168,T,State Police,N,W,F,day,d) more than 20,21-25,N,Y
+K0003169,T,State Police,N,M,M,day,U,41-45,N,Y
+K0003170,T,State Police,N,W,F,day,c) 16 to 20,46-50,N,Y
+K0003171,T,State Police,N,H,M,night,c) 16 to 20,46-50,N,N
+K0003176,T,State Police,N,W,F,day,d) more than 20,46-50,N,N
+K0003178,T,State Police,N,B,M,day,U,26-30,N,N
+K0003200,T,State Police,N,W,M,night,U,36-40,N,Y
+K0003206,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0003208,T,State Police,N,W,M,day,U,41-45,N,Y
+K0003211,T,State Police,N,W,M,day,U,31-35,N,N
+K0003212,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0003219,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0003220,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0003285,T,State Police,N,W,M,day,U,66-70,N,Y
+K0003288,T,State Police,N,W,F,day,d) more than 20,21-25,N,Y
+K0003296,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0003297,T,State Police,N,M,M,day,U,31-35,N,N
+K0003313,T,State Police,N,W,M,day,U,46-50,N,Y
+K0003314,T,State Police,N,W,M,day,U,56-60,N,Y
+K0003315,T,State Police,N,W,M,day,U,26-30,N,Y
+K0003316,T,State Police,N,H,M,day,U,41-45,N,Y
+K0003317,T,State Police,N,W,M,day,U,51-55,N,Y
+K0003318,T,State Police,N,W,M,day,U,31-35,N,N
+K0003319,T,State Police,N,W,M,day,U,36-40,N,Y
+K0003320,T,State Police,N,B,M,night,U,41-45,N,Y
+K0003323,T,State Police,N,W,M,day,U,21-25,N,Y
+K0003335,T,State Police,N,W,M,night,U,41-45,N,Y
+K0003337,T,State Police,N,W,M,day,U,26-30,N,N
+K0003338,T,State Police,N,B,M,night,U,41-45,Y,Y
+K0003381,T,State Police,N,W,M,night,U,31-35,N,Y
+K0003386,W,State Police,N,W,F,day,b) 10 to 15,16-20,Y,Y
+K0003387,T,State Police,N,W,M,night,U,21-25,N,Y
+K0003391,T,State Police,N,W,M,day,U,21-25,N,Y
+K0003441,T,State Police,N,W,F,day,d) more than 20,16-20,N,Y
+K0003444,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0003446,T,State Police,N,W,M,day,b) 10 to 15,16-20,Y,Y
+K0003447,T,State Police,N,B,F,day,c) 16 to 20,31-35,Y,Y
+K0003468,W,State Police,N,W,M,night,a) less than 10,41-45,N,Y
+K0003470,T,State Police,N,W,M,day,d) more than 20,31-35,N,Y
+K0003483,T,State Police,N,W,M,day,c) 16 to 20,71-75,N,Y
+K0003487,T,State Police,N,W,M,day,d) more than 20,31-35,N,Y
+K0003490,T,State Police,N,W,M,day,U,16-20,N,Y
+K0003493,T,State Police,N,W,M,day,b) 10 to 15,51-55,Y,Y
+K0003495,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0003496,T,State Police,N,W,M,day,c) 16 to 20,41-45,N,N
+K0003497,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0003499,T,State Police,N,W,M,night,c) 16 to 20,26-30,N,Y
+K0003501,T,State Police,N,H,M,night,d) more than 20,21-25,N,Y
+K0003502,W,State Police,N,W,M,night,U,16-20,N,Y
+K0003503,W,State Police,N,H,M,night,U,16-20,N,Y
+K0003505,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,Y
+K0003507,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0003508,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0003512,T,State Police,N,W,F,day,c) 16 to 20,26-30,N,Y
+K0003513,T,State Police,N,W,M,day,d) more than 20,41-45,N,Y
+K0003514,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,Y
+K0003517,T,State Police,N,W,F,day,c) 16 to 20,16-20,N,Y
+K0003518,T,State Police,N,M,M,day,U,56-60,N,Y
+K0003520,T,State Police,N,W,M,day,U,31-35,Y,Y
+K0003521,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0003522,W,State Police,N,W,F,day,U,36-40,N,Y
+K0003523,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0003524,T,State Police,N,W,M,day,U,31-35,N,Y
+K0003526,T,State Police,N,H,F,day,c) 16 to 20,21-25,N,Y
+K0003527,T,State Police,N,W,M,day,c) 16 to 20,61-65,N,Y
+K0003528,T,State Police,N,W,F,day,d) more than 20,21-25,N,N
+K0003529,W,State Police,N,W,F,day,a) less than 10,21-25,N,Y
+K0003531,T,State Police,N,W,M,day,U,41-45,N,N
+K0003532,T,State Police,N,W,F,day,U,31-35,N,Y
+K0003533,W,State Police,N,W,M,day,a) less than 10,31-35,N,Y
+K0003534,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0003536,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0003537,T,State Police,N,W,M,day,U,31-35,N,Y
+K0003538,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,Y
+K0003539,T,State Police,N,W,F,day,U,41-45,N,Y
+K0003540,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0003561,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0003562,W,State Police,N,W,F,day,b) 10 to 15,56-60,N,Y
+K0003563,W,State Police,N,W,F,night,b) 10 to 15,31-35,N,Y
+K0003569,T,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0003583,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0003585,T,State Police,N,B,M,night,U,26-30,N,Y
+K0003587,T,State Police,N,W,M,night,U,56-60,Y,Y
+K0003588,T,State Police,N,W,F,night,U,21-25,N,Y
+K0003589,W,State Police,N,W,M,night,U,56-60,N,Y
+K0003590,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0003591,W,State Police,N,W,M,night,U,46-50,N,Y
+K0003592,T,State Police,N,W,M,night,c) 16 to 20,46-50,N,Y
+K0003594,T,State Police,N,W,M,night,d) more than 20,41-45,N,N
+K0003596,T,State Police,N,W,M,day,d) more than 20,51-55,N,Y
+K0003597,T,State Police,N,W,M,day,d) more than 20,41-45,N,N
+K0003598,T,State Police,N,W,F,day,d) more than 20,26-30,N,Y
+K0003599,W,State Police,N,W,M,night,U,26-30,N,Y
+K0003602,T,State Police,N,W,M,night,U,41-45,N,Y
+K0003603,T,State Police,N,W,M,night,U,26-30,N,Y
+K0003604,T,State Police,N,W,M,night,U,31-35,N,Y
+K0003605,W,State Police,N,W,M,night,U,26-30,N,Y
+K0003606,T,State Police,N,W,M,night,U,41-45,N,Y
+K0003607,T,State Police,N,W,M,night,U,31-35,N,Y
+K0003608,T,State Police,N,W,M,night,U,16-20,N,Y
+K0003609,W,State Police,N,W,F,night,U,16-20,N,N
+K0003611,W,State Police,N,W,M,night,U,36-40,N,Y
+K0003614,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,N
+K0003615,T,State Police,N,W,M,day,U,31-35,N,Y
+K0003618,T,State Police,N,A,M,night,d) more than 20,21-25,N,Y
+K0003619,T,State Police,N,A,M,night,b) 10 to 15,21-25,N,Y
+K0003621,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0003622,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0003623,T,State Police,N,W,M,day,U,26-30,N,Y
+K0003624,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,N
+K0003625,W,State Police,N,W,F,day,b) 10 to 15,46-50,Y,Y
+K0003626,T,State Police,N,W,F,day,U,56-60,N,Y
+K0003627,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0003628,W,State Police,N,W,M,day,U,51-55,Y,Y
+K0003629,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0003630,T,State Police,N,W,F,day,U,46-50,Y,Y
+K0003632,T,State Police,N,W,M,day,c) 16 to 20,21-25,Y,Y
+K0003633,T,State Police,N,W,M,night,a) less than 10,41-45,N,N
+K0003634,T,State Police,N,W,F,day,b) 10 to 15,46-50,U,N
+K0003635,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0003641,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0003642,T,State Police,N,W,M,day,U,26-30,N,Y
+K0003643,T,State Police,N,W,M,day,U,21-25,N,Y
+K0003644,T,State Police,N,W,M,day,U,66-70,N,Y
+K0003645,T,State Police,N,A,M,day,U,26-30,N,Y
+K0003646,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0003648,T,State Police,N,W,F,night,U,26-30,N,Y
+K0003649,T,State Police,N,U,U,night,U,36-40,N,Y
+K0003650,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,Y
+K0003651,T,State Police,N,B,M,night,b) 10 to 15,21-25,N,Y
+K0003653,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0003654,T,State Police,N,W,F,day,U,31-35,Y,Y
+K0003656,T,State Police,N,W,M,day,U,51-55,N,Y
+K0003658,T,State Police,N,W,F,night,U,26-30,N,Y
+K0003659,T,State Police,N,W,F,day,U,51-55,N,Y
+K0003660,T,State Police,N,W,F,day,U,21-25,N,Y
+K0003661,T,State Police,N,W,M,day,U,31-35,N,Y
+K0003662,T,State Police,N,M,F,day,U,21-25,N,Y
+K0003663,T,State Police,N,W,M,day,U,21-25,N,Y
+K0003664,T,State Police,N,W,M,night,U,31-35,N,Y
+K0003665,T,State Police,N,W,F,night,a) less than 10,26-30,N,N
+K0003666,T,State Police,N,W,F,night,d) more than 20,51-55,Y,Y
+K0003668,T,State Police,N,W,M,night,c) 16 to 20,41-45,N,Y
+K0003669,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0003670,T,State Police,N,W,F,night,b) 10 to 15,21-25,U,N
+K0003671,T,State Police,N,W,M,day,U,21-25,N,Y
+K0003672,T,State Police,N,W,M,night,U,16-20,N,Y
+K0003673,T,State Police,N,W,M,day,U,56-60,N,Y
+K0003674,T,State Police,N,W,F,day,c) 16 to 20,31-35,N,Y
+K0003676,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0003677,T,State Police,N,W,F,night,c) 16 to 20,21-25,N,Y
+K0003679,T,State Police,N,W,M,day,U,41-45,N,Y
+K0003680,T,State Police,N,W,M,day,U,36-40,Y,Y
+K0003686,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0003690,T,State Police,N,W,M,day,c) 16 to 20,41-45,N,N
+K0003691,T,State Police,N,W,M,day,a) less than 10,21-25,N,Y
+K0003694,T,State Police,N,W,F,day,c) 16 to 20,26-30,N,Y
+K0003695,T,State Police,N,W,F,day,c) 16 to 20,31-35,N,Y
+K0003696,T,State Police,N,W,M,night,a) less than 10,31-35,N,N
+K0003698,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0003699,T,State Police,N,W,F,day,U,21-25,N,Y
+K0003700,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0003701,T,State Police,N,W,F,night,U,36-40,Y,Y
+K0003704,W,State Police,N,W,M,night,U,61-65,N,Y
+K0003705,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0003706,W,State Police,N,W,M,night,U,41-45,N,Y
+K0003707,W,State Police,N,W,M,night,U,46-50,Y,Y
+K0003708,W,State Police,N,W,F,night,U,56-60,Y,Y
+K0003709,T,State Police,N,H,M,night,U,31-35,N,Y
+K0003710,T,State Police,N,W,F,night,U,21-25,Y,Y
+K0003712,W,State Police,N,W,M,night,U,26-30,N,Y
+K0003713,W,State Police,N,W,M,day,U,16-20,Y,Y
+K0003714,T,State Police,N,B,M,night,U,26-30,N,Y
+K0003715,W,State Police,N,W,M,night,U,36-40,N,Y
+K0003716,W,State Police,N,W,M,night,U,51-55,N,Y
+K0003718,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,Y
+K0003741,W,State Police,N,W,M,day,U,36-40,U,N
+K0003761,T,State Police,N,W,M,day,d) more than 20,31-35,N,Y
+K0003762,T,State Police,N,W,F,night,c) 16 to 20,21-25,N,Y
+K0003764,W,State Police,N,W,F,night,U,36-40,N,N
+K0003767,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0003768,T,State Police,N,W,F,night,U,16-20,N,Y
+K0003774,W,State Police,N,W,M,day,U,16-20,Y,Y
+K0003775,T,State Police,N,W,M,day,c) 16 to 20,46-50,N,Y
+K0003779,T,State Police,N,W,F,night,U,31-35,N,Y
+K0003780,T,State Police,N,W,F,night,c) 16 to 20,31-35,Y,Y
+K0003821,T,State Police,N,W,M,day,d) more than 20,21-25,N,N
+K0003822,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0003823,T,State Police,N,W,F,night,U,16-20,N,Y
+K0003825,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0003826,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0003828,T,State Police,N,W,M,night,U,46-50,N,Y
+K0003829,T,State Police,N,W,M,night,U,36-40,N,Y
+K0003834,T,State Police,N,A,F,day,U,16-20,Y,Y
+K0003835,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0003837,T,State Police,N,W,M,day,U,41-45,N,Y
+K0003838,T,State Police,N,M,M,day,U,36-40,N,N
+K0003842,T,State Police,N,W,M,night,U,21-25,N,Y
+K0003845,T,State Police,N,W,F,night,U,41-45,N,Y
+K0003847,W,State Police,N,W,M,night,U,16-20,N,Y
+K0003848,W,State Police,N,W,M,night,U,66-70,N,Y
+K0003850,T,State Police,N,W,M,day,U,31-35,N,Y
+K0003852,T,State Police,N,W,M,night,U,21-25,N,Y
+K0003854,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,Y
+K0003855,T,State Police,N,W,M,night,c) 16 to 20,41-45,N,Y
+K0003856,T,State Police,N,W,M,night,d) more than 20,16-20,N,Y
+K0003857,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0003858,W,State Police,N,W,M,day,b) 10 to 15,16-20,Y,Y
+K0003859,T,State Police,N,W,M,night,b) 10 to 15,76-80,N,Y
+K0003862,T,State Police,N,A,M,day,d) more than 20,36-40,N,Y
+K0003863,T,State Police,N,B,M,night,U,56-60,N,Y
+K0003865,T,State Police,N,W,F,night,b) 10 to 15,51-55,N,Y
+K0003873,T,State Police,N,W,F,day,c) 16 to 20,51-55,N,Y
+K0003875,T,State Police,N,W,M,night,U,21-25,N,Y
+K0003877,T,State Police,N,W,F,day,c) 16 to 20,31-35,N,Y
+K0003878,W,State Police,N,W,M,day,U,36-40,N,Y
+K0003879,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0003881,T,State Police,N,W,M,night,U,21-25,N,Y
+K0003882,W,State Police,N,M,M,night,a) less than 10,46-50,N,N
+K0003883,W,State Police,N,W,M,night,U,66-70,Y,Y
+K0003884,W,State Police,N,W,M,night,a) less than 10,41-45,N,Y
+K0003886,W,State Police,N,W,F,night,a) less than 10,26-30,N,Y
+K0003889,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0003890,W,State Police,N,W,M,night,U,46-50,N,N
+K0003891,T,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0003894,W,State Police,N,W,F,night,U,26-30,N,N
+K0003895,W,State Police,N,M,M,night,U,26-30,Y,Y
+K0003897,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,N
+K0003901,T,State Police,N,H,M,night,U,46-50,N,Y
+K0003904,T,State Police,N,H,F,night,U,21-25,N,Y
+K0003907,T,State Police,N,W,M,day,b) 10 to 15,61-65,N,Y
+K0003909,T,State Police,N,W,F,night,U,36-40,Y,Y
+K0003911,T,State Police,N,W,M,day,U,26-30,N,Y
+K0003912,W,State Police,N,W,M,night,U,16-20,N,Y
+K0003913,T,State Police,N,U,F,day,U,41-45,N,Y
+K0003915,T,State Police,N,H,M,day,U,31-35,Y,Y
+K0003916,T,State Police,N,W,M,day,U,21-25,N,Y
+K0003917,T,State Police,N,W,F,day,U,26-30,N,Y
+K0003918,T,State Police,N,W,M,day,U,21-25,N,Y
+K0003919,W,State Police,N,W,F,day,U,26-30,N,Y
+K0003922,W,State Police,N,W,M,day,U,41-45,Y,Y
+K0003923,W,State Police,N,W,M,night,a) less than 10,26-30,N,Y
+K0003924,W,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0003925,W,State Police,N,W,F,night,U,21-25,N,Y
+K0003926,W,State Police,N,H,M,night,U,21-25,N,Y
+K0003927,W,State Police,N,W,F,day,U,16-20,N,Y
+K0003928,W,State Police,N,W,M,night,U,41-45,N,Y
+K0003931,W,State Police,N,W,M,night,U,16-20,N,Y
+K0003932,T,State Police,N,W,F,night,U,36-40,N,Y
+K0003935,W,State Police,N,W,M,night,a) less than 10,21-25,N,N
+K0003937,W,State Police,N,W,F,night,a) less than 10,61-65,N,Y
+K0003939,W,State Police,N,W,M,day,U,31-35,N,Y
+K0003941,T,State Police,N,W,M,day,d) more than 20,61-65,N,Y
+K0003942,T,State Police,N,W,M,day,d) more than 20,51-55,N,Y
+K0003943,T,State Police,N,W,F,day,U,46-50,N,Y
+K0003944,T,State Police,N,W,M,day,U,61-65,N,Y
+K0003945,T,State Police,N,W,M,day,U,36-40,N,Y
+K0003946,T,State Police,N,W,M,day,U,46-50,N,Y
+K0003947,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0003948,T,State Police,N,W,F,night,b) 10 to 15,36-40,N,Y
+K0003949,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0003950,T,State Police,N,W,M,day,b) 10 to 15,31-35,Y,Y
+K0003951,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0003952,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0003954,T,State Police,N,W,M,day,c) 16 to 20,21-25,Y,Y
+K0003955,T,State Police,N,W,F,day,c) 16 to 20,21-25,Y,Y
+K0003956,T,State Police,N,A,M,day,c) 16 to 20,26-30,N,Y
+K0003957,T,State Police,N,W,F,night,U,56-60,N,Y
+K0003958,T,State Police,N,W,M,day,d) more than 20,26-30,Y,Y
+K0003959,T,State Police,N,W,F,day,d) more than 20,41-45,N,Y
+K0003960,T,State Police,N,W,F,night,U,16-20,N,Y
+K0003966,W,State Police,N,W,M,day,U,41-45,Y,Y
+K0003967,W,State Police,N,W,M,day,U,21-25,N,Y
+K0003968,W,State Police,N,M,M,day,U,41-45,N,Y
+K0003969,W,State Police,N,W,M,day,U,31-35,N,Y
+K0003970,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0003971,T,State Police,N,W,M,day,U,21-25,N,Y
+K0003981,T,State Police,N,H,M,day,b) 10 to 15,26-30,Y,Y
+K0003982,W,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0003983,W,State Police,N,U,M,night,b) 10 to 15,26-30,N,Y
+K0004001,T,State Police,N,B,M,day,U,41-45,N,Y
+K0004002,T,State Police,N,M,M,day,U,26-30,N,Y
+K0004003,T,State Police,N,W,M,day,U,51-55,N,Y
+K0004005,T,State Police,N,W,M,day,U,46-50,N,Y
+K0004006,T,State Police,N,H,F,day,U,31-35,N,Y
+K0004009,T,State Police,N,B,F,day,U,31-35,N,Y
+K0004010,T,State Police,N,W,F,day,U,41-45,N,Y
+K0004011,T,State Police,N,W,F,day,U,46-50,N,Y
+K0004012,T,State Police,N,W,M,day,U,41-45,N,Y
+K0004016,T,State Police,N,B,F,night,U,21-25,Y,Y
+K0004029,T,State Police,N,W,M,day,U,51-55,Y,Y
+K0004033,T,State Police,N,W,M,day,U,16-20,N,Y
+K0004037,T,State Police,N,H,F,day,U,31-35,N,Y
+K0004039,T,State Police,N,W,F,day,U,51-55,N,Y
+K0004040,T,State Police,N,W,M,day,U,26-30,N,Y
+K0004041,T,State Police,N,H,M,day,U,21-25,N,N
+K0004042,T,State Police,N,W,M,day,U,31-35,N,Y
+K0004043,T,State Police,N,W,M,night,U,31-35,N,Y
+K0004049,T,State Police,N,W,M,night,U,21-25,N,Y
+K0004052,T,State Police,N,H,M,night,U,36-40,N,Y
+K0004056,T,State Police,N,W,M,night,U,16-20,N,Y
+K0004065,T,State Police,N,W,M,night,U,26-30,N,Y
+K0004067,T,State Police,N,W,F,day,U,61-65,N,Y
+K0004068,T,State Police,N,W,M,day,U,26-30,N,Y
+K0004071,T,State Police,N,W,M,day,U,26-30,N,Y
+K0004074,T,State Police,N,W,F,day,U,36-40,N,Y
+K0004079,T,State Police,N,W,F,day,U,51-55,N,Y
+K0004080,T,State Police,N,W,M,night,U,26-30,N,Y
+K0004082,T,State Police,N,B,M,night,U,31-35,N,Y
+K0004083,T,State Police,N,W,M,night,U,46-50,N,N
+K0004084,T,State Police,N,H,M,night,U,26-30,N,Y
+K0004085,T,State Police,N,W,M,night,U,31-35,N,N
+K0004086,T,State Police,N,W,M,night,U,26-30,N,Y
+K0004088,T,State Police,N,W,M,day,U,26-30,N,Y
+K0004094,T,State Police,N,A,M,night,U,16-20,N,Y
+K0004098,T,State Police,N,W,M,night,U,16-20,N,Y
+K0004121,T,State Police,N,W,M,day,U,61-65,N,Y
+K0004125,W,State Police,N,W,M,night,U,16-20,N,Y
+K0004127,T,State Police,N,W,M,day,U,26-30,N,Y
+K0004128,T,State Police,N,W,M,day,b) 10 to 15,16-20,Y,Y
+K0004129,T,State Police,N,W,F,day,U,26-30,N,Y
+K0004130,T,State Police,N,W,M,day,d) more than 20,41-45,N,Y
+K0004133,T,State Police,N,W,M,day,U,36-40,N,Y
+K0004134,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0004135,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0004140,T,State Police,N,W,M,day,U,51-55,N,N
+K0004141,T,State Police,N,W,F,day,U,31-35,N,Y
+K0004142,T,State Police,N,W,M,day,U,36-40,N,Y
+K0004143,T,State Police,N,M,M,day,U,31-35,N,Y
+K0004150,T,State Police,N,W,F,day,U,46-50,N,Y
+K0004153,T,State Police,N,W,M,night,d) more than 20,21-25,N,N
+K0004154,T,State Police,N,W,M,night,d) more than 20,46-50,N,Y
+K0004157,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,Y
+K0004158,W,State Police,N,W,M,night,b) 10 to 15,56-60,Y,Y
+K0004159,W,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0004163,T,State Police,N,W,F,night,U,21-25,N,Y
+K0004164,T,State Police,N,W,M,night,d) more than 20,16-20,N,Y
+K0004166,T,State Police,N,W,M,day,c) 16 to 20,41-45,N,Y
+K0004167,T,State Police,N,W,M,night,c) 16 to 20,26-30,N,N
+K0004168,T,State Police,N,W,F,night,c) 16 to 20,21-25,N,Y
+K0004169,T,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0004174,T,State Police,N,W,M,night,U,21-25,Y,Y
+K0004179,W,State Police,N,W,F,night,U,41-45,N,Y
+K0004181,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,Y
+K0004187,T,State Police,N,B,M,night,c) 16 to 20,21-25,N,Y
+K0004188,T,State Police,N,H,M,night,U,36-40,Y,Y
+K0004194,T,State Police,N,W,M,day,U,36-40,N,Y
+K0004196,T,State Police,N,W,M,day,U,21-25,N,Y
+K0004200,T,State Police,N,A,F,night,U,36-40,N,Y
+K0004203,T,State Police,N,H,M,day,U,31-35,N,Y
+K0004205,T,State Police,N,W,M,day,U,46-50,N,N
+K0004208,T,State Police,N,H,M,day,U,41-45,N,Y
+K0004209,T,State Police,N,W,M,day,U,56-60,N,Y
+K0004211,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0004214,T,State Police,N,W,F,day,c) 16 to 20,26-30,N,Y
+K0004216,T,State Police,N,A,M,day,b) 10 to 15,36-40,N,Y
+K0004220,T,State Police,N,W,M,day,d) more than 20,36-40,Y,Y
+K0004226,W,State Police,N,W,M,day,U,26-30,N,Y
+K0004227,W,State Police,N,H,F,day,U,21-25,N,Y
+K0004228,T,State Police,N,W,M,day,U,51-55,N,Y
+K0004229,T,State Police,N,W,M,day,U,41-45,Y,Y
+K0004230,T,State Police,N,W,M,day,U,51-55,N,Y
+K0004235,W,State Police,N,W,F,day,U,36-40,N,Y
+K0004236,T,State Police,N,W,M,day,U,41-45,Y,Y
+K0004237,T,State Police,N,B,M,day,a) less than 10,31-35,N,Y
+K0004238,W,State Police,N,B,F,day,U,21-25,N,Y
+K0004239,W,State Police,N,W,M,day,U,36-40,N,Y
+K0004240,W,State Police,N,W,F,day,b) 10 to 15,26-30,N,N
+K0004241,T,State Police,N,W,F,day,U,31-35,N,Y
+K0004243,T,State Police,N,W,F,day,U,36-40,N,Y
+K0004244,T,State Police,N,W,M,day,U,31-35,N,Y
+K0004245,T,State Police,N,W,M,day,U,41-45,N,Y
+K0004247,T,State Police,N,B,M,day,U,16-20,N,Y
+K0004249,T,State Police,N,W,M,day,U,21-25,N,Y
+K0004250,T,State Police,N,W,M,night,U,41-45,Y,Y
+K0004251,T,State Police,N,W,M,day,U,26-30,Y,Y
+K0004252,T,State Police,N,W,M,day,U,41-45,N,Y
+K0004255,T,State Police,N,W,M,day,U,51-55,N,N
+K0004256,T,State Police,N,W,M,night,U,41-45,N,Y
+K0004257,T,State Police,N,W,M,night,d) more than 20,56-60,N,Y
+K0004258,T,State Police,N,H,M,night,U,61-65,N,Y
+K0004260,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,N
+K0004261,T,State Police,N,W,M,night,c) 16 to 20,41-45,N,Y
+K0004263,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,N
+K0004265,T,State Police,N,H,F,night,c) 16 to 20,41-45,Y,Y
+K0004266,T,State Police,N,W,F,night,c) 16 to 20,41-45,N,Y
+K0004269,T,State Police,N,B,M,night,d) more than 20,31-35,N,Y
+K0004270,T,State Police,N,B,F,night,d) more than 20,21-25,N,Y
+K0004278,T,State Police,N,W,M,night,U,36-40,N,N
+K0004279,T,State Police,N,W,M,day,U,21-25,N,Y
+K0004281,T,State Police,N,H,M,day,a) less than 10,21-25,N,Y
+K0004282,T,State Police,N,U,M,night,c) 16 to 20,41-45,N,N
+K0004283,T,State Police,N,U,M,day,c) 16 to 20,46-50,N,N
+K0004284,T,State Police,N,H,M,day,d) more than 20,26-30,N,Y
+K0004285,T,State Police,N,W,M,night,c) 16 to 20,56-60,N,Y
+K0004286,T,State Police,N,W,F,day,U,26-30,Y,Y
+K0004287,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0004288,T,State Police,N,W,F,day,U,36-40,Y,Y
+K0004289,T,State Police,N,B,F,day,U,41-45,N,Y
+K0004291,T,State Police,N,W,M,day,d) more than 20,21-25,N,Y
+K0004292,T,State Police,N,W,M,day,d) more than 20,36-40,N,Y
+K0004295,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0004297,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0004298,T,State Police,N,W,M,day,U,86-90,N,Y
+K0004300,T,State Police,N,W,M,night,U,41-45,N,Y
+K0004305,T,State Police,N,W,M,day,U,26-30,N,Y
+K0004310,T,State Police,N,W,F,day,U,46-50,Y,Y
+K0004311,T,State Police,N,A,M,day,U,26-30,N,Y
+K0004315,T,State Police,N,W,M,day,U,36-40,N,Y
+K0004316,T,State Police,N,W,M,day,U,31-35,N,N
+K0004317,T,State Police,N,W,M,day,U,51-55,N,N
+K0004322,T,State Police,N,A,M,night,b) 10 to 15,46-50,N,Y
+K0004325,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0004326,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0004332,T,State Police,N,W,M,day,c) 16 to 20,41-45,N,Y
+K0004334,T,State Police,N,W,F,day,c) 16 to 20,26-30,N,Y
+K0004335,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,Y
+K0004336,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0004337,T,State Police,N,U,F,day,b) 10 to 15,36-40,Y,Y
+K0004338,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0004339,T,State Police,N,A,F,day,c) 16 to 20,21-25,N,Y
+K0004340,T,State Police,N,B,M,day,d) more than 20,26-30,N,Y
+K0004357,T,State Police,N,W,M,night,c) 16 to 20,31-35,N,Y
+K0004360,T,State Police,N,W,F,day,c) 16 to 20,56-60,N,N
+K0004364,T,State Police,N,B,F,day,b) 10 to 15,26-30,N,Y
+K0004366,T,State Police,N,W,F,night,U,41-45,N,Y
+K0004368,T,State Police,N,W,M,day,c) 16 to 20,46-50,N,Y
+K0004382,T,State Police,N,A,F,day,U,21-25,N,N
+K0004383,T,State Police,N,W,M,day,U,41-45,N,N
+K0004384,T,State Police,N,W,M,day,U,36-40,N,Y
+K0004385,T,State Police,N,W,M,day,U,36-40,N,Y
+K0004386,T,State Police,N,W,M,day,U,16-20,N,Y
+K0004387,T,State Police,N,W,F,day,U,36-40,N,N
+K0004388,T,State Police,N,W,M,day,U,36-40,N,Y
+K0004389,T,State Police,N,W,M,day,U,46-50,N,Y
+K0004390,T,State Police,N,W,F,day,U,51-55,N,Y
+K0004392,T,State Police,N,W,F,day,b) 10 to 15,46-50,N,N
+K0004394,T,State Police,N,W,M,day,c) 16 to 20,56-60,N,Y
+K0004397,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0004398,T,State Police,N,W,F,night,c) 16 to 20,31-35,N,Y
+K0004403,T,State Police,N,U,U,night,U,36-40,N,Y
+K0004404,T,State Police,N,B,M,day,c) 16 to 20,46-50,N,Y
+K0004409,T,State Police,N,W,M,day,U,41-45,N,Y
+K0004410,W,State Police,N,W,F,day,a) less than 10,36-40,N,Y
+K0004411,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,Y
+K0004412,W,State Police,N,W,M,day,a) less than 10,51-55,U,N
+K0004416,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0004418,T,State Police,N,H,M,day,U,46-50,N,Y
+K0004419,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0004421,T,State Police,N,W,F,day,c) 16 to 20,46-50,N,Y
+K0004431,W,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0004433,W,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0004438,W,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0004454,W,State Police,N,W,F,day,c) 16 to 20,36-40,N,Y
+K0004455,W,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0004456,W,State Police,N,H,M,day,b) 10 to 15,51-55,N,Y
+K0004458,W,State Police,N,W,F,night,b) 10 to 15,26-30,U,N
+K0004460,W,State Police,N,W,M,day,U,46-50,N,Y
+K0004461,T,State Police,N,W,M,day,U,41-45,N,Y
+K0004475,T,State Police,N,W,F,night,U,56-60,N,Y
+K0004477,T,State Police,N,W,M,day,c) 16 to 20,21-25,Y,Y
+K0004487,T,State Police,N,A,M,night,d) more than 20,16-20,N,Y
+K0004488,T,State Police,N,W,M,night,U,36-40,Y,Y
+K0004489,W,State Police,N,W,M,day,U,26-30,N,Y
+K0004502,T,State Police,N,W,M,night,U,21-25,N,Y
+K0004508,T,State Police,N,H,M,night,d) more than 20,26-30,N,Y
+K0004509,T,State Police,N,W,M,night,d) more than 20,36-40,N,Y
+K0004510,T,State Police,N,W,F,night,d) more than 20,26-30,N,Y
+K0004514,T,State Police,N,W,M,night,U,66-70,N,Y
+K0004517,T,State Police,N,B,M,night,d) more than 20,21-25,N,Y
+K0004519,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,N
+K0004523,T,State Police,N,H,M,night,U,41-45,N,Y
+K0004524,T,State Police,N,W,M,night,U,26-30,N,Y
+K0004528,T,State Police,N,W,M,night,U,16-20,N,Y
+K0004529,T,State Police,N,B,M,night,U,21-25,N,Y
+K0004532,T,State Police,N,B,M,night,U,26-30,Y,Y
+K0004533,W,State Police,N,W,M,day,U,36-40,N,Y
+K0004534,T,State Police,N,W,M,day,U,51-55,N,Y
+K0004536,W,State Police,N,H,M,night,U,26-30,N,Y
+K0004537,T,State Police,N,A,M,night,U,46-50,N,Y
+K0004539,W,State Police,N,W,M,night,U,26-30,N,Y
+K0004543,T,State Police,N,H,M,night,b) 10 to 15,26-30,N,Y
+K0004545,T,State Police,N,W,F,day,U,16-20,N,Y
+K0004547,T,State Police,N,B,M,day,b) 10 to 15,21-25,N,Y
+K0004548,T,State Police,N,W,M,day,U,31-35,N,Y
+K0004550,T,State Police,N,W,M,day,U,21-25,N,N
+K0004554,T,State Police,N,W,F,day,U,21-25,Y,Y
+K0004555,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0004559,T,State Police,N,H,M,day,U,36-40,N,Y
+K0004581,T,State Police,N,A,M,day,U,21-25,N,Y
+K0004582,T,State Police,N,W,F,day,U,41-45,N,Y
+K0004604,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0004605,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0004611,T,State Police,N,W,M,day,U,56-60,N,N
+K0004614,W,State Police,N,W,M,day,U,46-50,N,Y
+K0004617,T,State Police,N,W,F,day,d) more than 20,31-35,N,Y
+K0004618,T,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0004623,W,State Police,N,A,M,night,U,36-40,N,Y
+K0004627,W,State Police,N,W,M,day,U,46-50,Y,Y
+K0004628,T,State Police,N,W,M,day,U,51-55,N,Y
+K0004629,T,State Police,N,W,F,day,U,41-45,N,Y
+K0004641,T,State Police,N,W,M,night,d) more than 20,16-20,N,Y
+K0004642,T,State Police,N,W,M,night,U,46-50,N,Y
+K0004648,W,State Police,N,W,M,night,U,21-25,Y,Y
+K0004650,T,State Police,N,W,M,day,U,36-40,N,Y
+K0004653,W,State Police,N,W,M,day,U,26-30,N,Y
+K0004654,T,State Police,N,B,M,day,U,31-35,N,Y
+K0004656,T,State Police,N,W,M,day,U,36-40,N,N
+K0004657,T,State Police,N,W,M,day,U,56-60,Y,Y
+K0004659,T,State Police,N,W,M,day,U,36-40,N,Y
+K0004660,T,State Police,N,W,M,night,U,41-45,N,Y
+K0004662,T,State Police,N,H,M,day,U,36-40,N,Y
+K0004669,T,State Police,N,W,F,day,U,26-30,N,Y
+K0004682,T,State Police,N,W,M,day,U,21-25,N,N
+K0004684,T,State Police,N,W,M,day,U,26-30,N,N
+K0004685,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0004700,T,State Police,N,W,M,day,U,46-50,N,N
+K0004702,W,State Police,N,H,F,day,U,26-30,N,Y
+K0004703,T,State Police,N,W,F,day,U,26-30,N,Y
+K0004704,W,State Police,N,W,M,day,U,21-25,N,N
+K0004705,T,State Police,N,H,M,day,U,26-30,N,Y
+K0004706,W,State Police,N,W,M,day,U,21-25,N,Y
+K0004707,T,State Police,N,H,M,day,U,36-40,N,Y
+K0004708,W,State Police,N,W,M,day,U,61-65,N,Y
+K0004711,W,State Police,N,A,F,day,U,26-30,N,Y
+K0004713,T,State Police,N,W,M,day,U,31-35,N,Y
+K0004714,T,State Police,N,W,M,day,U,36-40,N,N
+K0004723,T,State Police,N,A,M,day,U,46-50,N,Y
+K0004730,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0004731,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0004732,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0004737,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0004740,T,State Police,N,W,M,day,U,31-35,N,Y
+K0004750,T,State Police,N,W,M,day,U,31-35,N,Y
+K0004751,T,State Police,N,W,M,day,U,36-40,Y,Y
+K0004755,T,State Police,N,A,M,day,c) 16 to 20,36-40,N,Y
+K0004759,T,State Police,N,B,M,day,U,51-55,N,Y
+K0004761,T,State Police,N,W,M,night,U,21-25,N,Y
+K0004762,T,State Police,N,W,M,night,U,16-20,N,Y
+K0004766,W,State Police,N,W,F,day,c) 16 to 20,26-30,N,N
+K0004767,W,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0004770,T,State Police,N,W,M,day,U,26-30,N,Y
+K0004783,T,State Police,N,H,M,day,U,36-40,N,Y
+K0004786,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0004787,W,State Police,N,W,M,day,U,36-40,N,Y
+K0004789,W,State Police,N,W,M,day,U,21-25,N,Y
+K0004790,W,State Police,N,W,M,day,U,21-25,N,Y
+K0004791,T,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0004792,W,State Police,N,B,F,day,U,36-40,N,Y
+K0004793,W,State Police,N,W,M,day,c) 16 to 20,16-20,Y,Y
+K0004794,T,State Police,N,A,F,day,b) 10 to 15,21-25,Y,Y
+K0004795,W,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0004796,W,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0004797,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0004798,T,State Police,N,W,M,day,c) 16 to 20,36-40,Y,Y
+K0004799,W,State Police,N,W,F,day,U,46-50,N,Y
+K0004800,W,State Police,N,W,M,day,U,41-45,N,Y
+K0004801,T,State Police,N,B,M,night,d) more than 20,31-35,Y,Y
+K0004810,T,State Police,N,H,M,night,d) more than 20,31-35,N,Y
+K0004811,T,State Police,N,W,F,day,d) more than 20,31-35,N,Y
+K0004812,T,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0004813,T,State Police,N,B,F,night,U,41-45,N,Y
+K0004814,W,State Police,N,W,M,night,U,36-40,N,Y
+K0004815,T,State Police,N,W,M,night,U,36-40,N,Y
+K0004816,W,State Police,N,W,F,night,U,46-50,N,Y
+K0004818,W,State Police,N,B,F,day,U,71-75,N,N
+K0004821,T,State Police,N,W,M,night,U,31-35,N,Y
+K0004824,T,State Police,N,W,M,night,d) more than 20,51-55,N,Y
+K0004825,T,State Police,N,W,M,night,U,31-35,N,Y
+K0004826,T,State Police,N,W,F,day,U,41-45,N,Y
+K0004835,T,State Police,N,W,M,night,U,21-25,N,Y
+K0004836,T,State Police,N,W,F,night,U,26-30,Y,Y
+K0004837,T,State Police,N,W,M,night,U,41-45,N,Y
+K0004838,T,State Police,N,W,M,night,d) more than 20,36-40,N,Y
+K0004846,T,State Police,N,W,M,day,U,46-50,N,Y
+K0004927,T,State Police,N,W,M,day,U,21-25,N,Y
+K0004929,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,N
+K0004932,T,State Police,N,W,F,day,d) more than 20,66-70,N,Y
+K0004933,T,State Police,N,W,F,day,U,21-25,N,Y
+K0004937,T,State Police,N,W,M,day,d) more than 20,21-25,N,N
+K0004948,W,State Police,N,M,F,night,b) 10 to 15,41-45,N,N
+K0004949,T,State Police,N,B,M,night,d) more than 20,21-25,N,Y
+K0004950,T,State Police,N,A,M,night,b) 10 to 15,41-45,N,Y
+K0004951,T,State Police,N,B,M,night,a) less than 10,21-25,N,Y
+K0004963,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,N
+K0004969,T,State Police,N,H,M,night,U,31-35,N,Y
+K0004971,T,State Police,N,B,M,day,U,51-55,N,Y
+K0004975,W,State Police,N,W,M,night,U,36-40,N,Y
+K0004976,W,State Police,N,W,M,night,U,36-40,N,Y
+K0004977,W,State Police,N,W,M,night,U,56-60,N,Y
+K0004979,W,State Police,N,W,F,night,U,41-45,N,Y
+K0004980,W,State Police,N,W,M,night,U,51-55,N,Y
+K0004987,T,State Police,N,W,F,day,U,41-45,N,N
+K0005004,T,State Police,N,W,M,night,c) 16 to 20,31-35,N,Y
+K0005005,T,State Police,N,W,M,night,d) more than 20,41-45,N,Y
+K0005006,T,State Police,N,W,M,night,U,31-35,N,N
+K0005008,T,State Police,N,H,M,night,U,21-25,Y,Y
+K0005009,T,State Police,N,W,M,night,U,26-30,N,Y
+K0005010,T,State Police,N,W,M,night,c) 16 to 20,46-50,N,N
+K0005011,T,State Police,N,W,M,night,d) more than 20,31-35,U,N
+K0005012,T,State Police,N,W,M,night,d) more than 20,26-30,N,N
+K0005014,T,State Police,N,W,M,night,U,26-30,N,Y
+K0005015,T,State Police,N,W,M,night,c) 16 to 20,51-55,N,Y
+K0005018,W,State Police,N,W,M,night,U,46-50,N,Y
+K0005019,W,State Police,N,W,M,night,U,31-35,N,Y
+K0005022,T,State Police,N,B,M,night,b) 10 to 15,36-40,N,Y
+K0005025,T,State Police,N,W,M,day,U,41-45,N,Y
+K0005026,T,State Police,N,B,M,day,U,21-25,N,Y
+K0005027,T,State Police,N,B,M,day,U,26-30,N,Y
+K0005031,T,State Police,N,H,M,night,U,16-20,U,Y
+K0005038,T,State Police,N,W,M,night,U,21-25,Y,Y
+K0005039,T,State Police,N,A,F,night,U,31-35,N,Y
+K0005045,T,State Police,N,A,M,night,U,31-35,N,Y
+K0005048,T,State Police,N,W,M,day,U,36-40,N,Y
+K0005049,W,State Police,N,W,M,day,U,31-35,U,N
+K0005059,W,State Police,N,W,M,day,U,21-25,N,Y
+K0005081,T,State Police,N,W,M,day,U,21-25,N,Y
+K0005082,T,State Police,N,W,M,day,U,51-55,N,Y
+K0005084,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,Y
+K0005085,T,State Police,N,H,F,night,U,51-55,N,Y
+K0005121,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0005122,T,State Police,N,M,F,day,b) 10 to 15,21-25,N,Y
+K0005123,T,State Police,N,W,M,day,d) more than 20,41-45,N,N
+K0005124,T,State Police,N,W,M,day,U,31-35,N,Y
+K0005126,T,State Police,N,W,F,night,c) 16 to 20,31-35,N,N
+K0005127,T,State Police,N,W,F,night,c) 16 to 20,21-25,N,Y
+K0005129,T,State Police,N,W,F,day,c) 16 to 20,46-50,N,N
+K0005130,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0005131,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0005132,T,State Police,N,H,M,day,b) 10 to 15,21-25,N,Y
+K0005133,T,State Police,N,A,M,day,c) 16 to 20,21-25,N,N
+K0005134,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0005135,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0005136,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0005138,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0005139,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0005140,T,State Police,N,A,M,night,d) more than 20,46-50,N,Y
+K0005144,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0005145,T,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0005147,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0005148,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,Y
+K0005149,T,State Police,N,W,M,day,b) 10 to 15,36-40,Y,Y
+K0005150,T,State Police,N,W,M,night,b) 10 to 15,36-40,U,N
+K0005151,T,State Police,N,W,M,night,U,21-25,N,N
+K0005152,T,State Police,N,A,M,night,b) 10 to 15,31-35,N,N
+K0005156,T,State Police,N,B,M,night,b) 10 to 15,31-35,N,N
+K0005157,T,State Police,N,H,M,night,b) 10 to 15,31-35,N,Y
+K0005158,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0005161,W,State Police,N,W,F,day,a) less than 10,31-35,N,N
+K0005162,W,State Police,N,A,M,day,a) less than 10,31-35,N,N
+K0005163,W,State Police,N,W,M,day,a) less than 10,21-25,N,N
+K0005165,W,State Police,N,W,F,day,a) less than 10,31-35,N,Y
+K0005166,W,State Police,N,M,F,day,a) less than 10,41-45,N,N
+K0005167,W,State Police,N,W,F,day,a) less than 10,21-25,N,N
+K0005169,W,State Police,N,W,M,day,a) less than 10,26-30,N,Y
+K0005170,W,State Police,N,W,M,day,U,31-35,N,Y
+K0005171,W,State Police,N,W,M,day,a) less than 10,46-50,N,N
+K0005172,W,State Police,N,W,F,day,a) less than 10,16-20,N,Y
+K0005173,T,State Police,N,U,M,day,b) 10 to 15,26-30,N,N
+K0005174,W,State Police,N,W,M,day,a) less than 10,66-70,N,Y
+K0005184,T,State Police,N,W,M,night,U,26-30,Y,Y
+K0005192,W,State Police,N,W,M,day,b) 10 to 15,81-85,N,Y
+K0005193,T,State Police,N,B,M,day,U,21-25,Y,Y
+K0005195,W,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0005196,W,State Police,N,W,M,day,b) 10 to 15,46-50,Y,Y
+K0005198,T,State Police,N,B,M,night,c) 16 to 20,36-40,N,Y
+K0005199,T,State Police,N,W,F,night,b) 10 to 15,36-40,Y,Y
+K0005200,W,State Police,N,W,M,night,U,36-40,N,Y
+K0005205,T,State Police,N,W,F,day,U,26-30,N,Y
+K0005206,T,State Police,N,W,F,day,U,31-35,N,Y
+K0005212,T,State Police,N,W,M,night,U,31-35,N,Y
+K0005213,T,State Police,N,B,M,day,U,41-45,N,Y
+K0005214,T,State Police,N,W,F,day,c) 16 to 20,31-35,N,Y
+K0005219,W,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0005221,T,State Police,N,W,M,day,U,36-40,Y,Y
+K0005230,W,State Police,N,W,M,day,U,41-45,N,Y
+K0005231,W,State Police,N,W,M,day,U,21-25,N,Y
+K0005233,W,State Police,N,W,M,day,a) less than 10,26-30,N,Y
+K0005234,W,State Police,N,W,F,day,U,26-30,N,N
+K0005238,W,State Police,N,W,M,day,U,46-50,N,Y
+K0005239,W,State Police,N,W,M,day,U,26-30,N,Y
+K0005240,W,State Police,N,W,M,night,U,26-30,N,Y
+K0005262,T,State Police,N,A,F,day,U,36-40,N,Y
+K0005264,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0005265,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,Y
+K0005266,T,State Police,N,W,F,night,b) 10 to 15,41-45,N,Y
+K0005267,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0005268,T,State Police,N,H,M,night,b) 10 to 15,41-45,N,N
+K0005269,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0005272,T,State Police,N,W,F,day,U,26-30,N,Y
+K0005281,W,State Police,N,W,F,night,U,16-20,Y,Y
+K0005283,T,State Police,N,W,M,night,d) more than 20,16-20,N,Y
+K0005284,T,State Police,N,W,M,night,d) more than 20,16-20,N,N
+K0005285,T,State Police,N,W,F,night,c) 16 to 20,16-20,N,Y
+K0005286,T,State Police,N,W,F,night,d) more than 20,21-25,N,Y
+K0005288,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,N
+K0005289,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,Y
+K0005290,T,State Police,N,W,F,night,d) more than 20,16-20,N,Y
+K0005293,T,State Police,N,B,M,night,c) 16 to 20,21-25,N,Y
+K0005294,T,State Police,N,W,M,night,d) more than 20,21-25,Y,Y
+K0005297,T,State Police,N,H,M,night,d) more than 20,66-70,Y,Y
+K0005298,T,State Police,N,W,M,night,c) 16 to 20,36-40,N,N
+K0005299,T,State Police,N,U,U,day,U,21-25,N,Y
+K0005303,T,State Police,N,H,M,day,U,21-25,N,N
+K0005318,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,Y
+K0005325,W,State Police,N,W,F,day,U,41-45,N,Y
+K0005326,W,State Police,N,W,M,day,U,51-55,N,Y
+K0005330,W,State Police,N,W,M,day,U,31-35,N,Y
+K0005331,W,State Police,N,W,M,night,U,46-50,N,Y
+K0005344,T,State Police,N,W,M,night,c) 16 to 20,26-30,N,Y
+K0005349,T,State Police,N,W,M,day,U,26-30,N,Y
+K0005350,T,State Police,N,W,F,day,b) 10 to 15,46-50,N,Y
+K0005353,T,State Police,N,W,M,day,b) 10 to 15,56-60,N,Y
+K0005356,T,State Police,N,W,F,day,U,26-30,N,Y
+K0005357,T,State Police,N,W,F,day,U,16-20,N,Y
+K0005367,T,State Police,N,B,F,night,U,51-55,N,Y
+K0005381,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,Y
+K0005391,T,State Police,N,W,M,night,U,46-50,N,N
+K0005392,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,N
+K0005394,T,State Police,N,W,M,night,U,36-40,N,N
+K0005403,T,State Police,N,W,M,night,U,26-30,N,Y
+K0005407,T,State Police,N,W,M,night,U,41-45,N,Y
+K0005408,T,State Police,N,W,M,night,U,26-30,N,N
+K0005409,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0005410,T,State Police,N,M,M,day,U,36-40,N,Y
+K0005411,T,State Police,N,W,M,day,U,41-45,N,N
+K0005416,W,State Police,N,W,M,night,U,46-50,N,Y
+K0005418,T,State Police,N,H,M,night,U,26-30,Y,Y
+K0005424,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0005425,T,State Police,N,B,M,day,c) 16 to 20,31-35,N,Y
+K0005426,T,State Police,N,B,M,day,c) 16 to 20,41-45,N,Y
+K0005427,T,State Police,N,B,M,day,b) 10 to 15,46-50,N,Y
+K0005428,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0005433,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,Y
+K0005442,T,State Police,N,W,F,night,c) 16 to 20,26-30,N,Y
+K0005448,T,State Police,N,B,M,day,U,26-30,N,Y
+K0005449,T,State Police,N,M,M,night,d) more than 20,31-35,N,N
+K0005454,T,State Police,N,W,F,night,d) more than 20,46-50,N,N
+K0005456,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,Y
+K0005458,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0005467,T,State Police,N,W,M,night,U,46-50,Y,Y
+K0005468,T,State Police,N,W,M,night,U,36-40,N,Y
+K0005471,T,State Police,N,B,M,night,U,26-30,N,Y
+K0005475,T,State Police,N,H,M,night,U,16-20,N,Y
+K0005477,T,State Police,N,B,M,night,U,26-30,N,Y
+K0005480,T,State Police,N,H,M,night,U,21-25,N,Y
+K0005481,T,State Police,N,H,M,day,U,26-30,N,Y
+K0005484,T,State Police,N,W,M,day,U,36-40,N,Y
+K0005486,T,State Police,N,W,M,day,U,16-20,N,Y
+K0005488,T,State Police,N,H,M,day,U,26-30,Y,Y
+K0005490,T,State Police,N,W,F,night,U,31-35,N,Y
+K0005491,T,State Police,N,W,M,night,U,21-25,N,Y
+K0005492,T,State Police,N,W,F,night,U,41-45,N,Y
+K0005493,T,State Police,N,W,M,day,U,26-30,N,Y
+K0005494,T,State Police,N,A,M,day,U,36-40,N,Y
+K0005496,T,State Police,N,W,F,day,U,56-60,N,Y
+K0005497,T,State Police,N,B,M,night,U,36-40,N,Y
+K0005499,T,State Police,N,W,M,night,U,26-30,Y,Y
+K0005503,T,State Police,N,W,F,day,d) more than 20,16-20,N,Y
+K0005504,T,State Police,N,W,F,day,b) 10 to 15,56-60,N,Y
+K0005505,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,Y
+K0005508,T,State Police,N,W,M,day,c) 16 to 20,71-75,N,N
+K0005510,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,N
+K0005514,T,State Police,N,W,F,day,c) 16 to 20,31-35,Y,Y
+K0005517,T,State Police,N,W,M,day,c) 16 to 20,46-50,Y,Y
+K0005520,T,State Police,N,H,M,day,U,31-35,N,Y
+K0005521,T,State Police,N,W,M,day,b) 10 to 15,56-60,N,N
+K0005522,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0005523,T,State Police,N,W,M,day,d) more than 20,26-30,N,N
+K0005524,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,N
+K0005525,T,State Police,N,W,M,day,c) 16 to 20,61-65,N,Y
+K0005526,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,N
+K0005527,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0005528,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,N
+K0005529,T,State Police,N,W,F,day,d) more than 20,36-40,N,N
+K0005530,W,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0005532,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0005534,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,N
+K0005537,T,State Police,N,W,F,day,c) 16 to 20,41-45,N,N
+K0005538,W,State Police,N,W,M,day,b) 10 to 15,21-25,N,N
+K0005539,T,State Police,N,W,F,day,d) more than 20,41-45,Y,Y
+K0005540,T,State Police,N,W,M,day,U,36-40,Y,Y
+K0005541,T,State Police,N,W,M,day,d) more than 20,71-75,N,N
+K0005542,T,State Police,N,W,M,day,c) 16 to 20,61-65,N,N
+K0005545,W,State Police,N,W,F,day,a) less than 10,21-25,N,Y
+K0005547,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0005548,W,State Police,N,W,F,day,U,36-40,Y,Y
+K0005552,W,State Police,N,W,M,day,U,41-45,N,Y
+K0005553,T,State Police,N,W,M,day,U,51-55,N,Y
+K0005554,T,State Police,N,W,F,day,U,51-55,N,Y
+K0005555,W,State Police,N,W,M,day,U,41-45,N,Y
+K0005556,W,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0005557,W,State Police,N,W,M,day,a) less than 10,51-55,N,Y
+K0005558,W,State Police,N,W,F,day,b) 10 to 15,36-40,N,N
+K0005559,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0005560,T,State Police,N,W,F,day,b) 10 to 15,56-60,N,Y
+K0005564,W,State Police,N,W,M,day,U,16-20,N,Y
+K0005565,W,State Police,N,W,M,day,U,21-25,N,Y
+K0005567,T,State Police,N,W,M,day,U,21-25,N,Y
+K0005573,T,State Police,N,M,M,day,U,41-45,N,Y
+K0005575,T,State Police,N,W,F,day,c) 16 to 20,36-40,Y,Y
+K0005576,T,State Police,N,W,M,day,U,36-40,N,Y
+K0005577,T,State Police,N,W,M,day,U,61-65,Y,Y
+K0005580,T,State Police,N,W,M,day,U,31-35,N,Y
+K0005581,W,State Police,N,W,F,day,b) 10 to 15,21-25,N,N
+K0005582,T,State Police,N,H,M,day,d) more than 20,21-25,N,Y
+K0005583,W,State Police,N,W,M,day,b) 10 to 15,41-45,U,N
+K0005584,W,State Police,N,W,M,day,b) 10 to 15,16-20,N,N
+K0005586,T,State Police,N,A,M,day,d) more than 20,26-30,N,N
+K0005587,W,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0005588,W,State Police,N,W,M,day,U,21-25,N,Y
+K0005589,W,State Police,N,W,M,day,a) less than 10,41-45,N,N
+K0005590,W,State Police,N,W,F,day,a) less than 10,51-55,N,N
+K0005591,W,State Police,N,W,M,day,a) less than 10,16-20,N,N
+K0005593,W,State Police,N,W,M,day,a) less than 10,36-40,N,Y
+K0005595,T,State Police,N,A,M,day,U,36-40,N,N
+K0005596,T,State Police,N,W,F,day,U,56-60,N,Y
+K0005598,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,N
+K0005600,T,State Police,N,H,M,day,U,26-30,N,Y
+K0005602,W,State Police,N,W,M,night,U,56-60,N,Y
+K0005604,W,State Police,N,W,M,night,U,61-65,N,Y
+K0005606,W,State Police,N,W,F,night,U,36-40,Y,Y
+K0005609,W,State Police,N,W,M,night,U,26-30,N,N
+K0005613,W,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0005614,W,State Police,N,W,M,day,a) less than 10,31-35,N,Y
+K0005616,W,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0005618,W,State Police,N,W,M,night,b) 10 to 15,46-50,N,Y
+K0005619,W,State Police,N,W,F,night,b) 10 to 15,16-20,Y,Y
+K0005620,W,State Police,N,H,M,night,U,31-35,Y,Y
+K0005622,T,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0005623,W,State Police,N,W,M,day,U,21-25,N,Y
+K0005624,T,State Police,N,W,M,day,c) 16 to 20,56-60,N,N
+K0005625,W,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0005626,T,State Police,N,A,F,night,d) more than 20,26-30,N,N
+K0005627,W,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0005628,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0005629,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0005630,W,State Police,N,W,F,day,b) 10 to 15,41-45,N,N
+K0005632,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,N
+K0005633,W,State Police,N,W,M,day,a) less than 10,41-45,N,Y
+K0005634,W,State Police,N,W,M,night,U,46-50,Y,Y
+K0005635,W,State Police,N,W,M,night,U,31-35,N,Y
+K0005636,W,State Police,N,W,M,night,U,36-40,N,N
+K0005637,W,State Police,N,W,M,night,U,46-50,N,Y
+K0005639,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0005640,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0005641,T,State Police,N,W,M,night,b) 10 to 15,16-20,Y,Y
+K0005643,W,State Police,N,W,M,night,U,31-35,N,Y
+K0005644,W,State Police,N,W,M,day,U,16-20,Y,Y
+K0005645,W,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0005647,W,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0005651,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0005652,W,State Police,N,W,M,day,b) 10 to 15,26-30,Y,Y
+K0005653,W,State Police,N,W,M,day,b) 10 to 15,51-55,N,N
+K0005654,T,State Police,N,W,F,day,c) 16 to 20,36-40,Y,Y
+K0005660,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0005662,W,State Police,N,W,F,night,U,16-20,N,Y
+K0005663,W,State Police,N,W,M,night,U,46-50,N,Y
+K0005665,W,State Police,N,W,M,night,U,21-25,U,N
+K0005666,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0005667,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,N
+K0005668,T,State Police,N,W,M,day,d) more than 20,21-25,N,N
+K0005669,T,State Police,N,W,M,day,U,21-25,N,N
+K0005670,T,State Police,N,W,M,day,U,21-25,N,N
+K0005671,W,State Police,N,W,M,day,U,36-40,N,Y
+K0005672,W,State Police,N,W,F,day,d) more than 20,41-45,N,N
+K0005673,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,N
+K0005674,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0005677,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0005679,T,State Police,N,W,M,night,b) 10 to 15,41-45,N,N
+K0005680,T,State Police,N,W,F,day,d) more than 20,46-50,N,N
+K0005681,T,State Police,N,W,M,night,c) 16 to 20,36-40,N,N
+K0005682,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,N
+K0005683,T,State Police,N,W,F,day,c) 16 to 20,16-20,N,N
+K0005684,T,State Police,N,A,M,night,c) 16 to 20,21-25,N,N
+K0005685,T,State Police,N,W,F,day,b) 10 to 15,51-55,N,N
+K0005686,T,State Police,N,W,M,day,d) more than 20,16-20,N,N
+K0005687,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0005688,T,State Police,N,W,F,day,d) more than 20,16-20,N,N
+K0005689,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0005690,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,Y
+K0005691,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,N
+K0005692,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,N
+K0005693,T,State Police,N,W,M,night,U,31-35,N,N
+K0005694,T,State Police,N,W,M,night,d) more than 20,56-60,N,N
+K0005696,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,Y
+K0005698,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0005699,T,State Police,N,W,M,day,U,16-20,N,Y
+K0005700,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0005701,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,N
+K0005702,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0005703,T,State Police,N,W,F,night,c) 16 to 20,16-20,N,N
+K0005705,T,State Police,N,W,M,night,U,21-25,N,N
+K0005706,T,State Police,N,W,F,night,c) 16 to 20,16-20,N,N
+K0005708,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0005710,T,State Police,N,W,F,night,d) more than 20,36-40,N,Y
+K0005711,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,Y
+K0005713,T,State Police,N,W,M,day,c) 16 to 20,51-55,N,N
+K0005714,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0005715,T,State Police,N,B,M,day,U,41-45,Y,Y
+K0005720,T,State Police,N,W,M,night,U,46-50,N,Y
+K0005721,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0005722,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0005732,T,State Police,N,W,M,night,c) 16 to 20,41-45,N,N
+K0005733,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0005734,T,State Police,N,W,M,night,c) 16 to 20,21-25,U,N
+K0005735,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0005736,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0005737,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0005739,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0005740,W,State Police,N,W,M,day,c) 16 to 20,16-20,N,N
+K0005741,T,State Police,N,U,M,day,c) 16 to 20,61-65,N,N
+K0005742,T,State Police,N,U,M,night,c) 16 to 20,16-20,N,N
+K0005743,W,State Police,N,U,F,day,U,16-20,N,N
+K0005744,W,State Police,N,U,F,day,U,16-20,N,N
+K0005745,T,State Police,N,U,F,day,d) more than 20,16-20,N,N
+K0005746,T,State Police,N,U,M,night,c) 16 to 20,21-25,N,N
+K0005747,T,State Police,N,W,M,day,d) more than 20,21-25,N,N
+K0005749,T,State Police,N,U,F,day,c) 16 to 20,21-25,N,N
+K0005750,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,N
+K0005752,T,State Police,N,U,F,night,d) more than 20,16-20,N,N
+K0005753,W,State Police,N,W,F,day,U,51-55,N,N
+K0005755,W,State Police,N,U,F,night,U,41-45,N,Y
+K0005757,W,State Police,N,W,M,night,U,21-25,Y,Y
+K0005758,W,State Police,N,W,M,night,U,31-35,N,Y
+K0005759,W,State Police,N,W,F,night,U,51-55,N,Y
+K0005760,T,State Police,N,W,M,day,d) more than 20,41-45,U,N
+K0005762,T,State Police,N,W,M,day,d) more than 20,51-55,N,N
+K0005763,T,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0005764,T,State Police,N,W,M,day,U,71-75,N,Y
+K0005765,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0005766,W,State Police,N,H,M,day,U,21-25,N,Y
+K0005769,W,State Police,N,W,F,night,U,36-40,Y,Y
+K0005771,T,State Police,N,W,M,night,c) 16 to 20,36-40,N,N
+K0005772,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0005773,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,N
+K0005774,T,State Police,N,W,M,night,d) more than 20,26-30,N,N
+K0005775,T,State Police,N,W,M,night,c) 16 to 20,36-40,N,Y
+K0005776,W,State Police,N,W,F,day,U,31-35,N,Y
+K0005777,T,State Police,N,W,M,day,d) more than 20,16-20,N,N
+K0005779,T,State Police,N,W,F,night,d) more than 20,16-20,N,N
+K0005782,W,State Police,N,W,F,day,a) less than 10,51-55,N,Y
+K0005783,T,State Police,N,W,M,night,U,46-50,N,Y
+K0005784,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,N
+K0005785,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,Y
+K0005786,W,State Police,N,W,M,day,a) less than 10,46-50,N,Y
+K0005787,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,N
+K0005788,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0005789,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,N
+K0005790,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0005791,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,Y
+K0005792,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,Y
+K0005794,T,State Police,N,B,M,night,b) 10 to 15,46-50,N,Y
+K0005795,T,State Police,N,A,M,night,b) 10 to 15,21-25,N,N
+K0005796,T,State Police,N,W,F,day,b) 10 to 15,61-65,N,N
+K0005797,T,State Police,N,W,M,night,U,41-45,N,Y
+K0005798,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,Y
+K0005800,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,N
+K0005801,T,State Police,N,W,M,day,d) more than 20,36-40,N,N
+K0005802,W,State Police,N,B,F,day,b) 10 to 15,31-35,N,N
+K0005803,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0005804,T,State Police,N,W,M,day,c) 16 to 20,51-55,N,N
+K0005805,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,N
+K0005806,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,Y
+K0005807,W,State Police,N,W,M,day,U,31-35,N,Y
+K0005810,T,State Police,N,W,M,day,U,26-30,N,Y
+K0005811,T,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0005812,W,State Police,N,W,M,day,b) 10 to 15,21-25,Y,Y
+K0005814,T,State Police,N,W,M,day,U,21-25,N,Y
+K0005815,W,State Police,N,W,M,day,b) 10 to 15,21-25,U,N
+K0005817,T,State Police,N,W,M,day,U,21-25,N,Y
+K0005818,W,State Police,N,W,M,night,U,21-25,N,Y
+K0005819,W,State Police,N,W,M,day,U,41-45,N,Y
+K0005820,W,State Police,N,W,M,day,U,36-40,Y,Y
+K0005824,W,State Police,N,B,M,night,U,21-25,N,N
+K0005827,T,State Police,N,W,M,night,U,21-25,Y,Y
+K0005829,W,State Police,N,B,M,day,U,21-25,N,Y
+K0005831,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0005832,W,State Police,N,W,F,day,d) more than 20,26-30,Y,Y
+K0005833,T,State Police,N,W,F,day,b) 10 to 15,46-50,N,Y
+K0005834,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0005835,W,State Police,N,W,F,day,b) 10 to 15,41-45,N,N
+K0005837,W,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0005838,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0005839,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0005840,W,State Police,N,W,F,day,U,26-30,N,Y
+K0005841,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0005848,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0005850,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0005852,W,State Police,N,W,M,night,U,36-40,N,Y
+K0005855,W,State Police,N,W,F,day,U,36-40,N,Y
+K0005856,W,State Police,N,W,F,night,U,36-40,Y,Y
+K0005860,W,State Police,N,W,M,day,U,26-30,Y,Y
+K0005864,T,State Police,N,W,F,day,b) 10 to 15,46-50,N,Y
+K0005865,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0005870,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0005872,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,N
+K0005879,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0005880,W,State Police,N,W,M,night,c) 16 to 20,21-25,Y,Y
+K0005881,W,State Police,N,W,M,night,U,26-30,N,Y
+K0005883,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,N
+K0005884,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0005885,T,State Police,N,W,F,day,c) 16 to 20,46-50,N,N
+K0005886,T,State Police,N,W,M,night,c) 16 to 20,31-35,N,N
+K0005889,T,State Police,N,W,M,day,d) more than 20,31-35,N,Y
+K0005890,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0005895,T,State Police,N,B,M,night,c) 16 to 20,26-30,N,Y
+K0005897,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0005898,T,State Police,N,W,M,night,c) 16 to 20,31-35,Y,Y
+K0005899,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,N
+K0005905,W,State Police,N,W,M,night,U,26-30,N,Y
+K0005907,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0005908,T,State Police,N,A,M,day,d) more than 20,31-35,N,Y
+K0005909,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,N
+K0005910,T,State Police,N,W,M,night,U,16-20,N,N
+K0005911,W,State Police,N,H,M,night,c) 16 to 20,26-30,N,Y
+K0005912,T,State Police,N,W,M,night,U,16-20,N,Y
+K0005917,T,State Police,N,W,M,day,U,46-50,N,N
+K0005918,T,State Police,N,A,F,day,c) 16 to 20,16-20,N,Y
+K0005919,W,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0005920,T,State Police,N,W,F,day,c) 16 to 20,16-20,N,N
+K0005925,W,State Police,N,W,M,night,U,46-50,N,Y
+K0005928,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,N
+K0005929,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0005930,T,State Police,N,W,M,day,d) more than 20,16-20,N,N
+K0005931,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,N
+K0005932,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,N
+K0005933,T,State Police,N,W,M,day,d) more than 20,41-45,N,N
+K0005934,T,State Police,N,B,F,night,d) more than 20,51-55,N,N
+K0005936,T,State Police,N,W,M,night,U,16-20,N,Y
+K0005937,T,State Police,N,W,M,night,d) more than 20,21-25,Y,Y
+K0005939,W,State Police,N,W,M,day,U,31-35,N,Y
+K0005940,T,State Police,N,W,F,night,b) 10 to 15,46-50,N,Y
+K0005941,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,Y
+K0005942,W,State Police,N,W,M,day,U,26-30,N,N
+K0005944,W,State Police,N,W,F,day,a) less than 10,26-30,N,Y
+K0005945,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0005946,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0005947,W,State Police,N,W,F,day,a) less than 10,51-55,N,N
+K0005950,T,State Police,N,W,M,day,U,31-35,N,N
+K0005957,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,N
+K0005960,W,State Police,N,W,M,day,U,16-20,N,Y
+K0005961,T,State Police,N,W,M,day,U,71-75,N,Y
+K0005962,T,State Police,N,W,M,day,d) more than 20,16-20,N,Y
+K0005965,W,State Police,N,W,M,day,c) 16 to 20,71-75,N,N
+K0005967,W,State Police,N,W,M,night,b) 10 to 15,41-45,N,N
+K0005969,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,N
+K0005970,T,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0005973,T,State Police,N,W,M,day,d) more than 20,16-20,N,Y
+K0005977,W,State Police,N,W,M,day,U,66-70,N,Y
+K0005978,W,State Police,N,U,M,day,b) 10 to 15,31-35,N,Y
+K0005979,W,State Police,N,W,M,day,b) 10 to 15,51-55,N,N
+K0005980,T,State Police,N,W,M,night,d) more than 20,21-25,N,N
+K0005981,W,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0005983,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,N
+K0005984,T,State Police,N,W,F,night,c) 16 to 20,31-35,N,Y
+K0005986,W,State Police,N,W,F,night,b) 10 to 15,26-30,N,N
+K0005987,T,State Police,N,A,M,night,U,16-20,N,Y
+K0005988,W,State Police,N,W,M,night,U,51-55,N,Y
+K0005989,T,State Police,N,W,F,night,U,21-25,N,Y
+K0005991,W,State Police,N,W,M,night,b) 10 to 15,41-45,Y,Y
+K0005992,W,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0005993,W,State Police,N,W,F,night,b) 10 to 15,21-25,Y,Y
+K0005994,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,N
+K0005996,T,State Police,N,U,M,day,b) 10 to 15,56-60,N,N
+K0005997,W,State Police,N,W,F,night,b) 10 to 15,31-35,N,N
+K0005999,T,State Police,N,W,M,night,U,26-30,N,Y
+K0006000,T,State Police,N,W,F,day,U,21-25,N,N
+K0006002,T,State Police,N,H,F,night,U,36-40,Y,Y
+K0006005,T,State Police,N,B,F,night,U,21-25,Y,Y
+K0006008,W,State Police,N,W,F,night,b) 10 to 15,36-40,N,N
+K0006012,T,State Police,N,W,M,day,U,61-65,Y,Y
+K0006013,T,State Police,N,W,M,night,U,21-25,N,Y
+K0006014,W,State Police,N,W,F,day,U,31-35,Y,Y
+K0006022,T,State Police,N,H,M,night,b) 10 to 15,26-30,N,Y
+K0006026,T,State Police,N,W,M,night,d) more than 20,36-40,N,Y
+K0006027,W,State Police,N,W,M,day,U,36-40,N,Y
+K0006029,T,State Police,N,W,F,night,b) 10 to 15,21-25,Y,Y
+K0006030,T,State Police,N,W,F,night,b) 10 to 15,26-30,Y,Y
+K0006031,W,State Police,N,H,M,night,U,26-30,Y,Y
+K0006032,W,State Police,N,H,M,night,U,21-25,N,Y
+K0006034,W,State Police,N,W,F,day,U,51-55,N,Y
+K0006035,T,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0006037,W,State Police,N,W,M,day,U,16-20,N,Y
+K0006039,W,State Police,N,W,M,day,U,26-30,N,Y
+K0006040,T,State Police,N,W,F,day,U,21-25,N,Y
+K0006045,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0006047,W,State Police,N,W,M,day,U,31-35,N,Y
+K0006048,T,State Police,N,B,F,night,d) more than 20,21-25,N,N
+K0006050,T,State Police,N,B,F,night,d) more than 20,16-20,Y,Y
+K0006052,T,State Police,N,W,M,night,U,71-75,N,N
+K0006053,W,State Police,N,W,F,night,U,36-40,N,Y
+K0006061,W,State Police,N,B,M,day,b) 10 to 15,66-70,Y,Y
+K0006062,W,State Police,N,W,M,day,U,26-30,N,Y
+K0006063,W,State Police,N,W,M,day,U,16-20,Y,Y
+K0006064,W,State Police,N,W,M,day,U,31-35,Y,Y
+K0006067,W,State Police,N,W,M,day,U,31-35,N,Y
+K0006068,W,State Police,N,W,F,day,U,21-25,N,Y
+K0006069,W,State Police,N,W,M,day,U,21-25,N,Y
+K0006070,T,State Police,N,W,M,day,U,31-35,N,Y
+K0006071,W,State Police,N,W,M,day,U,26-30,N,Y
+K0006073,W,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0006074,T,State Police,N,W,M,day,U,36-40,N,Y
+K0006075,T,State Police,N,W,M,day,U,31-35,N,Y
+K0006076,W,State Police,N,W,M,day,U,21-25,N,Y
+K0006077,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0006078,W,State Police,N,W,M,day,b) 10 to 15,46-50,N,N
+K0006080,W,State Police,N,H,F,day,U,21-25,Y,Y
+K0006081,W,State Police,N,W,M,day,U,21-25,N,Y
+K0006082,W,State Police,N,W,M,day,U,31-35,N,N
+K0006084,T,State Police,N,H,F,day,b) 10 to 15,36-40,N,Y
+K0006085,W,State Police,N,W,F,day,U,41-45,Y,Y
+K0006086,W,State Police,N,W,F,day,U,36-40,N,Y
+K0006087,W,State Police,N,H,M,day,U,21-25,N,Y
+K0006089,W,State Police,N,H,M,day,U,36-40,Y,Y
+K0006090,W,State Police,N,W,M,day,U,41-45,N,Y
+K0006091,W,State Police,N,W,M,day,U,51-55,N,Y
+K0006092,W,State Police,N,H,M,day,U,36-40,N,Y
+K0006094,T,State Police,N,A,M,day,U,21-25,N,N
+K0006095,W,State Police,N,H,F,day,U,51-55,Y,Y
+K0006096,T,State Police,N,W,M,day,c) 16 to 20,41-45,N,Y
+K0006097,W,State Police,N,W,F,day,U,56-60,N,N
+K0006098,T,State Police,N,B,M,night,b) 10 to 15,21-25,N,N
+K0006100,T,State Police,N,H,M,day,U,21-25,N,Y
+K0006101,T,State Police,N,H,M,day,c) 16 to 20,31-35,N,N
+K0006103,T,State Police,N,H,M,day,c) 16 to 20,31-35,N,Y
+K0006106,W,State Police,N,W,M,day,U,26-30,Y,Y
+K0006107,T,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0006110,T,State Police,N,H,F,day,d) more than 20,16-20,Y,Y
+K0006111,T,State Police,N,W,F,day,d) more than 20,36-40,N,Y
+K0006113,T,State Police,N,W,M,day,U,21-25,N,Y
+K0006114,W,State Police,N,W,M,day,U,21-25,N,Y
+K0006117,T,State Police,N,W,F,day,U,36-40,N,Y
+K0006120,T,State Police,N,W,M,day,U,26-30,Y,Y
+K0006123,W,State Police,N,W,M,day,U,26-30,Y,Y
+K0006124,W,State Police,N,W,M,day,U,21-25,N,Y
+K0006127,W,State Police,N,W,F,day,d) more than 20,31-35,N,Y
+K0006128,T,State Police,N,W,M,day,d) more than 20,16-20,N,Y
+K0006129,T,State Police,N,W,M,day,d) more than 20,41-45,N,N
+K0006131,T,State Police,N,B,F,day,d) more than 20,26-30,N,N
+K0006132,W,State Police,N,H,M,day,c) 16 to 20,26-30,N,Y
+K0006133,W,State Police,N,H,M,day,U,26-30,N,Y
+K0006135,T,State Police,N,H,M,day,U,71-75,Y,Y
+K0006137,W,State Police,N,H,M,day,U,36-40,N,Y
+K0006138,T,State Police,N,H,M,day,d) more than 20,21-25,N,Y
+K0006139,W,State Police,N,H,M,day,U,16-20,Y,Y
+K0006141,W,State Police,N,W,F,day,U,21-25,N,Y
+K0006144,T,State Police,N,H,M,day,U,46-50,N,Y
+K0006145,W,State Police,N,H,M,day,U,36-40,Y,Y
+K0006148,W,State Police,N,W,M,day,U,21-25,N,Y
+K0006149,W,State Police,N,W,M,day,U,46-50,N,Y
+K0006150,W,State Police,N,H,M,day,U,21-25,N,Y
+K0006151,T,State Police,N,B,F,day,b) 10 to 15,36-40,N,Y
+K0006154,W,State Police,N,H,M,day,U,21-25,N,Y
+K0006155,W,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0006156,T,State Police,N,W,M,day,c) 16 to 20,46-50,N,Y
+K0006157,T,State Police,N,W,M,day,U,21-25,N,Y
+K0006158,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0006159,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0006160,W,State Police,N,H,M,day,U,26-30,N,Y
+K0006168,W,State Police,N,W,M,day,a) less than 10,31-35,N,Y
+K0006169,T,State Police,N,W,F,day,U,26-30,N,Y
+K0006173,T,State Police,N,W,F,day,U,21-25,Y,Y
+K0006175,T,State Police,N,B,F,day,U,36-40,N,Y
+K0006178,W,State Police,N,W,F,day,b) 10 to 15,46-50,N,Y
+K0006180,W,State Police,N,W,M,day,U,36-40,N,Y
+K0006183,T,State Police,N,W,F,day,U,16-20,Y,Y
+K0006186,T,State Police,N,W,M,day,U,46-50,N,Y
+K0006189,T,State Police,N,W,F,day,b) 10 to 15,21-25,Y,Y
+K0006190,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0006192,W,State Police,N,W,M,day,U,36-40,N,Y
+K0006193,T,State Police,N,W,M,day,U,21-25,N,Y
+K0006194,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0006195,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,N
+K0006196,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0006197,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0006198,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0006203,T,State Police,N,B,M,day,c) 16 to 20,46-50,N,N
+K0006205,T,State Police,N,W,M,day,U,26-30,Y,Y
+K0006206,T,State Police,N,W,M,day,U,26-30,Y,Y
+K0006207,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,N
+K0006208,T,State Police,N,W,M,day,c) 16 to 20,36-40,Y,Y
+K0006209,T,State Police,N,B,M,night,b) 10 to 15,41-45,N,Y
+K0006213,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0006215,T,State Police,N,B,M,day,U,41-45,N,Y
+K0006216,T,State Police,N,W,M,day,d) more than 20,16-20,N,Y
+K0006217,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0006218,T,State Police,N,W,F,day,d) more than 20,41-45,N,Y
+K0006219,W,State Police,N,B,F,day,b) 10 to 15,36-40,N,N
+K0006220,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0006222,W,State Police,N,W,M,day,U,26-30,N,Y
+K0006225,W,State Police,N,W,F,day,U,41-45,Y,Y
+K0006229,T,State Police,N,W,F,day,U,21-25,N,Y
+K0006231,W,State Police,N,W,M,day,U,21-25,N,Y
+K0006232,W,State Police,N,B,F,day,U,36-40,N,Y
+K0006237,W,State Police,N,B,M,night,U,16-20,Y,Y
+K0006239,W,State Police,N,W,M,night,U,21-25,Y,Y
+K0006261,W,State Police,N,W,M,night,U,36-40,Y,Y
+K0006264,W,State Police,N,W,M,night,b) 10 to 15,46-50,N,Y
+K0006268,W,State Police,N,H,M,night,U,21-25,Y,Y
+K0006269,W,State Police,N,B,M,night,U,21-25,N,Y
+K0006273,W,State Police,N,H,M,night,b) 10 to 15,16-20,Y,Y
+K0006276,T,State Police,N,W,M,night,U,21-25,N,Y
+K0006277,W,State Police,N,B,M,night,U,31-35,Y,Y
+K0006278,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0006279,W,State Police,N,H,F,night,U,21-25,N,Y
+K0006281,W,State Police,N,B,M,night,U,36-40,N,Y
+K0006284,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0006285,W,State Police,N,W,F,night,a) less than 10,16-20,N,Y
+K0006286,T,State Police,N,W,M,night,c) 16 to 20,26-30,N,Y
+K0006291,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,Y
+K0006292,W,State Police,N,A,M,night,a) less than 10,31-35,N,Y
+K0006293,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0006295,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0006296,W,State Police,N,W,M,night,U,41-45,N,Y
+K0006299,T,State Police,N,W,M,day,d) more than 20,31-35,N,Y
+K0006300,T,State Police,N,W,M,night,d) more than 20,51-55,N,Y
+K0006305,W,State Police,N,W,F,day,U,36-40,N,Y
+K0006309,W,State Police,N,B,M,night,b) 10 to 15,31-35,Y,Y
+K0006312,W,State Police,N,H,M,day,U,26-30,Y,Y
+K0006313,W,State Police,N,H,M,night,b) 10 to 15,21-25,N,Y
+K0006314,W,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0006321,T,State Police,N,W,M,night,d) more than 20,36-40,N,Y
+K0006322,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,N
+K0006323,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0006325,W,State Police,N,W,F,night,b) 10 to 15,36-40,N,N
+K0006326,W,State Police,N,W,M,day,b) 10 to 15,21-25,Y,Y
+K0006327,T,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0006329,T,State Police,N,H,M,night,U,21-25,Y,Y
+K0006332,W,State Police,N,W,M,night,U,21-25,N,Y
+K0006334,T,State Police,N,W,M,night,U,36-40,N,Y
+K0006335,W,State Police,N,H,F,night,b) 10 to 15,36-40,N,Y
+K0006336,W,State Police,N,W,M,night,b) 10 to 15,36-40,N,Y
+K0006337,T,State Police,N,W,F,night,d) more than 20,26-30,N,Y
+K0006338,W,State Police,N,W,M,day,b) 10 to 15,26-30,Y,Y
+K0006341,T,State Police,N,H,M,night,b) 10 to 15,16-20,Y,Y
+K0006342,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0006345,T,State Police,N,W,M,night,b) 10 to 15,36-40,Y,Y
+K0006346,T,State Police,N,H,M,night,b) 10 to 15,21-25,Y,Y
+K0006347,W,State Police,N,W,F,night,U,21-25,N,Y
+K0006348,W,State Police,N,H,M,night,U,16-20,Y,Y
+K0006349,W,State Police,N,W,F,night,U,21-25,N,Y
+K0006352,W,State Police,N,H,M,night,U,21-25,Y,Y
+K0006354,W,State Police,N,H,M,night,U,31-35,N,N
+K0006357,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,Y
+K0006359,W,State Police,N,W,M,night,U,26-30,N,Y
+K0006364,T,State Police,N,H,M,night,d) more than 20,26-30,N,N
+K0006366,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0006368,T,State Police,N,H,F,night,U,21-25,N,Y
+K0006369,T,State Police,N,W,M,night,U,26-30,N,Y
+K0006370,T,State Police,N,W,M,night,U,36-40,N,Y
+K0006371,T,State Police,N,W,M,night,c) 16 to 20,31-35,N,Y
+K0006372,T,State Police,N,W,F,night,c) 16 to 20,21-25,N,Y
+K0006373,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,Y
+K0006375,T,State Police,N,W,M,night,c) 16 to 20,56-60,N,Y
+K0006376,T,State Police,N,B,F,night,d) more than 20,26-30,N,N
+K0006377,T,State Police,N,W,M,night,d) more than 20,51-55,Y,Y
+K0006378,T,State Police,N,W,M,night,d) more than 20,41-45,N,Y
+K0006379,T,State Police,N,W,M,night,d) more than 20,41-45,N,N
+K0006380,T,State Police,N,W,M,night,d) more than 20,46-50,N,N
+K0006381,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,Y
+K0006382,T,State Police,N,A,M,night,d) more than 20,26-30,N,N
+K0006383,T,State Police,N,W,M,night,d) more than 20,36-40,N,Y
+K0006384,T,State Police,N,W,F,night,U,26-30,N,Y
+K0006385,T,State Police,N,U,U,night,c) 16 to 20,21-25,N,N
+K0006386,T,State Police,N,H,M,night,c) 16 to 20,26-30,Y,Y
+K0006387,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0006388,T,State Police,N,W,M,night,d) more than 20,16-20,N,Y
+K0006391,T,State Police,N,W,M,night,c) 16 to 20,26-30,Y,Y
+K0006392,T,State Police,N,B,M,night,d) more than 20,26-30,Y,Y
+K0006393,T,State Police,N,W,F,night,d) more than 20,21-25,Y,Y
+K0006395,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,N
+K0006396,T,State Police,N,B,M,night,d) more than 20,36-40,Y,Y
+K0006397,T,State Police,N,W,M,night,c) 16 to 20,26-30,Y,Y
+K0006398,T,State Police,N,W,F,night,d) more than 20,31-35,N,N
+K0006399,T,State Police,N,U,U,night,d) more than 20,16-20,Y,Y
+K0006401,T,State Police,N,H,M,night,U,21-25,N,Y
+K0006403,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0006404,T,State Police,N,B,F,night,b) 10 to 15,21-25,Y,Y
+K0006407,T,State Police,N,H,M,night,d) more than 20,16-20,N,Y
+K0006409,T,State Police,N,B,M,night,c) 16 to 20,26-30,N,Y
+K0006410,T,State Police,N,W,M,night,b) 10 to 15,56-60,N,Y
+K0006411,T,State Police,N,W,M,night,d) more than 20,56-60,N,Y
+K0006413,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0006414,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0006415,T,State Police,N,B,M,night,b) 10 to 15,26-30,N,N
+K0006416,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,N
+K0006417,T,State Police,N,H,M,night,b) 10 to 15,41-45,N,Y
+K0006418,T,State Police,N,H,F,night,b) 10 to 15,21-25,Y,Y
+K0006421,T,State Police,N,W,M,day,U,46-50,N,N
+K0006442,W,State Police,N,W,F,night,U,21-25,N,Y
+K0006444,T,State Police,N,W,F,day,U,46-50,Y,Y
+K0006450,T,State Police,N,W,M,day,U,21-25,N,Y
+K0006453,T,State Police,N,W,F,day,b) 10 to 15,56-60,N,N
+K0006454,T,State Police,N,H,M,day,U,46-50,N,Y
+K0006456,W,State Police,N,H,M,night,U,21-25,N,N
+K0006458,T,State Police,N,W,F,day,U,66-70,Y,Y
+K0006460,W,State Police,N,W,F,night,U,36-40,N,Y
+K0006461,W,State Police,N,W,M,day,U,41-45,N,N
+K0006462,T,State Police,N,W,F,day,c) 16 to 20,36-40,N,Y
+K0006463,W,State Police,N,W,F,night,U,51-55,N,Y
+K0006467,W,State Police,N,W,F,day,U,41-45,N,Y
+K0006468,W,State Police,N,H,M,day,U,41-45,N,Y
+K0006469,W,State Police,N,W,M,day,U,61-65,N,Y
+K0006471,T,State Police,N,H,F,day,U,16-20,Y,Y
+K0006472,W,State Police,N,W,M,night,U,66-70,N,Y
+K0006473,T,State Police,N,B,M,night,U,31-35,N,N
+K0006474,W,State Police,N,W,F,day,U,36-40,N,Y
+K0006476,W,State Police,N,H,F,night,U,36-40,N,Y
+K0006477,W,State Police,N,B,F,night,U,36-40,N,Y
+K0006478,T,State Police,N,H,M,night,d) more than 20,21-25,N,Y
+K0006479,W,State Police,N,H,F,night,U,41-45,Y,Y
+K0006480,W,State Police,N,W,F,night,b) 10 to 15,36-40,N,Y
+K0006486,T,State Police,N,B,M,night,b) 10 to 15,26-30,Y,Y
+K0006491,T,State Police,N,H,F,day,U,21-25,N,Y
+K0006496,T,State Police,N,W,M,day,d) more than 20,36-40,N,N
+K0006499,T,State Police,N,W,M,day,d) more than 20,36-40,N,Y
+K0006500,T,State Police,N,H,M,night,d) more than 20,41-45,N,N
+K0006521,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,N
+K0006541,T,State Police,N,W,M,night,U,21-25,N,Y
+K0006542,T,State Police,N,W,F,night,c) 16 to 20,21-25,N,N
+K0006543,T,State Police,N,W,F,night,b) 10 to 15,31-35,N,Y
+K0006544,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0006545,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0006546,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,N
+K0006547,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,Y
+K0006549,T,State Police,N,W,M,night,c) 16 to 20,36-40,N,Y
+K0006550,T,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0006552,T,State Police,N,W,M,day,U,36-40,N,N
+K0006553,T,State Police,N,B,F,night,c) 16 to 20,21-25,N,Y
+K0006554,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0006555,T,State Police,N,B,M,night,c) 16 to 20,21-25,N,Y
+K0006556,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0006557,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0006558,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0006560,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0006561,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,N
+K0006562,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0006563,T,State Police,N,W,M,day,U,16-20,N,Y
+K0006564,T,State Police,N,W,M,night,c) 16 to 20,26-30,N,Y
+K0006565,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0006566,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0006567,W,State Police,N,W,F,night,b) 10 to 15,36-40,N,Y
+K0006568,T,State Police,N,B,M,night,d) more than 20,36-40,N,Y
+K0006569,T,State Police,N,W,M,night,b) 10 to 15,21-25,U,N
+K0006570,T,State Police,N,A,F,day,d) more than 20,21-25,N,Y
+K0006571,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,N
+K0006572,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,N
+K0006573,W,State Police,N,W,F,night,b) 10 to 15,21-25,N,N
+K0006574,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0006575,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0006576,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0006577,T,State Police,N,W,M,night,b) 10 to 15,41-45,N,N
+K0006578,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0006579,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,N
+K0006580,T,State Police,N,W,M,day,c) 16 to 20,51-55,N,Y
+K0006604,T,State Police,N,W,F,day,d) more than 20,26-30,N,N
+K0006608,T,State Police,N,W,F,night,d) more than 20,56-60,N,Y
+K0006609,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,N
+K0006622,T,State Police,N,H,F,day,U,16-20,N,Y
+K0006626,W,State Police,N,W,M,night,c) 16 to 20,56-60,N,Y
+K0006629,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0006630,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,N
+K0006631,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,Y
+K0006632,W,State Police,N,W,M,night,c) 16 to 20,21-25,N,N
+K0006636,T,State Police,N,W,F,day,U,26-30,N,Y
+K0006637,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,Y
+K0006639,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,N
+K0006643,T,State Police,N,W,M,day,c) 16 to 20,56-60,N,N
+K0006644,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0006647,W,State Police,N,W,M,night,U,16-20,N,Y
+K0006650,T,State Police,N,W,M,day,U,26-30,N,Y
+K0006651,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0006652,T,State Police,N,W,M,day,U,41-45,Y,Y
+K0006653,W,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0006655,T,State Police,N,W,F,day,d) more than 20,31-35,N,Y
+K0006656,T,State Police,N,W,M,day,d) more than 20,31-35,N,Y
+K0006657,W,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0006658,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0006659,T,State Police,N,W,F,night,b) 10 to 15,36-40,N,N
+K0006661,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,N
+K0006662,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0006664,T,State Police,N,W,M,day,U,31-35,N,Y
+K0006665,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0006668,T,State Police,N,W,M,day,U,36-40,N,Y
+K0006669,T,State Police,N,H,M,day,b) 10 to 15,31-35,N,Y
+K0006671,T,State Police,N,W,F,day,U,21-25,N,N
+K0006673,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0006675,T,State Police,N,W,M,day,U,41-45,N,Y
+K0006678,T,State Police,N,W,M,day,b) 10 to 15,86-90,U,N
+K0006679,T,State Police,N,W,F,day,d) more than 20,26-30,N,Y
+K0006682,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0006683,T,State Police,N,W,F,day,U,26-30,N,N
+K0006684,T,State Police,N,W,F,day,U,21-25,N,Y
+K0006686,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,N
+K0006687,T,State Police,N,W,M,night,U,41-45,N,Y
+K0006690,T,State Police,N,W,M,night,c) 16 to 20,26-30,N,N
+K0006694,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0006695,T,State Police,N,W,M,night,U,16-20,N,Y
+K0006696,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0006698,T,State Police,N,W,F,night,d) more than 20,16-20,N,Y
+K0006701,T,State Police,N,W,M,night,d) more than 20,16-20,N,N
+K0006702,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,N
+K0006703,T,State Police,N,W,F,day,c) 16 to 20,36-40,N,Y
+K0006705,T,State Police,N,W,M,day,U,26-30,N,Y
+K0006706,T,State Police,N,W,F,day,c) 16 to 20,26-30,N,Y
+K0006709,T,State Police,N,W,M,day,d) more than 20,31-35,N,Y
+K0006710,T,State Police,N,W,F,day,c) 16 to 20,26-30,N,Y
+K0006711,T,State Police,N,W,F,day,c) 16 to 20,41-45,N,Y
+K0006712,T,State Police,N,W,F,day,d) more than 20,21-25,N,Y
+K0006713,T,State Police,N,W,M,day,d) more than 20,41-45,N,N
+K0006714,T,State Police,N,B,M,night,b) 10 to 15,21-25,N,N
+K0006715,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0006716,T,State Police,N,W,M,night,d) more than 20,26-30,N,Y
+K0006717,T,State Police,N,W,M,night,d) more than 20,16-20,N,Y
+K0006719,T,State Police,N,H,M,day,U,46-50,N,Y
+K0006720,T,State Police,N,W,M,night,c) 16 to 20,66-70,N,Y
+K0006742,T,State Police,N,W,M,day,U,21-25,N,N
+K0006743,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0006744,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0006745,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,N
+K0006746,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0006748,W,State Police,N,W,M,night,c) 16 to 20,51-55,N,Y
+K0006750,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0006752,T,State Police,N,W,F,night,c) 16 to 20,46-50,N,N
+K0006754,W,State Police,N,W,M,day,U,36-40,U,N
+K0006755,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0006757,T,State Police,N,W,M,night,b) 10 to 15,31-35,N,N
+K0006759,T,State Police,N,W,F,night,b) 10 to 15,31-35,N,N
+K0006760,T,State Police,N,W,M,day,d) more than 20,36-40,N,Y
+K0006761,T,State Police,N,W,M,day,U,26-30,N,Y
+K0006766,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,N
+K0006774,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0006777,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0006784,T,State Police,N,W,F,day,c) 16 to 20,26-30,N,N
+K0006790,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0006797,T,State Police,N,H,M,day,b) 10 to 15,21-25,N,Y
+K0006801,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,N
+K0006802,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0006803,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0006810,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,N
+K0006811,T,State Police,N,W,M,day,c) 16 to 20,41-45,N,Y
+K0006813,T,State Police,N,B,M,day,c) 16 to 20,16-20,N,Y
+K0006815,T,State Police,N,B,M,day,d) more than 20,16-20,N,N
+K0006817,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,N
+K0006818,T,State Police,N,W,M,day,d) more than 20,31-35,N,N
+K0006819,T,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0006822,T,State Police,N,W,M,day,d) more than 20,16-20,N,Y
+K0006823,T,State Police,N,W,M,day,c) 16 to 20,16-20,U,N
+K0006824,T,State Police,N,W,M,day,d) more than 20,16-20,N,N
+K0006825,T,State Police,N,W,F,day,d) more than 20,21-25,N,Y
+K0006826,T,State Police,N,W,M,day,d) more than 20,21-25,N,Y
+K0006828,T,State Police,N,W,M,day,U,16-20,N,Y
+K0006829,T,State Police,N,W,M,day,U,16-20,N,Y
+K0006830,T,State Police,N,W,M,day,U,16-20,N,Y
+K0006831,T,State Police,N,W,M,night,d) more than 20,46-50,N,Y
+K0006832,T,State Police,N,W,M,day,d) more than 20,36-40,N,N
+K0006834,T,State Police,N,W,M,day,d) more than 20,21-25,N,N
+K0006836,T,State Police,N,W,F,day,d) more than 20,31-35,N,Y
+K0006838,T,State Police,N,W,F,day,d) more than 20,21-25,N,N
+K0006840,T,State Police,N,W,F,night,d) more than 20,26-30,N,Y
+K0006844,T,State Police,N,W,M,day,U,31-35,Y,Y
+K0006849,T,State Police,N,W,M,night,d) more than 20,61-65,N,Y
+K0006852,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,N
+K0006881,T,State Police,N,W,M,night,U,16-20,N,N
+K0006883,T,State Police,N,W,M,day,U,16-20,N,Y
+K0006884,T,State Police,N,H,M,night,d) more than 20,26-30,N,Y
+K0006885,T,State Police,N,W,F,night,c) 16 to 20,21-25,U,N
+K0006886,T,State Police,N,W,M,night,d) more than 20,31-35,U,N
+K0006887,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0006889,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,N
+K0006890,T,State Police,N,W,F,night,d) more than 20,31-35,U,N
+K0006891,T,State Police,N,W,F,night,d) more than 20,21-25,N,N
+K0006892,T,State Police,N,H,M,night,d) more than 20,21-25,N,Y
+K0006893,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,Y
+K0006894,T,State Police,N,W,F,night,d) more than 20,26-30,N,Y
+K0006895,T,State Police,N,W,M,night,d) more than 20,26-30,N,N
+K0006896,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0006897,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0006900,T,State Police,N,W,F,night,d) more than 20,41-45,N,N
+K0006906,T,State Police,N,W,F,day,U,61-65,N,Y
+K0006907,T,State Police,N,W,M,day,d) more than 20,36-40,U,N
+K0006908,T,State Police,N,W,F,day,U,26-30,N,N
+K0006909,T,State Police,N,W,M,day,b) 10 to 15,66-70,N,Y
+K0006911,T,State Police,N,W,M,day,d) more than 20,16-20,N,N
+K0006912,T,State Police,N,W,M,day,d) more than 20,26-30,N,Y
+K0006913,T,State Police,N,W,M,day,U,31-35,Y,Y
+K0006915,T,State Police,N,W,F,day,d) more than 20,41-45,U,N
+K0006916,T,State Police,N,W,F,day,c) 16 to 20,56-60,N,Y
+K0006927,T,State Police,N,W,M,day,U,41-45,Y,Y
+K0006928,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,N
+K0006929,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0006930,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0006943,T,State Police,N,B,M,day,b) 10 to 15,31-35,N,Y
+K0006945,T,State Police,N,W,F,night,c) 16 to 20,21-25,N,N
+K0006949,T,State Police,N,W,F,night,c) 16 to 20,21-25,N,N
+K0006952,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,N
+K0006954,T,State Police,N,W,F,day,d) more than 20,31-35,N,Y
+K0006956,T,State Police,N,B,M,night,d) more than 20,26-30,N,Y
+K0006961,T,State Police,N,H,M,night,U,16-20,N,Y
+K0006962,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0006966,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,N
+K0006967,T,State Police,N,W,M,night,U,21-25,N,Y
+K0006968,T,State Police,N,W,F,night,d) more than 20,31-35,Y,Y
+K0006969,T,State Police,N,H,M,day,b) 10 to 15,31-35,N,Y
+K0006982,T,State Police,N,W,M,day,d) more than 20,46-50,N,N
+K0006983,T,State Police,N,B,M,day,d) more than 20,46-50,N,Y
+K0006984,W,State Police,N,W,M,day,U,51-55,Y,Y
+K0006985,W,State Police,N,H,M,day,U,31-35,N,N
+K0006986,T,State Police,N,H,M,day,U,31-35,N,N
+K0006988,T,State Police,N,W,M,day,U,26-30,N,Y
+K0006989,W,State Police,N,W,M,day,U,26-30,N,Y
+K0006992,T,State Police,N,W,M,night,U,36-40,Y,Y
+K0006997,T,State Police,N,B,M,night,U,16-20,N,Y
+K0006998,T,State Police,N,W,M,night,U,16-20,N,Y
+K0006999,T,State Police,N,W,M,night,U,16-20,N,Y
+K0007000,T,State Police,N,W,M,night,U,16-20,N,Y
+K0007003,T,State Police,N,W,M,day,U,61-65,N,Y
+K0007004,T,State Police,N,W,M,day,U,16-20,N,Y
+K0007007,T,State Police,N,B,F,day,b) 10 to 15,16-20,N,N
+K0007010,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0007011,T,State Police,N,W,M,day,U,26-30,N,Y
+K0007013,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,N
+K0007014,T,State Police,N,W,M,day,b) 10 to 15,31-35,Y,Y
+K0007015,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0007022,W,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0007027,W,State Police,N,W,M,night,a) less than 10,31-35,N,Y
+K0007030,T,State Police,N,W,F,day,U,51-55,N,N
+K0007032,W,State Police,N,W,M,night,a) less than 10,21-25,N,Y
+K0007033,W,State Police,N,W,F,night,U,21-25,N,Y
+K0007034,T,State Police,N,W,M,day,U,21-25,N,Y
+K0007035,W,State Police,N,W,F,night,U,21-25,N,Y
+K0007036,T,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0007038,W,State Police,N,W,F,night,a) less than 10,46-50,N,N
+K0007039,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0007040,W,State Police,N,W,M,night,a) less than 10,36-40,N,N
+K0007041,W,State Police,N,W,M,day,U,41-45,Y,Y
+K0007042,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0007043,W,State Police,N,W,F,night,U,26-30,Y,Y
+K0007044,W,State Police,N,W,F,night,U,36-40,N,Y
+K0007045,W,State Police,N,W,M,night,U,36-40,Y,Y
+K0007048,W,State Police,N,W,M,night,U,46-50,N,Y
+K0007049,W,State Police,N,W,M,day,U,46-50,N,Y
+K0007050,W,State Police,N,W,M,day,U,26-30,N,Y
+K0007051,W,State Police,N,U,M,night,U,31-35,Y,Y
+K0007052,W,State Police,N,W,M,day,U,21-25,Y,Y
+K0007053,W,State Police,N,W,M,night,U,61-65,N,N
+K0007054,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0007055,W,State Police,N,W,M,day,U,46-50,N,Y
+K0007056,W,State Police,N,W,M,day,U,51-55,N,Y
+K0007058,W,State Police,N,W,M,night,U,36-40,N,Y
+K0007060,W,State Police,N,W,M,night,U,41-45,Y,Y
+K0007061,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0007064,W,State Police,N,W,M,day,a) less than 10,41-45,N,Y
+K0007066,W,State Police,N,H,M,night,U,16-20,N,Y
+K0007067,W,State Police,N,W,M,night,U,21-25,N,Y
+K0007069,T,State Police,N,W,M,day,U,21-25,N,Y
+K0007073,W,State Police,N,W,F,night,U,16-20,N,Y
+K0007091,W,State Police,N,W,M,night,U,21-25,N,Y
+K0007101,T,State Police,N,W,F,day,b) 10 to 15,56-60,N,Y
+K0007102,T,State Police,N,W,M,day,b) 10 to 15,61-65,N,Y
+K0007104,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,N
+K0007108,T,State Police,N,B,F,day,b) 10 to 15,46-50,Y,Y
+K0007110,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0007111,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0007113,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0007114,T,State Police,N,W,M,day,d) more than 20,16-20,N,Y
+K0007117,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0007129,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0007132,W,State Police,N,W,M,night,U,61-65,N,Y
+K0007141,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0007142,W,State Police,N,W,M,day,a) less than 10,31-35,N,Y
+K0007143,W,State Police,N,W,M,night,a) less than 10,46-50,N,Y
+K0007144,T,State Police,N,W,M,night,c) 16 to 20,41-45,Y,Y
+K0007145,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,N
+K0007149,T,State Police,N,W,M,night,U,21-25,N,Y
+K0007150,W,State Police,N,W,M,night,a) less than 10,21-25,N,Y
+K0007151,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,Y
+K0007154,T,State Police,N,W,M,night,b) 10 to 15,16-20,Y,Y
+K0007155,W,State Police,N,W,M,night,U,21-25,Y,Y
+K0007157,T,State Police,N,W,M,night,b) 10 to 15,16-20,Y,Y
+K0007161,W,State Police,N,W,F,day,U,46-50,N,Y
+K0007162,T,State Police,N,W,M,day,U,21-25,N,Y
+K0007163,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,N
+K0007164,T,State Police,N,W,M,day,U,26-30,Y,Y
+K0007165,T,State Police,N,W,M,night,U,16-20,N,Y
+K0007166,T,State Police,N,B,M,day,U,26-30,N,Y
+K0007167,W,State Police,N,W,M,day,U,46-50,N,Y
+K0007168,T,State Police,N,W,M,day,U,26-30,N,Y
+K0007170,W,State Police,N,W,M,day,b) 10 to 15,21-25,Y,Y
+K0007171,W,State Police,N,W,F,day,U,21-25,N,Y
+K0007173,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0007174,T,State Police,N,W,M,night,b) 10 to 15,26-30,Y,Y
+K0007178,T,State Police,N,W,F,day,U,31-35,Y,Y
+K0007179,T,State Police,N,W,M,night,U,16-20,Y,Y
+K0007181,W,State Police,N,W,F,night,U,16-20,N,Y
+K0007182,W,State Police,N,W,M,night,U,46-50,N,Y
+K0007183,W,State Police,N,W,M,night,U,51-55,Y,Y
+K0007187,T,State Police,N,W,M,night,U,16-20,Y,Y
+K0007190,W,State Police,N,W,F,night,U,16-20,N,Y
+K0007193,W,State Police,N,W,M,night,U,16-20,N,Y
+K0007194,W,State Police,N,W,M,night,U,51-55,Y,Y
+K0007196,W,State Police,N,W,M,night,a) less than 10,51-55,N,Y
+K0007198,T,State Police,N,W,F,day,c) 16 to 20,36-40,N,Y
+K0007200,W,State Police,N,W,M,night,a) less than 10,26-30,N,Y
+K0007201,W,State Police,N,W,F,day,U,31-35,N,N
+K0007202,W,State Police,N,W,F,day,b) 10 to 15,46-50,N,Y
+K0007203,W,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0007204,W,State Police,N,W,F,day,U,31-35,N,Y
+K0007206,W,State Police,N,W,M,day,U,41-45,N,Y
+K0007208,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0007209,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0007210,W,State Police,N,B,F,day,a) less than 10,31-35,N,N
+K0007211,T,State Police,N,W,M,day,b) 10 to 15,76-80,N,Y
+K0007212,W,State Police,N,W,M,day,U,61-65,N,N
+K0007213,W,State Police,N,W,F,day,U,51-55,N,Y
+K0007214,W,State Police,N,W,M,day,U,41-45,N,Y
+K0007216,W,State Police,N,W,F,day,U,21-25,N,N
+K0007217,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0007219,W,State Police,N,W,M,day,U,41-45,N,Y
+K0007220,W,State Police,N,W,M,day,U,51-55,N,N
+K0007222,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0007224,W,State Police,N,W,F,day,U,56-60,N,Y
+K0007227,W,State Police,N,W,M,night,U,36-40,N,Y
+K0007230,W,State Police,N,W,F,night,U,21-25,U,N
+K0007231,W,State Police,N,W,M,night,U,26-30,N,Y
+K0007234,W,State Police,N,W,M,night,U,21-25,Y,Y
+K0007235,W,State Police,N,W,M,night,U,51-55,N,Y
+K0007236,W,State Police,N,W,F,night,U,46-50,Y,Y
+K0007237,W,State Police,N,W,M,night,U,31-35,N,Y
+K0007238,W,State Police,N,W,F,night,U,21-25,N,Y
+K0007239,W,State Police,N,H,M,night,U,21-25,Y,Y
+K0007241,W,State Police,N,W,F,day,U,46-50,N,Y
+K0007243,W,State Police,N,W,F,day,b) 10 to 15,16-20,N,Y
+K0007244,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0007245,W,State Police,N,W,M,day,b) 10 to 15,56-60,N,Y
+K0007246,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0007247,W,State Police,N,W,M,night,c) 16 to 20,36-40,N,Y
+K0007248,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,Y
+K0007249,W,State Police,N,W,M,night,U,51-55,Y,Y
+K0007251,W,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0007252,W,State Police,N,W,M,day,c) 16 to 20,26-30,N,Y
+K0007255,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,N
+K0007256,W,State Police,N,W,F,day,c) 16 to 20,26-30,N,Y
+K0007260,W,State Police,N,W,M,night,U,16-20,N,Y
+K0007262,W,State Police,N,W,F,day,U,36-40,N,Y
+K0007266,T,State Police,N,W,F,day,c) 16 to 20,16-20,N,Y
+K0007267,T,State Police,N,W,M,day,b) 10 to 15,31-35,Y,Y
+K0007269,W,State Police,N,M,F,day,U,31-35,N,Y
+K0007275,T,State Police,N,B,M,day,U,31-35,Y,Y
+K0007276,W,State Police,N,W,F,night,a) less than 10,46-50,Y,Y
+K0007277,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0007281,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,N
+K0007282,W,State Police,N,W,F,day,b) 10 to 15,41-45,N,N
+K0007283,W,State Police,N,W,F,day,b) 10 to 15,51-55,N,N
+K0007284,W,State Police,N,W,M,day,b) 10 to 15,51-55,N,Y
+K0007285,T,State Police,N,W,F,day,b) 10 to 15,46-50,N,N
+K0007286,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0007287,T,State Police,N,W,M,day,d) more than 20,61-65,N,Y
+K0007288,W,State Police,N,W,M,day,U,51-55,Y,Y
+K0007291,W,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0007292,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0007293,W,State Police,N,B,M,day,b) 10 to 15,21-25,N,Y
+K0007294,W,State Police,N,W,F,day,U,36-40,N,N
+K0007295,W,State Police,N,W,M,day,U,31-35,N,Y
+K0007296,W,State Police,N,W,M,day,U,21-25,N,Y
+K0007297,W,State Police,N,W,F,day,U,41-45,N,Y
+K0007298,W,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0007299,T,State Police,N,W,M,day,c) 16 to 20,56-60,N,Y
+K0007300,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0007303,W,State Police,N,W,M,day,U,46-50,N,N
+K0007304,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0007305,W,State Police,N,W,M,day,b) 10 to 15,71-75,N,N
+K0007306,W,State Police,N,A,M,day,U,31-35,N,Y
+K0007308,W,State Police,N,W,F,day,U,46-50,N,Y
+K0007309,W,State Police,N,W,F,day,U,21-25,N,Y
+K0007314,T,State Police,N,W,F,day,U,31-35,N,Y
+K0007316,T,State Police,N,W,M,day,U,21-25,N,Y
+K0007319,T,State Police,N,W,M,day,U,16-20,N,Y
+K0007321,W,State Police,N,W,M,day,U,26-30,Y,Y
+K0007322,W,State Police,N,W,M,day,U,31-35,N,Y
+K0007323,T,State Police,N,W,M,day,b) 10 to 15,71-75,N,N
+K0007325,W,State Police,N,W,M,day,U,26-30,Y,Y
+K0007326,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0007330,T,State Police,N,W,M,day,U,31-35,N,Y
+K0007331,W,State Police,N,W,M,day,U,36-40,N,Y
+K0007332,W,State Police,N,W,M,day,d) more than 20,21-25,N,N
+K0007333,W,State Police,N,W,M,day,U,36-40,N,Y
+K0007334,T,State Police,N,W,F,day,b) 10 to 15,61-65,N,N
+K0007335,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0007336,W,State Police,N,W,F,day,U,41-45,Y,Y
+K0007337,W,State Police,N,W,M,day,U,41-45,N,Y
+K0007339,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0007341,T,State Police,N,W,M,day,U,21-25,N,N
+K0007342,W,State Police,N,W,F,day,a) less than 10,51-55,N,Y
+K0007343,W,State Police,N,W,M,day,U,31-35,N,Y
+K0007344,T,State Police,N,W,M,day,U,16-20,N,N
+K0007348,W,State Police,N,W,M,day,U,16-20,N,Y
+K0007350,W,State Police,N,W,F,day,U,21-25,Y,Y
+K0007352,W,State Police,N,W,M,day,U,31-35,Y,Y
+K0007354,T,State Police,N,W,M,day,U,51-55,Y,Y
+K0007363,T,State Police,N,W,M,day,U,16-20,N,Y
+K0007366,W,State Police,N,W,M,day,c) 16 to 20,21-25,N,N
+K0007367,W,State Police,N,W,F,day,d) more than 20,31-35,N,Y
+K0007368,T,State Police,N,U,M,day,b) 10 to 15,56-60,N,N
+K0007369,W,State Police,N,W,M,day,d) more than 20,46-50,N,N
+K0007371,W,State Police,N,W,F,night,U,56-60,N,Y
+K0007372,T,State Police,N,W,F,day,U,21-25,N,Y
+K0007373,T,State Police,N,U,F,day,b) 10 to 15,41-45,N,N
+K0007374,W,State Police,N,W,F,day,c) 16 to 20,31-35,N,N
+K0007375,W,State Police,N,W,M,day,c) 16 to 20,41-45,N,N
+K0007377,W,State Police,N,U,M,night,U,56-60,Y,Y
+K0007378,W,State Police,N,W,F,day,U,36-40,Y,Y
+K0007379,T,State Police,N,W,M,day,U,46-50,Y,Y
+K0007381,W,State Police,N,W,M,day,U,36-40,N,Y
+K0007382,W,State Police,N,W,F,day,U,31-35,N,Y
+K0007386,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0007387,T,State Police,N,W,M,day,U,21-25,N,Y
+K0007388,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0007390,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0007397,T,State Police,N,B,F,night,U,36-40,Y,Y
+K0007401,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0007421,W,State Police,N,W,F,day,U,21-25,N,Y
+K0007422,W,State Police,N,W,M,day,U,21-25,N,N
+K0007423,W,State Police,N,W,F,day,U,41-45,N,N
+K0007424,W,State Police,N,W,F,day,U,56-60,N,N
+K0007425,W,State Police,N,W,F,day,U,46-50,N,N
+K0007426,W,State Police,N,W,M,day,U,51-55,N,N
+K0007427,W,State Police,N,W,M,day,U,46-50,N,N
+K0007428,W,State Police,N,W,F,day,a) less than 10,46-50,N,N
+K0007429,W,State Police,N,W,M,day,a) less than 10,21-25,N,N
+K0007431,T,State Police,N,W,F,day,U,16-20,N,Y
+K0007432,W,State Police,N,W,F,day,a) less than 10,26-30,N,N
+K0007435,W,State Police,N,W,F,day,a) less than 10,26-30,N,Y
+K0007438,W,State Police,N,W,M,day,a) less than 10,36-40,N,Y
+K0007439,T,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0007440,T,State Police,N,W,M,day,U,31-35,N,Y
+K0007448,W,State Police,N,W,F,night,c) 16 to 20,41-45,Y,Y
+K0007451,W,State Police,N,W,F,night,U,36-40,N,Y
+K0007453,W,State Police,N,W,F,night,U,31-35,Y,Y
+K0007455,W,State Police,N,W,F,day,d) more than 20,16-20,N,Y
+K0007456,W,State Police,N,W,M,night,U,61-65,N,Y
+K0007457,W,State Police,N,B,M,day,U,26-30,N,Y
+K0007458,T,State Police,N,W,M,day,a) less than 10,51-55,N,N
+K0007459,T,State Police,N,W,M,day,a) less than 10,46-50,N,N
+K0007460,T,State Police,N,W,F,day,a) less than 10,26-30,N,N
+K0007472,W,State Police,N,H,M,night,U,16-20,Y,Y
+K0007474,W,State Police,N,W,F,day,U,56-60,Y,Y
+K0007477,W,State Police,N,W,M,night,U,26-30,N,Y
+K0007480,W,State Police,N,B,M,night,U,26-30,Y,Y
+K0007482,W,State Police,N,W,F,day,U,36-40,N,Y
+K0007487,W,State Police,N,W,F,day,b) 10 to 15,16-20,Y,Y
+K0007488,W,State Police,N,A,M,day,a) less than 10,66-70,N,N
+K0007489,T,State Police,N,W,F,day,U,51-55,N,N
+K0007490,T,State Police,N,W,M,day,U,41-45,N,N
+K0007491,W,State Police,N,W,F,day,a) less than 10,51-55,U,N
+K0007492,T,State Police,N,W,M,day,U,56-60,N,N
+K0007493,T,State Police,N,W,F,day,a) less than 10,46-50,N,N
+K0007494,W,State Police,N,W,M,day,a) less than 10,46-50,N,N
+K0007495,T,State Police,N,B,F,day,b) 10 to 15,36-40,N,N
+K0007496,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0007497,T,State Police,N,W,M,day,b) 10 to 15,56-60,N,N
+K0007498,W,State Police,N,W,M,day,a) less than 10,31-35,N,Y
+K0007499,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,N
+K0007500,W,State Police,N,W,F,day,b) 10 to 15,16-20,N,N
+K0007503,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0007504,W,State Police,N,W,M,night,b) 10 to 15,46-50,Y,Y
+K0007505,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,Y
+K0007506,W,State Police,N,W,M,night,b) 10 to 15,16-20,Y,Y
+K0007507,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,N
+K0007509,T,State Police,N,W,M,day,U,71-75,N,Y
+K0007510,W,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0007511,T,State Police,N,W,M,night,c) 16 to 20,26-30,Y,Y
+K0007512,W,State Police,N,W,F,night,c) 16 to 20,16-20,Y,Y
+K0007513,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,Y
+K0007515,T,State Police,N,W,M,day,b) 10 to 15,56-60,N,N
+K0007516,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0007518,T,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0007520,W,State Police,N,W,M,night,b) 10 to 15,16-20,Y,Y
+K0007522,W,State Police,N,W,M,day,a) less than 10,51-55,N,Y
+K0007542,W,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0007543,W,State Police,N,W,M,day,U,16-20,Y,Y
+K0007544,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0007546,W,State Police,N,W,F,day,b) 10 to 15,31-35,N,Y
+K0007549,W,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0007551,W,State Police,N,W,M,day,b) 10 to 15,21-25,Y,Y
+K0007552,T,State Police,N,W,F,night,d) more than 20,21-25,N,Y
+K0007555,T,State Police,N,W,M,night,b) 10 to 15,16-20,Y,Y
+K0007557,W,State Police,N,W,M,day,b) 10 to 15,31-35,Y,Y
+K0007563,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,Y
+K0007564,T,State Police,N,W,M,day,U,16-20,N,Y
+K0007567,W,State Police,N,W,M,day,U,21-25,Y,Y
+K0007575,T,State Police,N,B,M,day,b) 10 to 15,26-30,N,Y
+K0007577,T,State Police,N,W,M,day,b) 10 to 15,26-30,Y,Y
+K0007578,T,State Police,N,W,M,day,U,16-20,N,Y
+K0007579,T,State Police,N,W,M,day,U,16-20,N,Y
+K0007580,T,State Police,N,W,F,day,U,16-20,N,Y
+K0007584,W,State Police,N,W,M,day,a) less than 10,51-55,N,Y
+K0007585,W,State Police,N,W,M,day,a) less than 10,16-20,N,Y
+K0007587,T,State Police,N,W,M,day,b) 10 to 15,16-20,Y,Y
+K0007589,W,State Police,N,W,M,day,a) less than 10,31-35,N,Y
+K0007590,W,State Police,N,W,M,day,a) less than 10,41-45,N,Y
+K0007592,W,State Police,N,W,M,day,a) less than 10,36-40,N,Y
+K0007593,T,State Police,N,W,F,day,b) 10 to 15,46-50,Y,Y
+K0007594,W,State Police,N,W,M,day,a) less than 10,16-20,N,Y
+K0007596,T,State Police,N,W,F,day,b) 10 to 15,16-20,N,Y
+K0007598,W,State Police,N,W,F,day,a) less than 10,56-60,Y,Y
+K0007600,W,State Police,N,W,F,day,a) less than 10,51-55,Y,Y
+K0007601,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0007608,T,State Police,N,W,M,day,c) 16 to 20,46-50,N,N
+K0007609,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,N
+K0007610,W,State Police,N,W,F,day,a) less than 10,66-70,N,Y
+K0007611,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0007641,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,Y
+K0007642,T,State Police,N,W,M,day,U,51-55,N,N
+K0007644,T,State Police,N,W,M,night,U,41-45,N,Y
+K0007645,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0007647,W,State Police,N,W,M,night,U,21-25,N,Y
+K0007648,W,State Police,N,W,M,night,U,31-35,Y,Y
+K0007649,W,State Police,N,W,F,day,U,66-70,N,Y
+K0007650,W,State Police,N,W,M,day,U,31-35,N,Y
+K0007651,T,State Police,N,W,M,day,U,21-25,N,Y
+K0007652,T,State Police,N,W,M,day,U,21-25,N,Y
+K0007653,W,State Police,N,W,F,night,U,36-40,N,Y
+K0007654,T,State Police,N,W,M,night,U,26-30,N,Y
+K0007655,W,State Police,N,W,F,night,U,31-35,N,Y
+K0007656,W,State Police,N,W,M,night,U,21-25,N,N
+K0007657,W,State Police,N,W,M,night,U,26-30,N,Y
+K0007658,T,State Police,N,W,M,day,U,16-20,N,N
+K0007659,T,State Police,N,B,M,day,b) 10 to 15,21-25,N,N
+K0007662,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0007663,T,State Police,N,W,M,night,U,21-25,N,Y
+K0007664,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0007683,W,State Police,N,W,M,day,a) less than 10,41-45,Y,Y
+K0007684,W,State Police,N,W,M,day,a) less than 10,66-70,N,N
+K0007686,W,State Police,N,W,M,day,a) less than 10,51-55,N,Y
+K0007687,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0007689,W,State Police,N,W,M,day,U,21-25,Y,Y
+K0007690,T,State Police,N,W,M,day,b) 10 to 15,31-35,Y,Y
+K0007691,W,State Police,N,W,M,night,a) less than 10,71-75,N,Y
+K0007693,W,State Police,N,W,F,night,U,16-20,Y,Y
+K0007698,W,State Police,N,W,M,day,U,26-30,N,Y
+K0007699,W,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0007700,W,State Police,N,W,M,day,U,56-60,N,Y
+K0007701,W,State Police,N,W,M,day,a) less than 10,41-45,N,Y
+K0007702,W,State Police,N,W,M,day,U,16-20,N,Y
+K0007703,W,State Police,N,W,M,day,a) less than 10,46-50,N,Y
+K0007705,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0007706,W,State Police,N,W,M,day,a) less than 10,46-50,N,Y
+K0007707,W,State Police,N,W,M,day,a) less than 10,46-50,N,Y
+K0007709,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0007710,T,State Police,N,W,M,day,U,26-30,Y,Y
+K0007712,W,State Police,N,W,M,night,U,46-50,N,Y
+K0007713,T,State Police,N,B,M,night,b) 10 to 15,21-25,N,Y
+K0007714,W,State Police,N,W,F,day,a) less than 10,21-25,N,Y
+K0007715,W,State Police,N,W,M,day,a) less than 10,51-55,N,Y
+K0007718,T,State Police,N,W,M,day,U,16-20,N,Y
+K0007721,W,State Police,N,W,M,day,a) less than 10,31-35,N,Y
+K0007722,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,Y
+K0007723,W,State Police,N,W,F,day,a) less than 10,41-45,Y,Y
+K0007724,W,State Police,N,W,M,night,a) less than 10,16-20,Y,Y
+K0007725,W,State Police,N,W,F,night,a) less than 10,56-60,Y,Y
+K0007726,W,State Police,N,W,M,day,a) less than 10,36-40,N,N
+K0007727,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0007728,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0007729,W,State Police,N,W,F,day,a) less than 10,21-25,N,Y
+K0007730,W,State Police,N,W,F,day,a) less than 10,26-30,N,Y
+K0007732,W,State Police,N,W,M,day,a) less than 10,51-55,N,Y
+K0007733,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0007735,T,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0007736,W,State Police,N,W,F,day,a) less than 10,46-50,N,Y
+K0007737,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0007738,W,State Police,N,W,M,night,a) less than 10,21-25,N,Y
+K0007739,W,State Police,N,W,M,day,a) less than 10,61-65,N,N
+K0007740,W,State Police,N,W,M,day,a) less than 10,46-50,Y,Y
+K0007741,T,State Police,N,W,M,day,b) 10 to 15,16-20,Y,Y
+K0007742,W,State Police,N,W,M,day,a) less than 10,21-25,N,Y
+K0007743,T,State Police,N,W,M,day,U,21-25,N,Y
+K0007744,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0007746,W,State Police,N,W,F,day,a) less than 10,56-60,N,Y
+K0007747,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0007748,W,State Police,N,W,F,night,a) less than 10,61-65,N,Y
+K0007749,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0007750,W,State Police,N,W,M,night,a) less than 10,31-35,N,Y
+K0007751,W,State Police,N,W,F,day,a) less than 10,21-25,N,Y
+K0007752,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0007753,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0007755,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0007756,T,State Police,N,W,M,day,U,26-30,N,Y
+K0007757,T,State Police,N,W,F,night,b) 10 to 15,36-40,Y,Y
+K0007758,T,State Police,N,W,F,night,b) 10 to 15,21-25,Y,Y
+K0007759,T,State Police,N,W,M,day,U,31-35,N,Y
+K0007760,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,N
+K0007762,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0007763,W,State Police,N,W,M,day,b) 10 to 15,51-55,Y,Y
+K0007764,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0007766,T,State Police,N,W,M,day,U,41-45,Y,Y
+K0007768,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0007769,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,Y
+K0007771,T,State Police,N,W,M,day,U,31-35,N,Y
+K0007772,W,State Police,N,W,M,day,U,31-35,N,Y
+K0007773,W,State Police,N,W,M,day,U,71-75,Y,Y
+K0007774,W,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0007775,W,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0007777,W,State Police,N,H,F,day,U,31-35,N,Y
+K0007781,W,State Police,N,W,F,day,U,61-65,N,N
+K0007782,W,State Police,N,W,M,night,b) 10 to 15,51-55,N,N
+K0007783,W,State Police,N,W,M,day,a) less than 10,41-45,N,Y
+K0007784,W,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0007785,W,State Police,N,W,F,night,a) less than 10,31-35,Y,Y
+K0007786,W,State Police,N,W,M,day,a) less than 10,16-20,N,Y
+K0007787,W,State Police,N,A,F,night,a) less than 10,41-45,N,Y
+K0007788,W,State Police,N,H,M,day,a) less than 10,21-25,N,Y
+K0007789,W,State Police,N,W,F,day,b) 10 to 15,36-40,Y,Y
+K0007790,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0007791,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0007801,W,State Police,N,W,M,day,a) less than 10,26-30,N,N
+K0007802,W,State Police,N,W,M,day,a) less than 10,56-60,N,Y
+K0007803,W,State Police,N,W,F,day,a) less than 10,41-45,N,Y
+K0007804,W,State Police,N,W,M,day,a) less than 10,61-65,N,Y
+K0007805,W,State Police,N,W,M,day,a) less than 10,16-20,N,Y
+K0007806,W,State Police,N,W,M,day,U,16-20,N,Y
+K0007807,W,State Police,N,W,F,day,U,21-25,N,Y
+K0007808,W,State Police,N,W,M,day,a) less than 10,61-65,N,N
+K0007809,W,State Police,N,W,F,day,a) less than 10,36-40,N,Y
+K0007824,W,State Police,N,W,F,day,b) 10 to 15,51-55,Y,Y
+K0007825,W,State Police,N,W,M,day,a) less than 10,21-25,Y,Y
+K0007827,W,State Police,N,W,F,night,c) 16 to 20,46-50,N,Y
+K0007828,W,State Police,N,W,F,night,b) 10 to 15,46-50,Y,Y
+K0007831,W,State Police,N,W,M,day,b) 10 to 15,16-20,Y,Y
+K0007832,W,State Police,N,W,M,day,b) 10 to 15,56-60,N,N
+K0007836,W,State Police,N,W,M,day,c) 16 to 20,36-40,N,Y
+K0007841,W,State Police,N,W,M,night,b) 10 to 15,66-70,N,Y
+K0007843,W,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0007849,W,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0007853,W,State Police,N,W,F,day,b) 10 to 15,41-45,Y,Y
+K0007854,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0007855,T,State Police,N,W,F,day,U,46-50,N,Y
+K0007857,W,State Police,N,W,M,day,b) 10 to 15,51-55,N,N
+K0007859,W,State Police,N,W,F,day,c) 16 to 20,16-20,N,Y
+K0007860,T,State Police,N,W,M,day,c) 16 to 20,16-20,Y,Y
+K0007861,T,State Police,N,W,M,day,U,21-25,N,Y
+K0007863,W,State Police,N,W,M,night,U,21-25,N,Y
+K0007864,W,State Police,N,W,M,night,U,21-25,N,Y
+K0007865,W,State Police,N,W,F,night,a) less than 10,41-45,N,Y
+K0007866,W,State Police,N,W,M,night,a) less than 10,31-35,Y,Y
+K0007867,W,State Police,N,W,F,night,a) less than 10,26-30,N,N
+K0007881,W,State Police,N,W,M,day,U,21-25,N,Y
+K0007902,T,State Police,N,W,M,day,U,31-35,N,Y
+K0007903,T,State Police,N,W,F,day,U,56-60,Y,Y
+K0007905,T,State Police,N,W,M,day,U,81-85,Y,Y
+K0007906,T,State Police,N,B,M,day,b) 10 to 15,31-35,Y,Y
+K0007908,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0007909,W,State Police,N,W,F,day,U,26-30,N,Y
+K0007910,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0007913,W,State Police,N,W,M,day,U,56-60,N,Y
+K0007914,W,State Police,N,W,M,day,U,21-25,N,Y
+K0007915,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0007916,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0007917,T,State Police,N,W,M,day,d) more than 20,16-20,Y,Y
+K0007919,T,State Police,N,W,M,day,U,31-35,Y,Y
+K0007922,T,State Police,N,H,F,night,U,21-25,Y,Y
+K0007923,T,State Police,N,W,F,day,U,21-25,N,Y
+K0007925,T,State Police,N,W,M,day,a) less than 10,46-50,N,Y
+K0007926,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0007927,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0007928,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,N
+K0007930,T,State Police,N,W,F,day,b) 10 to 15,51-55,N,Y
+K0007933,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,Y
+K0007934,T,State Police,N,W,M,day,b) 10 to 15,31-35,N,N
+K0007935,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0007936,W,State Police,N,W,M,day,b) 10 to 15,31-35,N,Y
+K0007942,T,State Police,N,W,M,night,c) 16 to 20,31-35,N,N
+K0007943,T,State Police,N,W,M,night,d) more than 20,16-20,N,Y
+K0007944,W,State Police,N,W,F,night,b) 10 to 15,46-50,U,N
+K0007945,T,State Police,N,W,F,night,b) 10 to 15,46-50,N,N
+K0007946,W,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0007947,W,State Police,N,W,F,night,b) 10 to 15,51-55,N,Y
+K0007948,W,State Police,N,W,F,night,U,51-55,U,N
+K0007949,W,State Police,N,W,F,night,U,26-30,N,Y
+K0007950,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0007951,W,State Police,N,W,M,night,U,16-20,N,Y
+K0007952,W,State Police,N,W,F,night,U,21-25,U,N
+K0007962,W,State Police,N,W,M,night,U,16-20,N,Y
+K0007963,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0007965,T,State Police,N,W,M,night,U,21-25,N,Y
+K0007966,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0007967,W,State Police,N,W,M,night,U,16-20,N,Y
+K0007971,T,State Police,N,W,M,day,b) 10 to 15,66-70,N,N
+K0007973,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0007981,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0007982,T,State Police,N,W,M,night,c) 16 to 20,31-35,N,Y
+K0007983,W,State Police,N,H,M,night,a) less than 10,41-45,N,Y
+K0007984,T,State Police,N,W,M,night,d) more than 20,16-20,Y,Y
+K0007986,W,State Police,N,W,M,night,U,21-25,Y,Y
+K0007987,T,State Police,N,W,M,night,U,16-20,N,Y
+K0007988,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0007989,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0007990,W,State Police,N,W,M,night,a) less than 10,26-30,N,Y
+K0007992,T,State Police,N,W,M,night,d) more than 20,16-20,Y,Y
+K0007993,T,State Police,N,W,M,night,c) 16 to 20,16-20,Y,Y
+K0008001,W,State Police,N,W,M,day,U,51-55,Y,Y
+K0008002,T,State Police,N,W,M,day,U,21-25,N,Y
+K0008003,W,State Police,N,W,F,night,U,21-25,Y,Y
+K0008006,W,State Police,N,W,F,night,c) 16 to 20,26-30,N,Y
+K0008007,W,State Police,N,B,M,day,U,26-30,N,Y
+K0008010,W,State Police,N,W,F,night,U,31-35,N,Y
+K0008011,T,State Police,N,W,M,night,U,16-20,N,Y
+K0008012,W,State Police,N,W,M,night,U,16-20,N,Y
+K0008014,T,State Police,N,W,M,day,U,21-25,N,Y
+K0008015,T,State Police,N,W,M,night,U,21-25,N,N
+K0008016,W,State Police,N,W,M,night,U,31-35,N,Y
+K0008017,W,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0008020,W,State Police,N,W,M,night,U,36-40,N,Y
+K0008041,W,State Police,N,W,M,night,U,16-20,N,N
+K0008048,W,State Police,N,W,M,night,c) 16 to 20,31-35,N,Y
+K0008058,T,State Police,N,W,M,day,U,16-20,N,Y
+K0008060,T,State Police,N,W,F,day,U,21-25,N,Y
+K0008062,T,State Police,N,W,F,day,b) 10 to 15,21-25,N,Y
+K0008065,T,State Police,N,W,F,day,b) 10 to 15,46-50,N,Y
+K0008067,T,State Police,N,W,F,day,U,21-25,N,Y
+K0008069,T,State Police,N,H,M,day,b) 10 to 15,26-30,N,Y
+K0008070,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0008074,T,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0008075,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,Y
+K0008077,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,Y
+K0008079,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0008080,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,N
+K0008081,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,N
+K0008082,W,State Police,N,W,M,night,U,16-20,N,Y
+K0008083,W,State Police,N,W,F,night,U,31-35,N,N
+K0008084,W,State Police,N,W,F,night,U,41-45,Y,Y
+K0008087,T,State Police,N,W,M,day,U,26-30,N,Y
+K0008090,W,State Police,N,B,M,night,U,31-35,Y,Y
+K0008094,W,State Police,N,W,M,night,U,36-40,N,Y
+K0008100,W,State Police,N,H,M,night,U,21-25,N,N
+K0008121,W,State Police,N,W,M,night,a) less than 10,26-30,N,Y
+K0008122,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0008125,W,State Police,N,B,M,night,U,41-45,N,Y
+K0008129,W,State Police,N,B,M,day,U,36-40,N,Y
+K0008130,T,State Police,N,W,M,night,U,16-20,Y,Y
+K0008136,T,State Police,N,W,F,night,c) 16 to 20,21-25,N,N
+K0008137,W,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0008138,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0008139,T,State Police,N,W,M,night,U,21-25,N,Y
+K0008140,T,State Police,N,W,M,night,U,21-25,N,Y
+K0008142,W,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0008144,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0008146,W,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0008148,T,State Police,N,W,M,night,b) 10 to 15,31-35,Y,Y
+K0008150,W,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0008152,W,State Police,N,W,M,night,U,21-25,N,Y
+K0008153,W,State Police,N,W,F,night,b) 10 to 15,36-40,N,Y
+K0008154,W,State Police,N,W,M,night,U,36-40,N,Y
+K0008155,W,State Police,N,W,M,night,b) 10 to 15,21-25,N,N
+K0008156,W,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0008157,T,State Police,N,H,M,night,c) 16 to 20,21-25,N,Y
+K0008160,T,State Police,N,W,M,night,U,21-25,N,N
+K0008163,W,State Police,N,W,M,day,U,16-20,Y,Y
+K0008168,T,State Police,N,W,F,day,c) 16 to 20,46-50,N,N
+K0008169,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0008170,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0008171,T,State Police,N,W,M,day,d) more than 20,16-20,N,N
+K0008173,W,State Police,N,W,F,day,U,36-40,Y,Y
+K0008174,W,State Police,N,W,M,day,U,51-55,Y,Y
+K0008177,W,State Police,N,W,F,day,U,21-25,N,Y
+K0008178,T,State Police,N,W,M,day,U,36-40,N,Y
+K0008179,T,State Police,N,W,M,day,U,21-25,N,N
+K0008181,T,State Police,N,W,F,day,U,31-35,N,Y
+K0008182,W,State Police,N,W,F,day,U,56-60,N,Y
+K0008183,T,State Police,N,W,F,day,U,36-40,Y,Y
+K0008184,T,State Police,N,W,F,day,U,31-35,N,Y
+K0008185,W,State Police,N,W,M,night,U,21-25,N,Y
+K0008187,W,State Police,N,W,M,day,U,31-35,N,Y
+K0008188,W,State Police,N,A,F,day,a) less than 10,36-40,N,Y
+K0008191,W,State Police,N,W,M,day,a) less than 10,51-55,N,Y
+K0008192,T,State Police,N,W,M,day,U,41-45,Y,Y
+K0008194,T,State Police,N,W,M,night,d) more than 20,46-50,N,Y
+K0008195,W,State Police,N,W,F,day,U,46-50,Y,Y
+K0008196,W,State Police,N,W,F,day,a) less than 10,36-40,N,Y
+K0008199,W,State Police,N,H,F,day,a) less than 10,36-40,Y,Y
+K0008200,T,State Police,N,W,F,day,U,36-40,N,Y
+K0008201,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0008202,T,State Police,N,W,M,night,U,21-25,N,Y
+K0008205,W,State Police,N,W,M,day,U,41-45,N,N
+K0008215,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0008216,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,N
+K0008217,T,State Police,N,W,F,night,U,36-40,N,N
+K0008218,W,State Police,N,W,M,night,U,16-20,N,N
+K0008219,T,State Police,N,B,M,night,b) 10 to 15,21-25,N,N
+K0008221,T,State Police,N,H,M,day,U,16-20,N,Y
+K0008223,W,State Police,N,B,M,day,U,21-25,N,Y
+K0008228,W,State Police,N,H,M,day,U,26-30,Y,Y
+K0008229,T,State Police,N,W,M,day,U,51-55,N,Y
+K0008230,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0008231,T,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0008232,T,State Police,N,W,M,day,b) 10 to 15,26-30,N,Y
+K0008233,T,State Police,N,B,M,day,b) 10 to 15,26-30,N,Y
+K0008235,T,State Police,N,W,M,night,U,26-30,N,Y
+K0008245,W,State Police,N,W,M,day,U,56-60,Y,Y
+K0008249,W,State Police,N,W,M,day,U,26-30,N,Y
+K0008250,T,State Police,N,W,M,day,U,26-30,N,Y
+K0008251,T,State Police,N,W,M,day,U,21-25,Y,Y
+K0008254,W,State Police,N,W,M,day,U,21-25,N,N
+K0008256,T,State Police,N,W,M,day,U,36-40,N,N
+K0008260,T,State Police,N,W,M,day,b) 10 to 15,21-25,N,Y
+K0008276,T,State Police,N,W,M,day,c) 16 to 20,51-55,N,Y
+K0008281,W,State Police,N,W,M,day,a) less than 10,26-30,N,Y
+K0008282,T,State Police,N,W,F,day,b) 10 to 15,26-30,N,Y
+K0008283,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0008289,T,State Police,N,W,F,day,U,31-35,N,Y
+K0008290,T,State Police,N,W,M,day,U,21-25,N,Y
+K0008292,W,State Police,N,W,M,day,U,51-55,N,Y
+K0008293,T,State Police,N,W,M,day,U,36-40,N,Y
+K0008295,T,State Police,N,W,F,day,b) 10 to 15,41-45,N,N
+K0008297,W,State Police,N,W,M,night,U,36-40,N,Y
+K0008299,W,State Police,N,B,M,day,U,21-25,N,Y
+K0008300,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0008301,W,State Police,N,W,M,day,U,21-25,N,Y
+K0008302,W,State Police,N,W,M,day,U,26-30,N,Y
+K0008311,W,State Police,N,W,M,day,U,26-30,Y,Y
+K0008313,W,State Police,N,H,F,day,U,21-25,N,Y
+K0008314,T,State Police,N,W,M,day,U,26-30,N,Y
+K0008315,W,State Police,N,W,M,day,U,41-45,N,Y
+K0008316,T,State Police,N,H,M,day,b) 10 to 15,36-40,Y,Y
+K0008317,T,State Police,N,W,M,day,b) 10 to 15,N/A,Y,Y
+K0008318,T,State Police,N,W,M,day,U,41-45,N,Y
+K0008319,W,State Police,N,H,F,day,b) 10 to 15,56-60,Y,Y
+K0008321,T,State Police,N,W,M,day,U,21-25,N,Y
+K0008322,W,State Police,N,W,F,night,U,41-45,N,Y
+K0008323,W,State Police,N,W,F,day,b) 10 to 15,16-20,N,Y
+K0008326,W,State Police,N,W,M,night,U,21-25,N,Y
+K0008327,W,State Police,N,W,M,night,b) 10 to 15,41-45,N,N
+K0008328,W,State Police,N,W,M,day,U,21-25,N,Y
+K0008330,W,State Police,N,W,M,night,U,51-55,N,N
+K0008331,W,State Police,N,W,M,night,U,21-25,N,Y
+K0008332,T,State Police,N,W,M,night,U,31-35,N,Y
+K0008334,T,State Police,N,W,M,night,b) 10 to 15,46-50,N,Y
+K0008335,W,State Police,N,W,F,night,b) 10 to 15,46-50,N,N
+K0008336,W,State Police,N,W,M,day,b) 10 to 15,51-55,N,N
+K0008338,W,State Police,N,W,M,day,U,46-50,N,N
+K0008340,W,State Police,N,W,M,night,b) 10 to 15,41-45,N,N
+K0008342,W,State Police,N,W,F,night,U,21-25,N,N
+K0008343,T,State Police,N,W,M,night,b) 10 to 15,51-55,N,Y
+K0008344,T,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0008345,W,State Police,N,W,M,night,U,36-40,N,N
+K0008350,W,State Police,N,W,M,night,a) less than 10,21-25,N,N
+K0008353,T,State Police,N,W,F,night,b) 10 to 15,21-25,N,N
+K0008354,W,State Police,N,W,M,night,a) less than 10,21-25,N,N
+K0008355,W,State Police,N,W,F,night,d) more than 20,16-20,N,Y
+K0008356,W,State Police,N,W,M,night,U,21-25,N,Y
+K0008358,T,State Police,N,W,M,night,b) 10 to 15,36-40,N,N
+K0008360,W,State Police,N,W,M,night,a) less than 10,16-20,N,Y
+K0008361,W,State Police,N,H,M,day,U,46-50,N,Y
+K0008362,T,State Police,N,W,M,night,U,31-35,N,Y
+K0008365,T,State Police,N,M,M,day,b) 10 to 15,46-50,U,N
+K0008366,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,N
+K0008367,T,State Police,N,W,F,day,b) 10 to 15,46-50,N,Y
+K0008368,T,State Police,N,W,M,day,c) 16 to 20,26-30,N,N
+K0008369,T,State Police,N,W,M,night,d) more than 20,31-35,N,N
+K0008371,T,State Police,N,W,M,night,U,36-40,N,Y
+K0008374,T,State Police,N,W,M,night,c) 16 to 20,21-25,N,N
+K0008375,T,State Police,N,W,M,night,U,66-70,N,Y
+K0008376,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,N
+K0008378,T,State Police,N,W,M,night,c) 16 to 20,26-30,N,N
+K0008384,T,State Police,N,W,F,night,b) 10 to 15,31-35,N,N
+K0008388,T,State Police,N,W,M,day,U,41-45,Y,Y
+K0008389,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,N
+K0008392,T,State Police,N,W,M,day,U,26-30,N,Y
+K0008393,T,State Police,N,W,M,day,b) 10 to 15,51-55,N,Y
+K0008394,T,State Police,N,W,M,night,U,21-25,Y,Y
+K0008398,W,State Police,N,W,M,day,b) 10 to 15,36-40,N,N
+K0008399,T,State Police,N,W,M,night,U,51-55,N,N
+K0008403,W,State Police,N,W,F,night,U,51-55,N,Y
+K0008405,W,State Police,N,W,M,night,U,21-25,N,Y
+K0008406,W,State Police,N,W,M,night,U,41-45,N,Y
+K0008408,W,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0008409,T,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0008411,T,State Police,N,H,M,night,U,21-25,Y,Y
+K0008414,W,State Police,N,H,M,night,U,21-25,Y,Y
+K0008418,W,State Police,N,H,F,night,U,21-25,N,Y
+K0008420,W,State Police,N,W,M,night,U,36-40,N,Y
+K0008421,T,State Police,N,A,M,night,a) less than 10,26-30,N,Y
+K0008422,W,State Police,N,W,M,night,U,51-55,N,Y
+K0008423,W,State Police,N,W,M,night,U,46-50,N,Y
+K0008424,T,State Police,N,H,M,day,b) 10 to 15,26-30,N,Y
+K0008426,W,State Police,N,W,M,night,U,31-35,N,Y
+K0008427,T,State Police,N,B,M,night,b) 10 to 15,41-45,N,Y
+K0008429,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,N
+K0008430,T,State Police,N,W,M,night,U,46-50,N,Y
+K0008431,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,N
+K0008433,W,State Police,N,W,M,night,U,31-35,N,Y
+K0008434,W,State Police,N,W,M,day,U,31-35,N,Y
+K0008436,T,State Police,N,W,M,day,b) 10 to 15,21-25,Y,Y
+K0008437,T,State Police,N,W,M,day,b) 10 to 15,76-80,N,Y
+K0008442,W,State Police,N,W,M,day,U,36-40,N,Y
+K0008450,T,State Police,N,H,M,day,b) 10 to 15,31-35,Y,Y
+K0008456,T,State Police,N,W,M,day,U,41-45,N,N
+K0008460,T,State Police,N,W,M,day,b) 10 to 15,36-40,N,Y
+K0008461,T,State Police,N,W,F,night,U,21-25,N,Y
+K0008462,W,State Police,N,W,M,night,U,16-20,N,N
+K0008463,W,State Police,N,W,M,night,U,21-25,N,Y
+K0008465,T,State Police,N,W,M,night,U,46-50,Y,Y
+K0008471,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0008475,W,State Police,N,W,F,night,U,21-25,N,Y
+K0008477,W,State Police,N,W,M,night,U,16-20,N,N
+K0008480,W,State Police,N,W,F,day,U,16-20,N,Y
+K0008486,W,State Police,N,W,M,night,U,31-35,N,N
+K0008487,W,State Police,N,W,M,night,U,16-20,Y,Y
+K0008489,W,State Police,N,W,M,night,U,26-30,N,Y
+K0008490,W,State Police,N,W,M,night,U,31-35,N,Y
+K0008491,W,State Police,N,W,F,night,U,16-20,N,N
+K0008499,T,State Police,N,W,M,night,U,26-30,N,Y
+K0008501,W,State Police,N,W,F,night,U,46-50,N,Y
+K0008502,W,State Police,N,W,M,day,U,36-40,N,Y
+K0008504,W,State Police,N,W,M,day,U,31-35,N,Y
+K0008505,T,State Police,N,B,M,day,U,26-30,N,Y
+K0008506,W,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0008507,W,State Police,N,W,M,day,U,46-50,N,Y
+K0008508,T,State Police,N,B,F,night,b) 10 to 15,16-20,N,Y
+K0008509,T,State Police,N,B,M,night,d) more than 20,16-20,N,Y
+K0008510,T,State Police,N,W,M,night,U,56-60,N,Y
+K0008511,W,State Police,N,W,M,day,b) 10 to 15,61-65,N,Y
+K0008513,W,State Police,N,W,M,night,b) 10 to 15,46-50,N,Y
+K0008514,W,State Police,N,W,M,night,U,46-50,N,Y
+K0008515,W,State Police,N,W,M,night,U,36-40,N,Y
+K0008516,W,State Police,N,W,F,night,U,36-40,N,Y
+K0008517,W,State Police,N,W,M,day,U,51-55,N,Y
+K0008518,W,State Police,N,W,M,day,U,51-55,N,Y
+K0008520,W,State Police,N,W,M,day,U,46-50,N,Y
+K0008523,W,State Police,N,W,M,night,b) 10 to 15,56-60,N,Y
+K0008524,T,State Police,N,W,M,night,c) 16 to 20,21-25,Y,Y
+K0008525,W,State Police,N,W,M,night,b) 10 to 15,31-35,N,N
+K0008526,W,State Police,N,W,M,night,b) 10 to 15,36-40,N,Y
+K0008527,T,State Police,N,W,M,night,c) 16 to 20,16-20,N,Y
+K0008528,W,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0008529,T,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0008532,W,State Police,N,B,M,night,U,21-25,N,Y
+K0008533,T,State Police,N,B,M,night,U,41-45,N,Y
+K0008534,W,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0008535,W,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0008536,W,State Police,N,A,M,day,b) 10 to 15,31-35,N,Y
+K0008538,T,State Police,N,W,M,day,d) more than 20,21-25,N,Y
+K0008539,W,State Police,N,W,F,night,U,16-20,N,Y
+K0008540,W,State Police,N,W,M,night,b) 10 to 15,36-40,N,Y
+K0008541,T,State Police,N,W,M,day,c) 16 to 20,51-55,N,Y
+K0008542,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,N
+K0008545,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0008546,T,State Police,N,W,M,night,b) 10 to 15,41-45,N,Y
+K0008547,T,State Police,N,A,M,night,b) 10 to 15,21-25,N,Y
+K0008548,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0008550,T,State Police,N,W,M,night,c) 16 to 20,26-30,N,Y
+K0008553,T,State Police,N,W,F,day,U,41-45,N,N
+K0008567,W,State Police,N,W,M,day,b) 10 to 15,46-50,N,Y
+K0008571,W,State Police,N,W,M,night,b) 10 to 15,26-30,N,N
+K0008572,W,State Police,N,W,M,night,b) 10 to 15,56-60,N,Y
+K0008573,T,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0008574,W,State Police,N,W,M,night,b) 10 to 15,16-20,N,Y
+K0008575,T,State Police,N,W,M,night,U,16-20,N,Y
+K0008576,W,State Police,N,W,M,day,b) 10 to 15,66-70,N,Y
+K0008577,T,State Police,N,W,M,day,U,66-70,N,Y
+K0008578,W,State Police,N,W,M,day,U,36-40,N,Y
+K0008579,W,State Police,N,W,F,day,b) 10 to 15,81-85,N,Y
+K0008580,T,State Police,N,W,F,day,U,81-85,N,Y
+K0008581,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0008582,T,State Police,N,W,U,day,U,61-65,Y,Y
+K0008583,W,State Police,N,W,M,day,U,81-85,N,Y
+K0008584,T,State Police,N,W,M,day,U,16-20,Y,Y
+K0008586,W,State Police,N,W,F,day,U,26-30,N,Y
+K0008602,T,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0008605,W,State Police,N,W,F,night,U,41-45,N,Y
+K0008607,W,State Police,N,W,F,night,b) 10 to 15,31-35,N,Y
+K0008609,W,State Police,N,W,M,night,b) 10 to 15,31-35,N,Y
+K0008610,W,State Police,N,W,M,day,U,36-40,N,Y
+K0008611,W,State Police,N,W,M,night,U,31-35,N,Y
+K0008612,W,State Police,N,W,M,night,U,46-50,N,Y
+K0008613,W,State Police,N,W,M,night,b) 10 to 15,61-65,N,Y
+K0008615,W,State Police,N,W,F,night,b) 10 to 15,31-35,N,Y
+K0008616,T,State Police,N,W,M,night,d) more than 20,21-25,N,Y
+K0008618,W,State Police,N,W,M,night,b) 10 to 15,21-25,N,Y
+K0008619,T,State Police,N,H,M,day,U,56-60,N,Y
+K0008620,W,State Police,N,W,M,night,U,46-50,N,Y
+K0008621,W,State Police,N,H,F,night,b) 10 to 15,26-30,N,Y
+K0008622,W,State Police,N,W,M,night,b) 10 to 15,36-40,N,Y
+K0008625,W,State Police,N,W,M,night,b) 10 to 15,71-75,N,Y
+K0008626,T,State Police,N,W,F,night,b) 10 to 15,26-30,N,Y
+K0008631,W,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0008632,W,State Police,N,W,M,night,b) 10 to 15,26-30,Y,Y
+K0008633,W,State Police,N,W,M,night,U,46-50,N,Y
+K0008639,T,State Police,N,W,M,night,b) 10 to 15,16-20,N,N
+K0008640,W,State Police,N,W,M,day,b) 10 to 15,51-55,N,Y
+K0008643,W,State Police,N,W,M,night,a) less than 10,31-35,N,Y
+K0008644,W,State Police,N,W,M,night,U,21-25,N,Y
+K0008645,W,State Police,N,W,M,night,a) less than 10,46-50,N,N
+K0008651,W,State Police,N,W,F,night,a) less than 10,26-30,N,Y
+K0008652,W,State Police,N,W,M,night,a) less than 10,41-45,N,Y
+K0008656,W,State Police,N,W,M,night,U,46-50,N,Y
+K0008657,W,State Police,N,B,M,night,U,36-40,N,Y
+K0008664,W,State Police,N,W,M,night,U,16-20,N,Y
+K0008666,W,State Police,N,W,F,night,b) 10 to 15,21-25,N,Y
+K0008668,W,State Police,N,W,F,day,U,56-60,Y,Y
+K0008669,W,State Police,N,W,F,night,U,26-30,N,Y
+K0008670,W,State Police,N,W,F,night,U,41-45,N,Y
+K0008671,W,State Police,N,W,F,night,U,21-25,N,Y
+K0008677,W,State Police,N,W,F,night,U,21-25,Y,Y
+K0008680,T,State Police,N,W,F,day,U,16-20,N,Y
+K0008681,T,State Police,N,B,M,night,U,21-25,N,Y
+K0008686,W,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0008687,T,State Police,N,W,F,night,U,26-30,Y,Y
+K0008690,W,State Police,N,W,M,day,U,31-35,N,Y
+K0008691,W,State Police,N,W,F,night,U,26-30,N,Y
+K0008693,W,State Police,N,W,M,night,U,61-65,N,Y
+K0008694,W,State Police,N,W,M,night,U,21-25,Y,Y
+K0008697,W,State Police,N,W,M,night,U,56-60,N,Y
+K0008698,W,State Police,N,W,F,night,U,41-45,N,Y
+K0008699,W,State Police,N,W,M,day,U,16-20,N,Y
+K0008700,W,State Police,N,W,M,night,U,26-30,N,N
+K0008701,W,State Police,N,W,M,night,a) less than 10,26-30,N,Y
+K0008702,W,State Police,N,W,M,night,a) less than 10,16-20,N,Y
+K0008703,W,State Police,N,W,M,night,a) less than 10,46-50,N,Y
+K0008704,T,State Police,N,U,M,night,b) 10 to 15,31-35,Y,Y
+K0008705,W,State Police,N,W,M,night,a) less than 10,41-45,Y,Y
+K0008706,W,State Police,N,W,M,night,a) less than 10,36-40,N,Y
+K0008707,T,State Police,N,W,M,day,U,26-30,N,Y
+K0008708,W,State Police,N,W,M,day,U,31-35,N,Y
+K0008709,T,State Police,N,W,M,night,U,21-25,N,Y
+K0008710,W,State Police,N,U,M,night,U,21-25,N,Y
+K0008711,W,State Police,N,W,F,night,a) less than 10,31-35,N,Y
+K0008712,W,State Police,N,W,M,night,a) less than 10,26-30,N,Y
+K0008713,W,State Police,N,W,M,night,a) less than 10,21-25,N,Y
+K0008714,T,State Police,N,W,M,day,b) 10 to 15,41-45,N,Y
+K0008715,T,State Police,N,W,M,night,c) 16 to 20,56-60,Y,Y
+K0008717,T,State Police,N,W,M,night,U,41-45,N,Y
+K0008718,W,State Police,N,W,M,night,a) less than 10,61-65,N,Y
+K0008720,W,State Police,N,W,M,night,a) less than 10,61-65,N,Y
+K0008726,W,State Police,N,W,M,night,U,36-40,N,Y
+K0008727,W,State Police,N,W,M,night,U,41-45,N,Y
+K0008728,W,State Police,N,W,M,night,U,36-40,N,Y
+K0008730,W,State Police,N,W,M,night,U,16-20,N,Y
+K0008731,W,State Police,N,W,M,night,U,46-50,N,Y
+K0008733,W,State Police,N,W,M,night,U,46-50,N,Y
+K0008742,W,State Police,N,W,M,night,b) 10 to 15,51-55,N,Y
+K0008743,W,State Police,N,W,M,night,U,56-60,N,Y
+K0008745,W,State Police,N,B,M,night,U,51-55,N,Y
+K0008746,T,State Police,N,W,M,night,c) 16 to 20,36-40,N,Y
+K0008747,T,State Police,N,W,F,day,U,16-20,Y,Y
+K0008748,T,State Police,N,M,M,night,d) more than 20,31-35,N,N
+K0008749,T,State Police,N,B,M,night,b) 10 to 15,26-30,N,Y
+K0008751,T,State Police,N,W,M,night,b) 10 to 15,26-30,N,Y
+K0008753,T,State Police,N,W,M,day,U,21-25,N,Y
+K0008756,W,State Police,N,W,M,night,U,41-45,Y,Y
+K0008757,W,State Police,N,W,F,night,b) 10 to 15,16-20,N,Y
+K0008760,W,State Police,N,W,F,night,b) 10 to 15,36-40,Y,Y
+K0008763,W,State Police,N,W,F,night,a) less than 10,16-20,N,Y
+K0008764,W,State Police,N,W,M,night,U,21-25,N,Y
+K0008767,T,State Police,N,W,M,day,U,41-45,N,Y
+K0008768,W,State Police,N,W,M,night,U,41-45,N,Y
+K0008769,W,State Police,N,H,M,night,U,16-20,N,N
+K0008771,W,State Police,N,W,M,night,U,31-35,N,Y
+K0008772,W,State Police,N,W,M,night,U,31-35,N,Y
+K0008773,T,State Police,N,W,M,night,b) 10 to 15,21-25,Y,Y
+K0008775,W,State Police,N,W,F,night,U,46-50,Y,Y
+K0008776,W,State Police,N,H,M,day,U,31-35,N,Y
+K0008777,W,State Police,N,W,M,night,U,31-35,N,Y
+K0008779,T,State Police,N,H,M,night,U,36-40,N,Y
+K0008781,W,State Police,N,W,F,day,U,31-35,N,Y
+K0008782,W,State Police,N,W,F,day,a) less than 10,21-25,N,Y
+K0008783,W,State Police,N,W,M,day,a) less than 10,56-60,N,Y
+K0008784,W,State Police,N,H,M,day,a) less than 10,21-25,N,N
+K0008786,W,State Police,N,B,F,day,a) less than 10,36-40,N,Y
+K0008788,W,State Police,N,W,M,day,U,56-60,N,Y
+K0008790,W,State Police,N,W,F,day,a) less than 10,51-55,N,Y
+K0008791,W,State Police,N,W,M,day,a) less than 10,36-40,N,Y
+K0008792,W,State Police,N,W,M,day,U,31-35,N,Y
+K0008797,W,State Police,N,W,M,day,a) less than 10,16-20,N,Y
+K0008798,W,State Police,N,W,M,day,b) 10 to 15,46-50,N,N
+K0008799,W,State Police,N,W,M,day,a) less than 10,36-40,N,Y
+K0008800,W,State Police,N,W,F,day,a) less than 10,31-35,N,Y
+K0008802,W,State Police,N,W,F,day,U,51-55,Y,Y
+K0008805,W,State Police,N,W,M,day,U,56-60,Y,Y
+K0008807,W,State Police,N,W,M,day,U,46-50,N,Y
+K0008808,W,State Police,N,W,F,day,U,46-50,N,Y
+K0008810,W,State Police,N,W,M,day,U,31-35,N,Y
+K0008816,W,State Police,N,W,M,day,U,36-40,N,Y
+K0008817,W,State Police,N,W,M,night,U,36-40,N,Y
+K0008818,W,State Police,N,W,F,day,U,56-60,N,Y
+K0008819,W,State Police,N,W,M,day,U,46-50,N,Y
+K0008820,W,State Police,N,W,M,day,U,46-50,N,Y
+K0008822,T,State Police,N,W,M,day,c) 16 to 20,21-25,N,Y
+K0008823,W,State Police,N,W,F,day,b) 10 to 15,31-35,Y,Y
+K0008825,W,State Police,N,W,M,day,b) 10 to 15,31-35,Y,Y
+K0008826,W,State Police,N,W,F,day,b) 10 to 15,36-40,N,Y
+K0008828,T,State Police,N,W,M,day,d) more than 20,71-75,N,Y
+K0008830,T,State Police,N,W,F,day,c) 16 to 20,26-30,N,Y
+K0008831,T,State Police,N,W,M,day,c) 16 to 20,31-35,N,Y
+K0008834,W,State Police,N,W,M,day,b) 10 to 15,16-20,N,Y
+K0008835,W,State Police,N,W,F,day,b) 10 to 15,41-45,N,Y
+K0008836,W,State Police,N,W,M,day,U,36-40,N,Y
+K0008837,W,State Police,N,W,F,day,b) 10 to 15,21-25,Y,Y
+K0008838,W,State Police,N,W,F,day,U,26-30,N,Y
+K0008839,W,State Police,N,W,F,day,b) 10 to 15,21-25,Y,Y
+K0008841,T,State Police,N,W,F,day,U,31-35,N,Y
+K0008843,T,State Police,N,W,M,day,U,31-35,N,Y
+K0008844,T,State Police,N,W,F,day,c) 16 to 20,31-35,N,Y
+K0008845,T,State Police,N,W,M,day,c) 16 to 20,36-40,N,Y
+K0008846,T,State Police,N,W,F,day,c) 16 to 20,21-25,N,Y
+K0008847,T,State Police,N,W,F,day,d) more than 20,26-30,Y,Y
+K0008849,T,State Police,N,W,F,night,c) 16 to 20,41-45,N,Y
+K0008850,T,State Police,N,W,M,night,c) 16 to 20,61-65,N,Y
+K0008851,T,State Police,N,B,M,night,c) 16 to 20,46-50,N,Y
+K0008852,T,State Police,N,W,F,night,b) 10 to 15,36-40,N,Y
+K0008853,T,State Police,N,W,M,day,U,36-40,N,Y
+K0008854,T,State Police,N,W,M,day,U,41-45,N,Y
+K0008856,W,State Police,N,W,M,night,U,41-45,Y,Y
+K0008858,T,State Police,N,W,M,day,c) 16 to 20,51-55,N,Y
+K0008859,T,State Police,N,W,M,day,c) 16 to 20,16-20,N,Y

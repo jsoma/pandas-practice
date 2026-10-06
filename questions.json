@@ -52,7 +52,13 @@
         "head"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df['Company name'].head(1).value_counts()",
+        "df['Company name'].value_counts().tail(1)",
+        "df['Company name'].count().head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "forces_sort_highest_023",
@@ -106,7 +112,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('other', ascending=False)",
+        "df.sort_values('other', ascending=False).tail(1)",
+        "df.sort_index('other', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "powerplants_filter_count_003",
@@ -160,7 +172,13 @@
         "sum"
       ],
       "hint": "Use boolean indexing to solve this",
-      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "(df['plant_name'] == 'Kelford').mean()",
+        "(df['plant_name'] == 'Kelford').count()",
+        "(df['plant_name'] == 'Kelford').min()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "wreckers_groupby_count_015",
@@ -213,7 +231,13 @@
         "value_counts"
       ],
       "hint": "Use groupby to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean().",
+      "distractors": [
+        "df['DBA Name'].count()",
+        "df['DBA Name'].unique()",
+        "df['DBA Name'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_value_counts_most_common_063",
@@ -267,7 +291,13 @@
         "head"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df['AGEGROUP'].head(1).value_counts()",
+        "df['AGEGROUP'].value_counts().tail(1)",
+        "df['AGEGROUP'].count().head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "powerplants_mean_simple_134",
@@ -320,7 +350,13 @@
         "mean"
       ],
       "hint": "Use mean to solve this",
-      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df['hydro_mw'].sum()",
+        "df['hydro_mw'].count()",
+        "df['hydro_mw'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_groupby_mean_098",
@@ -374,7 +410,13 @@
         "mean"
       ],
       "hint": "Use groupby and mean to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df.groupby('Unit')['Current Item Code'].sum()",
+        "df.groupby('Unit')['Current Item Code'].count()",
+        "df.groupby('Unit')['Current Item Code'].value_counts()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_sum_simple_029",
@@ -427,7 +469,13 @@
         "sum"
       ],
       "hint": "Use sum to solve this",
-      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['Current Item Code'].mean()",
+        "df['Current Item Code'].min()",
+        "df['Current Item Code'].value_counts()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "foods_filter_count_034",
@@ -481,7 +529,13 @@
         "sum"
       ],
       "hint": "Use boolean indexing to solve this",
-      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "(df['Carbs'] == '13%').mean()",
+        "(df['Carbs'] == '13%').count()",
+        "(df['Carbs'] == '13%').nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "race-places_groupby_sum_sorted_041",
@@ -536,7 +590,13 @@
         "sort_values"
       ],
       "hint": "Use groupby and sum and sort_values to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df.groupby('Race_Result')['Serial'].sort_values(ascending=False).sum()",
+        "df.groupby('Race_Result')['Serial'].sum().min(ascending=False)",
+        "df.groupby('Race_Result')['Serial'].sum().max(ascending=False)"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "overflows_value_counts_most_common_042",
@@ -590,7 +650,13 @@
         "head"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df['Waterbody name'].head(1).value_counts()",
+        "df['Waterbody name'].value_counts().tail(1)",
+        "df['Waterbody name'].count().head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "motorcycles_filter_show_all_simple_571",
@@ -643,7 +709,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Seat'] != 'One piece dual seat']",
+        "df[df['Seat'] > 'One piece dual seat']",
+        "df[df['Seat'] < 'One piece dual seat']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "foods_filter_show_all_simple_025",
@@ -696,7 +768,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Fat'] != '58%']",
+        "df[df['Fat'] > '58%']",
+        "df[df['Fat'] < '58%']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "foods_count_multiple_values_046",
@@ -750,7 +828,13 @@
         "sum"
       ],
       "hint": "Use isin to solve this",
-      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['Phos'].sum().isin(['195mg', '0mg'])",
+        "df['Phos'].isin(['195mg', '0mg']).mean()",
+        "df['Phos'].isin(['195mg', '0mg']).count()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "foods_groupby_count_023",
@@ -803,7 +887,13 @@
         "value_counts"
       ],
       "hint": "Use groupby to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean().",
+      "distractors": [
+        "df['Protein'].count()",
+        "df['Protein'].unique()",
+        "df['Protein'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_groupby_count_073",
@@ -856,7 +946,13 @@
         "value_counts"
       ],
       "hint": "Use groupby to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean().",
+      "distractors": [
+        "df['INTOWN'].count()",
+        "df['INTOWN'].unique()",
+        "df['INTOWN'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "wreckers_filter_show_all_simple_032",
@@ -909,7 +1005,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['State'] != 'TX']",
+        "df[df['State'] > 'TX']",
+        "df[df['State'] < 'TX']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "forces_mean_simple_026",
@@ -962,7 +1064,13 @@
         "mean"
       ],
       "hint": "Use mean to solve this",
-      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df['other'].sum()",
+        "df['other'].count()",
+        "df['other'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "overflows_filter_show_all_037",
@@ -1015,7 +1123,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Waterbody name'] != 'TYNE']",
+        "df[df['Waterbody name'] > 'TYNE']",
+        "df[df['Waterbody name'] < 'TYNE']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_filter_show_all_050",
@@ -1068,7 +1182,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['MPHGROUP'] != 'd) more than 20']",
+        "df[df['MPHGROUP'] > 'd) more than 20']",
+        "df[df['MPHGROUP'] < 'd) more than 20']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "motorcycles_sum_simple_707",
@@ -1121,7 +1241,13 @@
         "sum"
       ],
       "hint": "Use sum to solve this",
-      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['Oil capacity (litres)'].mean()",
+        "df['Oil capacity (litres)'].count()",
+        "df['Oil capacity (litres)'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_value_counts_most_common_055",
@@ -1175,7 +1301,13 @@
         "head"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df['MPHGROUP'].head(1).value_counts()",
+        "df['MPHGROUP'].value_counts().tail(1)",
+        "df['MPHGROUP'].count().head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "motorcycles_sort_highest_586",
@@ -1229,7 +1361,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('Dry weight (kg)', ascending=False)",
+        "df.sort_values('Dry weight (kg)', ascending=False).tail(1)",
+        "df.sort_index('Dry weight (kg)', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "tickets-tiny_value_counts_basic_078",
@@ -1282,7 +1420,13 @@
         "value_counts"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages.",
+      "distractors": [
+        "df['INSTATE'].count()",
+        "df['INSTATE'].unique()",
+        "df['INSTATE'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "motorcycles_sort_highest_144",
@@ -1336,7 +1480,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('Torque (rpm)', ascending=False)",
+        "df.sort_values('Torque (rpm)', ascending=False).tail(1)",
+        "df.sort_index('Torque (rpm)', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "forces_filter_numeric_greater_016",
@@ -1390,7 +1540,13 @@
         "sum"
       ],
       "hint": "Use boolean indexing to solve this",
-      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "(df['air'] > 5000.0).mean()",
+        "(df['air'] > 5000.0).count()",
+        "(df['air'] > 5000.0).nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "race-places_groupby_mean_038",
@@ -1444,7 +1600,13 @@
         "mean"
       ],
       "hint": "Use groupby and mean to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df.groupby('Race_Result')['Year_x'].sum()",
+        "df.groupby('Race_Result')['Year_x'].count()",
+        "df.groupby('Race_Result')['Year_x'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_sort_lowest_069",
@@ -1498,7 +1660,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('Production')",
+        "df.sort_values('Production', ascending=False).head(1)",
+        "df.sort_values('Production').tail(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "foods_filter_show_all_simple_033",
@@ -1551,7 +1719,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Carbs'] != '14%']",
+        "df[df['Carbs'] > '14%']",
+        "df[df['Carbs'] < '14%']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "motorcycles_groupby_count_493",
@@ -1604,7 +1778,13 @@
         "value_counts"
       ],
       "hint": "Use groupby to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean().",
+      "distractors": [
+        "df['Front tyre'].count()",
+        "df['Front tyre'].unique()",
+        "df['Front tyre'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "motorcycles_filter_numeric_greater_137",
@@ -1658,7 +1838,13 @@
         "sum"
       ],
       "hint": "Use boolean indexing to solve this",
-      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "(df['Torque (Nm)'] > 106.6).mean()",
+        "(df['Torque (Nm)'] > 106.6).count()",
+        "(df['Torque (Nm)'] > 106.6).nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "race-places_sort_highest_043",
@@ -1712,7 +1898,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('Serial', ascending=False)",
+        "df.sort_values('Serial', ascending=False).tail(1)",
+        "df.sort_index('Serial', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "grammys_groupby_mean_041",
@@ -1766,7 +1958,13 @@
         "mean"
       ],
       "hint": "Use groupby and mean to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df.groupby('status')['year'].sum()",
+        "df.groupby('status')['year'].count()",
+        "df.groupby('status')['year'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "powerplants_filter_show_all_simple_077",
@@ -1819,7 +2017,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['street_address'] != 'P.O. BOX 429']",
+        "df[df['street_address'] > 'P.O. BOX 429']",
+        "df[df['street_address'] < 'P.O. BOX 429']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "powerplants_groupby_mean_016",
@@ -1873,7 +2077,13 @@
         "mean"
       ],
       "hint": "Use groupby and mean to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df.groupby('utility_name')['zip'].sum()",
+        "df.groupby('utility_name')['zip'].count()",
+        "df.groupby('utility_name')['zip'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_filter_show_all_simple_020",
@@ -1926,7 +2136,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['LOCAL'] != 'N']",
+        "df[df['LOCAL'] > 'N']",
+        "df[df['LOCAL'] < 'N']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "overflows_value_counts_most_common_054",
@@ -1980,7 +2196,13 @@
         "head"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df['Treatment method'].head(1).value_counts()",
+        "df['Treatment method'].value_counts().tail(1)",
+        "df['Treatment method'].count().head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "grammys_filter_show_all_045",
@@ -2033,7 +2255,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['cleaned_musician'] != 'Adele']",
+        "df[df['cleaned_musician'] > 'Adele']",
+        "df[df['cleaned_musician'] < 'Adele']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "wreckers_sum_simple_045",
@@ -2086,7 +2314,13 @@
         "sum"
       ],
       "hint": "Use sum to solve this",
-      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['Zip code'].mean()",
+        "df['Zip code'].count()",
+        "df['Zip code'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "wreckers_value_counts_most_common_013",
@@ -2140,7 +2374,13 @@
         "head"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df['DBA Name'].head(1).value_counts()",
+        "df['DBA Name'].value_counts().tail(1)",
+        "df['DBA Name'].count().head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "tickets-tiny_value_counts_basic_008",
@@ -2193,7 +2433,13 @@
         "value_counts"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages.",
+      "distractors": [
+        "df['TYPE'].count()",
+        "df['TYPE'].unique()",
+        "df['TYPE'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_count_multiple_values_064",
@@ -2247,7 +2493,13 @@
         "sum"
       ],
       "hint": "Use isin to solve this",
-      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['AGEGROUP'].sum().isin(['51-55', '56-60'])",
+        "df['AGEGROUP'].isin(['51-55', '56-60']).mean()",
+        "df['AGEGROUP'].isin(['51-55', '56-60']).count()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "powerplants_sort_highest_167",
@@ -2301,7 +2553,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('other_mw', ascending=False)",
+        "df.sort_values('other_mw', ascending=False).tail(1)",
+        "df.sort_index('other_mw', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "grammys_mean_simple_005",
@@ -2354,7 +2612,13 @@
         "mean"
       ],
       "hint": "Use mean to solve this",
-      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df['year'].sum()",
+        "df['year'].count()",
+        "df['year'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_mean_simple_138",
@@ -2407,7 +2671,13 @@
         "mean"
       ],
       "hint": "Use mean to solve this",
-      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df['Footnote'].sum()",
+        "df['Footnote'].count()",
+        "df['Footnote'].value_counts()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "motorcycles_sort_highest_178",
@@ -2461,7 +2731,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('Max RPM', ascending=False)",
+        "df.sort_values('Max RPM', ascending=False).tail(1)",
+        "df.sort_index('Max RPM', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "crops_sort_lowest_003",
@@ -2515,7 +2791,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.sort_values('Year').tail(1)",
+        "df.sort_index('Year').head(1)",
+        "df.min('Year').head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "powerplants_groupby_mean_198",
@@ -2569,7 +2851,13 @@
         "mean"
       ],
       "hint": "Use groupby and mean to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df.groupby('tech_desc')['zip'].sum()",
+        "df.groupby('tech_desc')['zip'].count()",
+        "df.groupby('tech_desc')['zip'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "powerplants_filter_numeric_greater_118",
@@ -2623,7 +2911,13 @@
         "sum"
       ],
       "hint": "Use boolean indexing to solve this",
-      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "(df['crude_mw'] > 0.0).mean()",
+        "(df['crude_mw'] > 0.0).count()",
+        "(df['crude_mw'] > 0.0).nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "powerplants_mean_simple_170",
@@ -2676,7 +2970,13 @@
         "mean"
       ],
       "hint": "Use mean to solve this",
-      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df['other_mw'].sum()",
+        "df['other_mw'].count()",
+        "df['other_mw'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "foods_value_counts_basic_028",
@@ -2729,7 +3029,13 @@
         "value_counts"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages.",
+      "distractors": [
+        "df['Fat'].count()",
+        "df['Fat'].unique()",
+        "df['Fat'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "grammys_filter_show_all_052",
@@ -2782,7 +3088,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['musician_y'] != 'Taylor Swift']",
+        "df[df['musician_y'] > 'Taylor Swift']",
+        "df[df['musician_y'] < 'Taylor Swift']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_groupby_sum_sorted_100",
@@ -2837,7 +3149,13 @@
         "sort_values"
       ],
       "hint": "Use groupby and sum and sort_values to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df.groupby('Unit')['Year'].sort_values(ascending=False).sum()",
+        "df.groupby('Unit')['Year'].sum().min(ascending=False)",
+        "df.groupby('Unit')['Year'].sum().max(ascending=False)"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_filter_show_all_012",
@@ -2890,7 +3208,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['AGENCY2'] != 'State Police']",
+        "df[df['AGENCY2'] > 'State Police']",
+        "df[df['AGENCY2'] < 'State Police']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "motorcycles_filter_show_all_280",
@@ -2943,7 +3267,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Cooling system'] != 'Oil & air']",
+        "df[df['Cooling system'] > 'Oil & air']",
+        "df[df['Cooling system'] < 'Oil & air']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "forces_sort_lowest_018",
@@ -2997,7 +3327,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.sort_values('air', ascending=False).head(1)",
+        "df.sort_values('air').tail(1)",
+        "df.sort_index('air').head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "tickets-tiny_filter_count_036",
@@ -3051,7 +3387,13 @@
         "sum"
       ],
       "hint": "Use boolean indexing to solve this",
-      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "(df['SEX'] == 'U').mean()",
+        "(df['SEX'] == 'U').count()",
+        "(df['SEX'] == 'U').nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_sort_highest_068",
@@ -3105,7 +3447,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('Production', ascending=False)",
+        "df.sort_values('Production', ascending=False).tail(1)",
+        "df.sort_index('Production', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "crops_sort_top_5_070",
@@ -3159,7 +3507,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(5).sort_values('Production', ascending=False)",
+        "df.sort_values('Production', ascending=False).tail(5)",
+        "df.sort_index('Production', ascending=False).head(5)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "tickets-tiny_value_counts_basic_054",
@@ -3212,7 +3566,13 @@
         "value_counts"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages.",
+      "distractors": [
+        "df['MPHGROUP'].count()",
+        "df['MPHGROUP'].unique()",
+        "df['MPHGROUP'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_groupby_mean_049",
@@ -3266,7 +3626,13 @@
         "mean"
       ],
       "hint": "Use groupby and mean to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df.groupby('County')['Current Item Code'].sum()",
+        "df.groupby('County')['Current Item Code'].count()",
+        "df.groupby('County')['Current Item Code'].value_counts()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "race-places_mean_simple_046",
@@ -3319,7 +3685,13 @@
         "mean"
       ],
       "hint": "Use mean to solve this",
-      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df['Serial'].sum()",
+        "df['Serial'].count()",
+        "df['Serial'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "overflows_filter_show_all_simple_027",
@@ -3372,7 +3744,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Discharge Type'] != 'SO on sewer network']",
+        "df[df['Discharge Type'] > 'SO on sewer network']",
+        "df[df['Discharge Type'] < 'SO on sewer network']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "grammys_value_counts_most_common_012",
@@ -3426,7 +3804,13 @@
         "head"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df['musician_x'].head(1).value_counts()",
+        "df['musician_x'].value_counts().tail(1)",
+        "df['musician_x'].count().head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "race-places_filter_show_all_001",
@@ -3479,7 +3863,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Driver'] != 'Ott T\u00e4nak']",
+        "df[df['Driver'] > 'Ott T\u00e4nak']",
+        "df[df['Driver'] < 'Ott T\u00e4nak']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "overflows_filter_show_all_simple_002",
@@ -3532,7 +3922,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Company name'] != 'Anglian Water']",
+        "df[df['Company name'] > 'Anglian Water']",
+        "df[df['Company name'] < 'Anglian Water']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "foods_count_multiple_values_030",
@@ -3586,7 +3982,13 @@
         "sum"
       ],
       "hint": "Use isin to solve this",
-      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['Fat'].sum().isin(['0%', '59%'])",
+        "df['Fat'].isin(['0%', '59%']).mean()",
+        "df['Fat'].isin(['0%', '59%']).count()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "foods_filter_count_026",
@@ -3640,7 +4042,13 @@
         "sum"
       ],
       "hint": "Use boolean indexing to solve this",
-      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "(df['Fat'] == '33%').mean()",
+        "(df['Fat'] == '33%').count()",
+        "(df['Fat'] == '33%').nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_value_counts_basic_016",
@@ -3693,7 +4101,13 @@
         "value_counts"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages.",
+      "distractors": [
+        "df['AGENCY2'].count()",
+        "df['AGENCY2'].unique()",
+        "df['AGENCY2'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "overflows_groupby_sum_sorted_048",
@@ -3748,7 +4162,13 @@
         "sort_values"
       ],
       "hint": "Use groupby and sum and sort_values to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df.groupby('Waterbody name')['Spill count'].sort_values(ascending=False).sum()",
+        "df.groupby('Waterbody name')['Spill count'].sum().min(ascending=False)",
+        "df.groupby('Waterbody name')['Spill count'].sum().max(ascending=False)"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_value_counts_basic_094",
@@ -3801,7 +4221,13 @@
         "value_counts"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages.",
+      "distractors": [
+        "df['Unit'].count()",
+        "df['Unit'].unique()",
+        "df['Unit'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "race-places_sort_lowest_026",
@@ -3855,7 +4281,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.sort_values('Year_x', ascending=False).head(1)",
+        "df.sort_values('Year_x').tail(1)",
+        "df.sort_index('Year_x').head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "overflows_value_counts_most_common_077",
@@ -3909,7 +4341,13 @@
         "head"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df['Year count'].head(1).value_counts()",
+        "df['Year count'].value_counts().tail(1)",
+        "df['Year count'].count().head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "foods_groupby_count_031",
@@ -3962,7 +4400,13 @@
         "value_counts"
       ],
       "hint": "Use groupby to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean()."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean().",
+      "distractors": [
+        "df['Fat'].count()",
+        "df['Fat'].unique()",
+        "df['Fat'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "motorcycles_filter_show_all_simple_431",
@@ -4015,7 +4459,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Trail'] != '102 mm (4.0 inches)']",
+        "df[df['Trail'] > '102 mm (4.0 inches)']",
+        "df[df['Trail'] < '102 mm (4.0 inches)']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_count_multiple_values_010",
@@ -4069,7 +4519,13 @@
         "sum"
       ],
       "hint": "Use isin to solve this",
-      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['TYPE'].sum().isin(['T', 'W'])",
+        "df['TYPE'].isin(['T', 'W']).mean()",
+        "df['TYPE'].isin(['T', 'W']).nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "powerplants_sort_top_5_127",
@@ -4123,7 +4579,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(5).sort_values('bio_mw', ascending=False)",
+        "df.sort_values('bio_mw', ascending=False).tail(5)",
+        "df.sort_index('bio_mw', ascending=False).head(5)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "tickets-tiny_filter_show_all_simple_043",
@@ -4176,7 +4638,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['DAYNIGHT'] != 'night']",
+        "df[df['DAYNIGHT'] > 'night']",
+        "df[df['DAYNIGHT'] < 'night']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "wreckers_filter_show_all_021",
@@ -4229,7 +4697,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['City'] != 'INEZ']",
+        "df[df['City'] > 'INEZ']",
+        "df[df['City'] < 'INEZ']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "overflows_filter_show_all_simple_013",
@@ -4282,7 +4756,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Site name'] != 'SPORTS CENTRE MILL RD.']",
+        "df[df['Site name'] > 'SPORTS CENTRE MILL RD.']",
+        "df[df['Site name'] < 'SPORTS CENTRE MILL RD.']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "forces_sort_highest_017",
@@ -4336,7 +4816,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('air', ascending=False)",
+        "df.sort_values('air', ascending=False).tail(1)",
+        "df.sort_index('air', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "grammys_sort_highest_085",
@@ -4390,7 +4876,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.sort_values('Column1', ascending=False).tail(1)",
+        "df.sort_index('Column1', ascending=False).head(1)",
+        "df.min('Column1', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "wreckers_sort_lowest_042",
@@ -4444,7 +4936,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('Zip code')",
+        "df.sort_values('Zip code', ascending=False).head(1)",
+        "df.sort_values('Zip code').tail(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "powerplants_sort_highest_119",
@@ -4498,7 +4996,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('crude_mw', ascending=False)",
+        "df.sort_values('crude_mw', ascending=False).tail(1)",
+        "df.sort_index('crude_mw', ascending=False).head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "overflows_filter_show_all_072",
@@ -4551,7 +5055,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Year count'] != '6']",
+        "df[df['Year count'] > '6']",
+        "df[df['Year count'] < '6']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "grammys_value_counts_most_common_026",
@@ -4605,7 +5115,13 @@
         "head"
       ],
       "hint": "Use value_counts to solve this",
-      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "value_counts() counts occurrences of each unique value. Add normalize=True for percentages. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df['category'].head(1).value_counts()",
+        "df['category'].value_counts().tail(1)",
+        "df['category'].count().head(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "forces_filter_numeric_greater_004",
@@ -4659,7 +5175,13 @@
         "sum"
       ],
       "hint": "Use boolean indexing to solve this",
-      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "Create True/False conditions to filter data. Use & for AND, | for OR. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "(df['land'] > 10000.0).mean()",
+        "(df['land'] > 10000.0).count()",
+        "(df['land'] > 10000.0).nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "motorcycles_mean_simple_554",
@@ -4712,7 +5234,13 @@
         "mean"
       ],
       "hint": "Use mean to solve this",
-      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df['Rear brakes diameter (mm)'].sum()",
+        "df['Rear brakes diameter (mm)'].count()",
+        "df['Rear brakes diameter (mm)'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "forces_sum_simple_027",
@@ -4765,7 +5293,13 @@
         "sum"
       ],
       "hint": "Use sum to solve this",
-      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['other'].mean()",
+        "df['other'].count()",
+        "df['other'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "tickets-tiny_count_multiple_values_072",
@@ -4819,7 +5353,13 @@
         "sum"
       ],
       "hint": "Use isin to solve this",
-      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "isin() checks if values are in a list. Returns True/False for each row. sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['INTOWN'].sum().isin(['U', 'Y'])",
+        "df['INTOWN'].isin(['U', 'Y']).mean()",
+        "df['INTOWN'].isin(['U', 'Y']).count()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_sort_top_5_004",
@@ -4873,7 +5413,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(5).sort_values('Year', ascending=False)",
+        "df.sort_values('Year', ascending=False).tail(5)",
+        "df.sort_index('Year', ascending=False).head(5)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "tickets-tiny_filter_show_all_019",
@@ -4926,7 +5472,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['LOCAL'] != 'N']",
+        "df[df['LOCAL'] > 'N']",
+        "df[df['LOCAL'] < 'N']"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "race-places_mean_simple_028",
@@ -4979,7 +5531,13 @@
         "mean"
       ],
       "hint": "Use mean to solve this",
-      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df['Year_x'].sum()",
+        "df['Year_x'].count()",
+        "df['Year_x'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "powerplants_sort_top_5_163",
@@ -5033,7 +5591,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(5).sort_values('geo_mw', ascending=False)",
+        "df.sort_values('geo_mw', ascending=False).tail(5)",
+        "df.sort_index('geo_mw', ascending=False).head(5)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "powerplants_sum_simple_165",
@@ -5086,7 +5650,13 @@
         "sum"
       ],
       "hint": "Use sum to solve this",
-      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df['geo_mw'].mean()",
+        "df['geo_mw'].count()",
+        "df['geo_mw'].nunique()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "powerplants_groupby_sum_sorted_202",
@@ -5141,7 +5711,13 @@
         "sort_values"
       ],
       "hint": "Use groupby and sum and sort_values to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df.groupby('tech_desc')['coal_mw'].sort_values(ascending=False).sum()",
+        "df.groupby('tech_desc')['coal_mw'].sum().min(ascending=False)",
+        "df.groupby('tech_desc')['coal_mw'].sum().max(ascending=False)"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "motorcycles_groupby_sum_sorted_335",
@@ -5196,7 +5772,13 @@
         "sort_values"
       ],
       "hint": "Use groupby and sum and sort_values to solve this",
-      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0)."
+      "explanation": "groupby() splits data into groups. Follow with an aggregation like sum() or mean(). sum() adds up values. On boolean conditions, it counts True values (True=1, False=0).",
+      "distractors": [
+        "df.groupby('Clutch')['Year of launch'].sort_values(ascending=False).sum()",
+        "df.groupby('Clutch')['Year of launch'].sum().min(ascending=False)",
+        "df.groupby('Clutch')['Year of launch'].sum().max(ascending=False)"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "crops_sort_lowest_063",
@@ -5250,7 +5832,13 @@
         "head"
       ],
       "hint": "Use sort_values to solve this",
-      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values."
+      "explanation": "sort_values() orders the dataframe by a column. Use ascending=False for highest first. head(n) returns the first n rows. Combine with sort_values() to find top/bottom values.",
+      "distractors": [
+        "df.head(1).sort_values('Harvested Acres')",
+        "df.sort_values('Harvested Acres', ascending=False).head(1)",
+        "df.sort_values('Harvested Acres').tail(1)"
+      ],
+      "answerOrderMatters": true
     },
     {
       "id": "forces_mean_simple_008",
@@ -5303,7 +5891,13 @@
         "mean"
       ],
       "hint": "Use mean to solve this",
-      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average."
+      "explanation": "mean() calculates the average of numeric values. Use on a column to get its average.",
+      "distractors": [
+        "df['land'].sum()",
+        "df['land'].count()",
+        "df['land'].median()"
+      ],
+      "answerOrderMatters": false
     },
     {
       "id": "race-places_filter_show_all_030",
@@ -5356,7 +5950,13 @@
         "filtering"
       ],
       "hint": "Use filtering to solve this",
-      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax."
+      "explanation": "Boolean filtering selects rows where a condition is True. Use df[condition] syntax.",
+      "distractors": [
+        "df[df['Race_Result'] != '3']",
+        "df[df['Race_Result'] > '3']",
+        "df[df['Race_Result'] < '3']"
+      ],
+      "answerOrderMatters": false
     }
   ]
 }

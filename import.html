@@ -54,6 +54,7 @@
 <body class="bg-gray-50">
     <div id="root"></div>
     
+    <script src="./practice-core.js"></script>
     <script type="text/babel">
         const { useState, useEffect, useRef } = React;
         
@@ -89,48 +90,17 @@
                         throw new Error('Invalid results file format');
                     }
                     
-                    // Get the content - JSZip should handle base64 decoding automatically
-                    // since we stored it with { base64: true }
+                    // Read the CSV stored inside the results archive.
                     const csvContent = await csvFile.async('string');
                     
-                    // Parse CSV
-                    const rows = csvContent.split('\n').filter(row => row.trim());
-                    const headers = rows[0].split(',');
-                    
-                    const parsedData = rows.slice(1).map(row => {
-                        const values = [];
-                        let currentValue = '';
-                        let inQuotes = false;
-                        
-                        for (let char of row) {
-                            if (char === '"') {
-                                inQuotes = !inQuotes;
-                            } else if (char === ',' && !inQuotes) {
-                                values.push(currentValue);
-                                currentValue = '';
-                            } else {
-                                currentValue += char;
-                            }
-                        }
-                        values.push(currentValue);
-                        
-                        const obj = {};
-                        headers.forEach((header, i) => {
-                            let value = values[i];
-                            // Parse booleans and numbers
-                            if (value === 'true') value = true;
-                            else if (value === 'false') value = false;
-                            else if (!isNaN(value) && value !== '') value = Number(value);
-                            obj[header] = value;
-                        });
-                        return obj;
-                    });
-                    
+                    const parsedData = PracticeCore.parseCSV(csvContent);
+
                     setData(parsedData);
                 } catch (err) {
                     setError(err.message);
                 } finally {
                     setLoading(false);
+                    if (fileInputRef.current) fileInputRef.current.value = "";
                 }
             };
             
@@ -147,101 +117,8 @@
                 if (file) processFile(file);
             };
             
-            const calculateStats = () => {
-                if (!data || data.length === 0) return null;
-                
-                const totalQuestions = data.length;
-                const correctAnswers = data.filter(d => d.is_correct).length;
-                const skippedQuestions = data.filter(d => d.skipped).length;
-                const hintsUsed = data.filter(d => d.hint_shown).length;
-                
-                // Unique questions
-                const uniqueQuestions = new Set(data.map(d => d.question_id)).size;
-                
-                // Average time spent (excluding skips)
-                const answeredQuestions = data.filter(d => !d.skipped);
-                const avgTimeSpent = answeredQuestions.length > 0
-                    ? answeredQuestions.reduce((sum, d) => sum + d.time_spent, 0) / answeredQuestions.length
-                    : 0;
-                
-                // Performance by difficulty
-                const difficultyStats = [1, 2, 3].map(level => {
-                    const questions = data.filter(d => d.difficulty === level);
-                    const correct = questions.filter(d => d.is_correct).length;
-                    return {
-                        level,
-                        total: questions.length,
-                        correct,
-                        accuracy: questions.length > 0 ? (correct / questions.length * 100) : 0
-                    };
-                });
-                
-                // Performance over time (by session)
-                const sessions = {};
-                data.forEach(d => {
-                    if (!sessions[d.session_id]) {
-                        sessions[d.session_id] = { total: 0, correct: 0, timestamp: d.timestamp };
-                    }
-                    sessions[d.session_id].total++;
-                    if (d.is_correct) sessions[d.session_id].correct++;
-                });
-                
-                const sessionData = Object.entries(sessions)
-                    .map(([id, stats]) => ({
-                        id,
-                        ...stats,
-                        accuracy: (stats.correct / stats.total * 100)
-                    }))
-                    .sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
-                
-                // Most difficult questions
-                const questionStats = {};
-                data.forEach(d => {
-                    if (!questionStats[d.question_id]) {
-                        questionStats[d.question_id] = {
-                            text: d.question_text,
-                            attempts: 0,
-                            correct: 0,
-                            hints: 0,
-                            avgTime: 0,
-                            totalTime: 0
-                        };
-                    }
-                    questionStats[d.question_id].attempts++;
-                    if (d.is_correct) questionStats[d.question_id].correct++;
-                    if (d.hint_shown) questionStats[d.question_id].hints++;
-                    if (!d.skipped) {
-                        questionStats[d.question_id].totalTime += d.time_spent;
-                        questionStats[d.question_id].avgTime = 
-                            questionStats[d.question_id].totalTime / 
-                            data.filter(x => x.question_id === d.question_id && !x.skipped).length;
-                    }
-                });
-                
-                const difficultQuestions = Object.entries(questionStats)
-                    .map(([id, stats]) => ({
-                        id,
-                        ...stats,
-                        accuracy: (stats.correct / stats.attempts * 100)
-                    }))
-                    .filter(q => q.attempts >= 2) // Only questions attempted at least twice
-                    .sort((a, b) => a.accuracy - b.accuracy)
-                    .slice(0, 5);
-                
-                return {
-                    totalQuestions,
-                    uniqueQuestions,
-                    correctAnswers,
-                    skippedQuestions,
-                    hintsUsed,
-                    accuracy: (correctAnswers / (totalQuestions - skippedQuestions) * 100),
-                    avgTimeSpent,
-                    difficultyStats,
-                    sessionData,
-                    difficultQuestions
-                };
-            };
-            
+            const calculateStats = () => PracticeCore.calculateStats(data);
+
             useEffect(() => {
                 if (!data) return;
                 

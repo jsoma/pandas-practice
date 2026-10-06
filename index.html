@@ -84,8 +84,9 @@
 <body class="bg-gray-50">
     <div id="root"></div>
     
+    <script src="./practice-core.js"></script>
     <script type="text/babel">
-        const { useState, useEffect, useCallback, useMemo } = React;
+        const { useState, useEffect, useCallback, useMemo, useRef } = React;
         
         // Pandas equivalency rules
         const PANDAS_EQUIVALENCIES = [
@@ -322,62 +323,14 @@
             const [showHint, setShowHint] = useState(false);
             const [startTime] = useState(Date.now());
             
-            // Generate choices based on the question
-            const choices = useMemo(() => {
-                const correct = question.canonicalAnswer.code;
-                const distractors = [];
-                
-                // Generate distractors based on the correct answer
-                if (correct.includes('value_counts()')) {
-                    distractors.push(
-                        correct.replace('value_counts()', 'count()'),
-                        correct.replace('value_counts()', 'size()'),
-                        correct.replace('value_counts()', 'unique()')
-                    );
-                } else if (correct.includes('groupby')) {
-                    distractors.push(
-                        correct.replace('groupby', 'sort_values'),
-                        correct.replace('.sum()', '.mean()'),
-                        correct.replace('.mean()', '.sum()')
-                    );
-                } else if (correct.includes('nlargest')) {
-                    distractors.push(
-                        correct.replace('nlargest', 'nsmallest'),
-                        correct.replace('nlargest', 'head'),
-                        correct.replace('nlargest', 'tail')
-                    );
-                } else if (correct.includes('nunique()')) {
-                    distractors.push(
-                        correct.replace('nunique()', 'count()'),
-                        correct.replace('nunique()', 'size()'),
-                        correct.replace('nunique()', 'unique()')
-                    );
-                } else if (correct.includes('sort_values')) {
-                    distractors.push(
-                        correct.replace('ascending=False', 'ascending=True'),
-                        correct.replace('sort_values', 'sort_index'),
-                        correct.replace('head(', 'tail(')
-                    );
-                } else {
-                    // Generic distractors
-                    distractors.push(
-                        correct + '.head()',
-                        correct.replace('].', '].unique().'),
-                        correct.includes('()') ? correct.replace('()', '().sum()') : correct + '.count()'
-                    );
-                }
-                
-                // Filter out duplicates and ensure we have at least 3 distractors
-                const uniqueDistractors = [...new Set(distractors.filter(d => d !== correct))];
-                while (uniqueDistractors.length < 3) {
-                    uniqueDistractors.push(correct + `.head(${uniqueDistractors.length + 1})`);
-                }
-                
-                return [...uniqueDistractors.slice(0, 3), correct].sort(() => Math.random() - 0.5);
-            }, [question]);
-            
+            const choices = useMemo(() => PracticeCore.shuffle([
+                ...question.distractors, question.canonicalAnswer.code
+            ]), [question]);
+            const submitted = useRef(false);
+
             const handleSubmit = () => {
-                if (selected === null) return;
+                if (selected === null || submitted.current) return;
+                submitted.current = true;
                 
                 setShowFeedback(true);
                 const isCorrect = choices[selected] === question.canonicalAnswer.code;
@@ -398,6 +351,8 @@
             };
             
             const handleSkip = () => {
+                if (submitted.current) return;
+                submitted.current = true;
                 setShowFeedback(true);
                 // When skipping, we don't select any answer
                 setSelected(null);
@@ -418,6 +373,8 @@
             };
             
             const handleNext = () => {
+                if (!submitted.current) return;
+                submitted.current = false;
                 const isCorrect = selected !== null && choices[selected] === question.canonicalAnswer.code;
                 // If skipped, give minimal points (1), otherwise normal scoring
                 onAnswer(selected === null ? 1 : (isCorrect ? 5 : 2));
@@ -570,69 +527,72 @@
             const [startTime] = useState(Date.now());
             const [showExplanation, setShowExplanation] = useState(false);
             
+            const [checking, setChecking] = useState(false);
+            const busy = useRef(false);
+            const advanced = useRef(false);
+            const workerRef = useRef(null);
+            const timeoutRef = useRef(null);
+            useEffect(() => () => {
+                workerRef.current?.terminate();
+                clearTimeout(timeoutRef.current);
+            }, []);
+
             const checkAnswer = () => {
-                // Simple equivalency checking
-                const normalized = code.trim().replace(/\s+/g, ' ');
-                const canonical = question.canonicalAnswer.code.trim().replace(/\s+/g, ' ');
-                
-                let isCorrect = false;
-                let quality = 2;
-                
-                // Exact match
-                if (normalized === canonical) {
-                    setFeedback({ correct: true, message: 'Perfect!' });
-                    isCorrect = true;
-                    quality = 5;
-                } else {
-                    // Check for common equivalencies
-                    // This is simplified - in production would use proper AST parsing
-                    const hasValueCounts = normalized.includes('value_counts()');
-                    const hasGroupbySize = normalized.includes('groupby') && normalized.includes('size()');
-                    
-                    if ((hasValueCounts && canonical.includes('value_counts')) ||
-                        (hasGroupbySize && canonical.includes('value_counts'))) {
-                        setFeedback({ correct: true, message: 'Great! That\'s an equivalent solution.' });
-                        isCorrect = true;
-                        quality = 4;
-                    } else {
-                        setFeedback({ correct: false, message: 'Not quite. Try again!' });
+                if (busy.current || feedback?.correct || !code.trim()) return;
+                busy.current = true;
+                setChecking(true);
+                setFeedback(null);
+                const finish = result => {
+                    clearTimeout(timeoutRef.current);
+                    busy.current = false;
+                    setChecking(false);
+                    if (result.error) {
+                        workerRef.current?.terminate();
+                        workerRef.current = null;
+                        setFeedback({ correct: false, message: result.error });
+                        return;
                     }
-                }
-                
-                // Track the attempt
-                const timeSpent = Math.round((Date.now() - startTime) / 1000);
-                onTrack({
-                    question_id: question.id,
-                    question_text: question.question,
-                    answer_selected: code,
-                    correct_answer: question.canonicalAnswer.code,
-                    is_correct: isCorrect,
-                    hint_shown: showHint,
-                    time_spent: timeSpent,
-                    question_type: guided ? 'guided_code' : 'free_code',
-                    skipped: false
-                });
-                
-                if (isCorrect) {
-                    setShowExplanation(true);
-                    setTimeout(() => onAnswer(quality), 3000); // Increased to allow time to read explanation
-                } else {
-                    setTimeout(() => setFeedback(null), 3000);
+                    setFeedback(result);
+                    setShowExplanation(result.correct);
+                    onTrack({
+                        question_id: question.id, question_text: question.question,
+                        answer_selected: code, correct_answer: question.canonicalAnswer.code,
+                        is_correct: result.correct, hint_shown: showHint,
+                        time_spent: Math.round((Date.now() - startTime) / 1000),
+                        question_type: guided ? 'guided_code' : 'free_code', skipped: false
+                    });
+                };
+                try {
+                    if (!workerRef.current) workerRef.current = new Worker('./grader-worker.js');
+                    const worker = workerRef.current;
+                    worker.onmessage = event => finish(event.data);
+                    worker.onerror = () => {
+                        worker.terminate(); workerRef.current = null;
+                        finish({ error: 'Answer checker could not load. Please try again.' });
+                    };
+                    timeoutRef.current = setTimeout(() => {
+                        worker.terminate(); workerRef.current = null;
+                        finish({ error: 'Answer checking timed out. Please try again.' });
+                    }, 60000);
+                    worker.postMessage({ dataset: question.dataset, canonical: question.canonicalAnswer.code, answer: code, preserveOrder: question.answerOrderMatters ?? true });
+                } catch (error) {
+                    finish({ error: 'Answer checker unavailable: ' + error.message });
                 }
             };
-            
+
             return (
                 <div className="space-y-4">
                     {guided && (
                         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                             <p className="text-sm text-blue-800">
-                                <strong>Structure hint:</strong> df[_____].______()
+                                <strong>Structure hint:</strong> Use df for the full dataset. Finish with the expression or variable containing your answer.
                             </p>
                         </div>
                     )}
                     
                     <div className="relative">
                         <textarea
+                            disabled={checking || feedback?.correct}
                             value={code}
                             onChange={(e) => setCode(e.target.value)}
                             placeholder="Enter your pandas code here..."
@@ -657,10 +617,10 @@
                         
                         <button
                             onClick={checkAnswer}
-                            disabled={!code.trim()}
+                            disabled={!code.trim() || checking || feedback?.correct}
                             className="flex-1 py-2 px-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:from-purple-700 hover:to-pink-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                         >
-                            Check Answer
+                            {checking ? 'Checking answer… (first load may take a minute)' : 'Check Answer'}
                         </button>
                     </div>
                     
@@ -670,6 +630,15 @@
                         </div>
                     )}
                     
+                    {feedback?.correct && (
+                        <button onClick={() => {
+                            if (advanced.current) return;
+                            advanced.current = true;
+                            onAnswer(5);
+                        }} className="w-full py-3 bg-purple-600 text-white rounded-lg">
+                            Next Question →
+                        </button>
+                    )}
                     {showExplanation && question.explanation && (
                         <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg fade-in">
                             <h4 className="text-sm font-semibold text-blue-900 mb-2">Why this answer?</h4>
@@ -810,7 +779,7 @@
                         if (!response.ok) throw new Error(`Failed to load questions: ${response.status} ${response.statusText}`);
                         
                         const data = await response.json();
-                        console.log('Loaded questions:', data);
+
                         
                         // Load saved progress
                         const savedProgress = localStorage.getItem('pandasMasteryProgress');
@@ -837,7 +806,7 @@
                             }
                         }));
                         
-                        console.log('Questions with SRS:', questionsWithSRS);
+
                         setQuestions(questionsWithSRS);
                         updateProgress(questionsWithSRS);
                         setLoading(false);
@@ -874,26 +843,9 @@
                     maxDifficulty = 2; // Easy and medium questions
                 }
                 
-                // Filter questions by difficulty and due date
-                const dueQuestions = questions.filter(q => 
-                    q.srs.nextReview <= Date.now() && 
-                    q.difficulty <= maxDifficulty
-                );
-                
-                let selectedQuestion;
-                if (dueQuestions.length === 0) {
-                    // No due questions at appropriate difficulty
-                    const appropriateQuestions = questions.filter(q => q.difficulty <= maxDifficulty);
-                    const sorted = [...appropriateQuestions].sort((a, b) => a.srs.nextReview - b.srs.nextReview);
-                    selectedQuestion = sorted[0];
-                } else {
-                    // Pick a random due question
-                    const randomIndex = Math.floor(Math.random() * dueQuestions.length);
-                    selectedQuestion = dueQuestions[randomIndex];
-                }
-                
+                const selectedQuestion = PracticeCore.selectQuestion(questions, maxDifficulty);
                 setCurrentQuestion(selectedQuestion);
-                
+
                 // Determine mode based on progress
                 const masteredCount = questions.filter(q => q.srs.repetitions >= 3).length;
                 const ratio = masteredCount / questions.length;
@@ -907,6 +859,22 @@
                 }
             }, [questions, currentQuestion, performanceHistory]);
             
+            // Wake up when the next eligible review becomes due, including in a long-lived tab.
+            useEffect(() => {
+                if (currentQuestion || !questions.length) return;
+                const recent = n => {
+                    const history = performanceHistory.slice(-n);
+                    return history.length ? history.filter(h => h.correct).length / history.length : 1;
+                };
+                const average = (recent(5) + recent(10)) / 2;
+                const maximum = average < 0.4 ? 1 : average < 0.7 ? 2 : 3;
+                const dates = questions.filter(q => q.difficulty <= maximum).map(q => q.srs.nextReview);
+                if (!dates.length) return;
+                const timer = setTimeout(() => setQuestions(previous => [...previous]),
+                    Math.min(2147483647, Math.max(1, Math.min(...dates) - Date.now())));
+                return () => clearTimeout(timer);
+            }, [questions, currentQuestion, performanceHistory]);
+
             const updateProgress = (questionList) => {
                 const mastered = questionList.filter(q => q.srs && q.srs.repetitions >= 5).length;
                 setProgress({ total: questionList.length, mastered });
@@ -1004,53 +972,8 @@
                 }
                 
                 try {
-                    // Create CSV content
-                    const headers = [
-                        'question_id',
-                        'question_text',
-                        'answer_selected',
-                        'correct_answer',
-                        'is_correct',
-                        'hint_shown',
-                        'times_seen',
-                        'times_correct',
-                        'timestamp',
-                        'difficulty',
-                        'time_spent',
-                        'question_type',
-                        'skipped',
-                        'performance_streak',
-                        'session_id',
-                        'dataset'
-                    ];
-                    
-                    const csvRows = [headers.join(',')];
-                    
-                    trackingData.forEach(row => {
-                        const values = headers.map(header => {
-                            let value = row[header];
-                            
-                            // Handle special cases
-                            if (value === null || value === undefined) {
-                                value = '';
-                            } else if (typeof value === 'string' && value.includes(',')) {
-                                // Escape commas in strings
-                                value = `"${value.replace(/"/g, '""')}"`;
-                            } else if (typeof value === 'boolean') {
-                                value = value ? 'TRUE' : 'FALSE';
-                            } else if (header === 'timestamp') {
-                                // Convert timestamp to readable date
-                                value = new Date(value).toISOString();
-                            }
-                            
-                            return value;
-                        });
-                        
-                        csvRows.push(values.join(','));
-                    });
-                    
-                    const csvContent = csvRows.join('\n');
-                    
+                    const csvContent = PracticeCore.exportCSV(trackingData);
+
                     // Create zip file
                     const zip = new JSZip();
                     zip.file('tracking_data.csv', csvContent);
@@ -1124,6 +1047,7 @@
                     <main className="py-12 px-4">
                         {currentQuestion ? (
                             <QuestionCard
+                                key={currentQuestion.id + ":" + questionMode}
                                 question={currentQuestion}
                                 mode={questionMode}
                                 onAnswer={handleAnswer}
@@ -1131,7 +1055,8 @@
                             />
                         ) : (
                             <div className="text-center py-12">
-                                <div className="shimmer h-96 max-w-4xl mx-auto rounded-xl"></div>
+                                <h2 className="text-xl font-semibold">You’re caught up!</h2>
+                                <p className="mt-2 text-gray-600">No reviews are due at your current difficulty. Come back when your next review is due.</p>
                             </div>
                         )}
                     </main>
@@ -1147,7 +1072,7 @@
         };
         
         // Render the app
-        ReactDOM.render(<App />, document.getElementById('root'));
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
     </script>
 </body>
 </html>
